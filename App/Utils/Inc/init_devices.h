@@ -1,0 +1,1 @@
+// Initialize the devices here and make sure that they are working properly (done within the device init code).
