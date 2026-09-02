@@ -34,7 +34,7 @@ Our system requirements describe the constraints and criteria by which our syste
 
 Functional, but simple, was the core philosophy that governed the design of our flight computer hardware. As such, our design features key sensors, such as a 6-axis IMU and barometer, but excludes more advanced features such as GPS and telemetry. Below, you can find a block diagram and list of critical components.
 
-![PCB Block Diagram](PCB_Block_Diagram.png)
+![PCB Block Diagram](Images/PCB_Block_Diagram.png)
 
 | Component | Part Number | Source |
 |---|---|---|
