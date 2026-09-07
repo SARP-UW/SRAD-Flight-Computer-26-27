@@ -1,7 +1,7 @@
 /**
  * State Operations:
  * - Toggle MCU LED at the beginning of the loop (so that it blinks)
- * - Collect IMU data, but don't write it to flash
+ * - Collect IMU data, but don't write it to flash until ...
  * - Check if acceleration exceeds threshold for launch detection, if so, transition to the next state.
  * - Control the pyro LEDs
  * - Will we ever log to extern_flash in this state?
@@ -15,5 +15,6 @@
 #include "App/Sensors/Inc/bmp390.h"
 #include "App/Devices/Inc/led.h"
 #include "App/Utils/Inc/pyro.h"
+#include "App/Devices/Inc/extern_flash.h"
 
-HAL_StatusTypeDef update_pre_flight();
+HAL_StatusTypeDef update_pre_flight(void);

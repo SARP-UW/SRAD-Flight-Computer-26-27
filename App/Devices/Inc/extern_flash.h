@@ -16,6 +16,6 @@ typedef struct {
     bool pyro_fire;          // Was a pyro fired during this packet? True if yes, false if no
 } Packet;
 
-HAL_StatusTypeDef init_extern_flash();
+HAL_StatusTypeDef init_extern_flash(void);
 
 HAL_StatusTypeDef write_packet_to_extern_flash(Packet* packet);

@@ -25,7 +25,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "App/States/Inc/state_machine.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -77,7 +77,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-
+  init_state_machine();
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -94,13 +94,15 @@ int main(void)
   MX_TIM2_Init();
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
-
+  State curr_state = PRE_FLIGHT;
+  State_Context context = {0};
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    curr_state = update_state(curr_state, &context);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
