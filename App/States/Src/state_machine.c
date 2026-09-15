@@ -2,7 +2,7 @@
 #include "States/Inc/pre_flight.h"
 #include "States/Inc/ascent.h"
 #include "States/Inc/descent.h"
-#include "States/Inc/idle_decent.h"
+#include "States/Inc/idle_descent.h"
 #include "States/Inc/post_flight.h"
 
 State update_state(State next_state, State_Context *context) {

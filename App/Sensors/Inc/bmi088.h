@@ -1,4 +1,4 @@
-// Comment
+//comment
 
 #pragma once
 

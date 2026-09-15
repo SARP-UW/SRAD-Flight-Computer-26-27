@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/jm/SARP_SRAD_FC/SRAD-Flight-Computer-26-27/build/Debug/cmake_install.cmake",
+		"/Users/jm/SARP_SRAD_FC/SRAD-Flight-Computer-26-27/build/Debug/cmake/stm32cubemx/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
