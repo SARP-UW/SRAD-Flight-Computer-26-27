@@ -39,7 +39,7 @@ Functional, but simple, was the core philosophy that governed the design of our 
 | Component | Part Number | Source |
 |---|---|---|
 | Microcontroller | STM32F411CEU6 | [JLCPCB](https://jlcpcb.com/partdetail/STMicroelectronics-STM32F411CEU6/C60420?jlc_vid=QAUPUlBSRVFdBVIEE1kNUlNXRVNaVAEDFQdeAVxQTlQxVlNeQFVZVlRXRlhaVDtW) |
-| Barometer | MS5611 | [JLCPCB]([https://jlcpcb.com/partdetail/BoschSensortec-BMP390/C5124834?jlc_vid=QAUPUlBSRVFdBVIEE1kNUlNXRVNaVAEDFQdeAVxQTlQxVlNeQFVZVlZTT1RZXjtW](https://jlcpcb.com/partdetail/TEConnectivity-MS561101BA0350/C15639) |
+| Barometer | MS5611 | [JLCPCB]([https://jlcpcb.com/partdetail/BoschSensortec-BMP390/C5124834?jlc_vid=QAUPUlBSRVFdBVIEE1kNUlNXRVNaVAEDFQdeAVxQTlQxVlNeQFVZVlZTT1RZXjtW](https://jlcpcb.com/partdetail/TEConnectivity-MS561101BA0350/C15639)) |
 | IMU | BMI088 | [JLCPCB](https://jlcpcb.com/partdetail/BoschSensortec-BMI088/C194919?jlc_vid=QAUPUlBSRVFdBVIEE1kNUlNXRVNaVAEDFQdeAVxQTlQxVlNeQFVZVlFfRVRaUDtW) |
 | External Flash | W25Q128JVPIQ | [JLCPCB](https://jlcpcb.com/partdetail/WinbondElec-W25Q128JVPIQ/C190862?jlc_vid=FgBZAgVeRgdZUFQHR1JbVl1RQFQKAl1TT1RZVVcCRAIxVlNeQFReXldfRVVbVDtW) |
 | USB-C Connector | TYPE-C-31-M-12 | [JLCPCB](https://jlcpcb.com/partdetail/Korean_HropartsElec-TYPE_C_31_M12/C165948?jlc_vid=FgBZAgVeRgdZUFQHR1JbVl1RQFQKAl1TT1RZVVcCRAIxVlNeQFRfUFVST1BdUTtW) |
