@@ -4,11 +4,11 @@
  * @brief MS561101BA03 Barometer driver
  */
 
- /**
-  * Notes:
-  * - Could improve the driver by verifying the PROM values with the CRC value.
-  * - Altitude will be calculated in a higher-level file.
-  */
+/**
+ * Notes:
+ * - Could improve the driver by verifying the PROM values with the CRC value.
+ * - Altitude will be calculated in a higher-level file.
+ */
 
 #include "ms5611.h"
 #include "spi.h"
@@ -50,8 +50,8 @@ typedef struct {
 // SPI
 extern SPI_HandleTypeDef hspi1;
 const uint8_t timeout = 10;              // 10ms timeout for SPI transfers
-#define MS5611_CS_GPIO_Port   GPIOA      // CHAGE ME WHEN YOU HAVE THE ACTUAL CS PORT
-#define MS5611_CS_Pin         GPIO_PIN_4 // CHAGE ME WHEN YOU HAVE THE ACTUAL CS PORT
+#define MS5611_CS_GPIO_Port GPIOA        // CHAGE ME WHEN YOU HAVE THE ACTUAL CS PORT
+#define MS5611_CS_Pin GPIO_PIN_4         // CHAGE ME WHEN YOU HAVE THE ACTUAL CS PORT
 
 static ms5611_calibration_data_t calibration_data; // Static variable to hold calibration data
 static ms5611_osr_t osr;                           // Static variable to hold the oversampling ratio
