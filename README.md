@@ -67,5 +67,5 @@ The application layer of the flight computer software revolves around a finite s
 |---|---|---|
 | **Project Lead** | Jude Merritt | ... |
 | **Hardware Member** | Andrew Winston | ... |
-| **Software Member** | *Name* | ... |
+| **Software Member** | Michael Zheng | ... |
 | **Software Member** | *Name* | ... |
