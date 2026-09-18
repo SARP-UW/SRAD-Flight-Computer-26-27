@@ -8,6 +8,8 @@
  * Notes:
  * - Could improve the driver by verifying the PROM values with the CRC value.
  * - Altitude will be calculated in a higher-level file.
+ * - May be good to abstract the convertion math from ms5611_update so that you can
+ *   easily conver to different units.
  */
 
 #include "ms5611.h"
@@ -87,6 +89,7 @@ static ms5611_osr_t osr;                           // Static variable to hold th
     HAL_Delay(conversion_time);
 }
 
+// Used to send a single command
 static HAL_StatusTypeDef send_command(uint8_t cmd) {
     uint8_t tx[1] = {cmd};
     HAL_GPIO_WritePin(MS5611_CS_PORT, MS5611_CS_PIN, GPIO_PIN_RESET);
@@ -95,6 +98,7 @@ static HAL_StatusTypeDef send_command(uint8_t cmd) {
     return status;
 }
 
+// Used to read from the adc
 static HAL_StatusTypeDef read_adc(uint32_t *res) {
     uint8_t tx[1] = {ADC_READ};
     uint8_t rx[3] = {0};
@@ -115,6 +119,7 @@ static HAL_StatusTypeDef read_adc(uint32_t *res) {
     return status;
 }
 
+// Used to read from the prom
 static HAL_StatusTypeDef read_prom(uint8_t prom_addr, uint16_t *res) {
     uint8_t tx[1] = {prom_addr};
     uint8_t rx[2] = {0};

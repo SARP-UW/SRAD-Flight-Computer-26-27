@@ -1,4 +1,8 @@
-//comment
+/**
+ * @file App/Sensors/Inc/bmi088.h
+ * @authors Jude Merritt
+ * @brief BMI088 IMU driver
+ */
 
 #pragma once
 
@@ -12,11 +16,19 @@ typedef struct {
     float gyro_x;  // Angular velocity around the X axis (rad/s)
     float gyro_y;  // Angular velocity around the Y axis (rad/s)
     float gyro_z;  // Angular velocity around the Z axis (rad/s)
-} BMI088_Data;
-
-HAL_StatusTypeDef init_BMI088(BMI088_Data *data);
+} bmi088_data_t;
 
 /**
- * @brief  Update the BMI088 sensor data.
+ * @brief Initializes the BMI088 IMU. 
+ * 
+ * @return HAL_StatusTypeDef HAL_OK if the initialization was successful, or an error code otherwise.
  */
-HAL_StatusTypeDef update_BMI088(BMI088_Data *data);
+HAL_StatusTypeDef init_bmi088(void);
+
+/**
+ * @brief Updates the bmi088_data_t structure with linear acceleration and angular velocity vaules.
+ *
+ * @param data pointer to the bmi088_data_t structure to store the IMU data.
+ * @return HAL_StatusTypeDef HAL_OK if the initialization was successful, or an error code otherwise.
+ */
+HAL_StatusTypeDef update_bmi088(bmi088_data_t *data);

@@ -79,3 +79,5 @@
 1054	1404	1789718766012355674	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj	57203d0cbf8c573e
 1161	1413	1789718766119376502	cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj	57d61e0ca322122f
 1040	1475	1789718765998494127	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj	b6002920c44f4d1c
+14	530	1789726194455615925	CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/ms5611.c.obj	9163d0ccc331bc49
+15	531	1789726194456607558	CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj	f679c0889d8d4c60

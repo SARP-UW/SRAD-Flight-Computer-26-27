@@ -39,7 +39,7 @@ typedef struct {
 /**
  * @brief Initializes the MS561101BA03 barometer. 
  *
- * @param data pointer to the ms5611_data structure to store the barometer data.
+ * @param data pointer to the ms5611_data_t structure to store the barometer data.
  * @param osr Oversampling ratio to use for measurements. A higher oversampling
  *            ratio will result in more accurate measurements, but will take longer to complete.
  * @return HAL_StatusTypeDef HAL_OK if the initialization was successful, or an error code otherwise.
@@ -47,8 +47,8 @@ typedef struct {
 HAL_StatusTypeDef init_ms5611(ms5611_osr_t osr);
 
 /**
- * @brief Updates the data structure with pressure, temperature, and altitude values.
- * @param data pointer to the ms5611_data structure to store the barometer data.
+ * @brief Updates the ms5611_data_t structure with pressure, temperature, and altitude values.
+ * @param data pointer to the ms5611_data_t structure to store the barometer data.
  * @return HAL_StatusTypeDef HAL_OK if the update was successful, or an error code otherwise.
  */
 HAL_StatusTypeDef update_ms5611(ms5611_data_t *data);

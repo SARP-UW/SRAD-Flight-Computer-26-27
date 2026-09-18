@@ -3303,7 +3303,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xba CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/ms5611.c.obj
  .debug_macro   0x00000000      0x126 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/ms5611.c.obj
  .debug_line    0x00000000      0xa1c CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/ms5611.c.obj
- .debug_str     0x00000000    0x882c7 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/ms5611.c.obj
+ .debug_str     0x00000000    0x882c3 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/ms5611.c.obj
  .comment       0x00000000       0x47 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/ms5611.c.obj
  .debug_frame   0x00000000       0xf8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/ms5611.c.obj
  .ARM.attributes
@@ -3354,23 +3354,27 @@ Discarded input sections
  .bss           0x00000000        0x0 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .rodata.timeout
                 0x00000000        0x1 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
- .text.spi_select_accel
-                0x00000000       0x18 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+ .text.send_command
+                0x00000000       0x70 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+ .text.write_reg
+                0x00000000       0xa8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+ .text.read_reg
+                0x00000000       0xe4 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .text.convert_accel_data_ms2
-                0x00000000       0x1a CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+                0x00000000       0x3c CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .text.convert_gyro_data_rads
-                0x00000000       0x1a CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
- .text.init_BMI088
-                0x00000000       0x16 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+                0x00000000       0x3c CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+ .text.init_bmi088
+                0x00000000      0x14e CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .text.update_BMI088
-                0x00000000       0x16 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
- .debug_info    0x00000000      0x32e CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
- .debug_abbrev  0x00000000      0x182 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+                0x00000000      0x12e CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+ .debug_info    0x00000000      0xb40 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+ .debug_abbrev  0x00000000      0x268 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .debug_aranges
-                0x00000000       0x40 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+                0x00000000       0x50 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .debug_rnglists
-                0x00000000       0x2b CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
- .debug_macro   0x00000000      0x26e CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+                0x00000000       0x3b CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+ .debug_macro   0x00000000      0x29e CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .debug_macro   0x00000000      0xad8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .debug_macro   0x00000000       0x22 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .debug_macro   0x00000000       0x8e CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
@@ -3412,10 +3416,10 @@ Discarded input sections
  .debug_macro   0x00000000      0x293 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .debug_macro   0x00000000       0xba CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .debug_macro   0x00000000      0x126 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
- .debug_line    0x00000000      0x7c8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
- .debug_str     0x00000000    0x87dc7 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+ .debug_line    0x00000000      0x9d8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+ .debug_str     0x00000000    0x88368 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .comment       0x00000000       0x47 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
- .debug_frame   0x00000000       0xcc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+ .debug_frame   0x00000000      0x118 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .ARM.attributes
                 0x00000000       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
