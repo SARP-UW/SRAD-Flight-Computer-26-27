@@ -13,6 +13,8 @@ State update_state(State next_state, State_Context *context) {
             if (status != HAL_OK) {
                 //...
             }
+
+            break;
         }
         case ASCENT: {
             HAL_StatusTypeDef status = update_ascent(context);
@@ -20,6 +22,8 @@ State update_state(State next_state, State_Context *context) {
             if (status != HAL_OK) {
                 //...
             }
+
+            break;
         }
         case DESCENT: {
             HAL_StatusTypeDef status = update_descent(context);
@@ -27,6 +31,8 @@ State update_state(State next_state, State_Context *context) {
             if (status != HAL_OK) {
                 //...
             }
+            
+            break;
         }
         case IDLE_DESCENT: {
             HAL_StatusTypeDef status = update_idle_descent(context);
@@ -34,6 +40,8 @@ State update_state(State next_state, State_Context *context) {
             if (status != HAL_OK) {
                 //...
             }
+
+            break;
         }
         case POST_FLIGHT: {
             HAL_StatusTypeDef status = update_post_flight();
@@ -41,6 +49,8 @@ State update_state(State next_state, State_Context *context) {
             if (status != HAL_OK) {
                 //...
             }
+
+            break;
         }
     }
 }

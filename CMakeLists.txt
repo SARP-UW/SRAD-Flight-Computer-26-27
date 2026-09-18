@@ -34,7 +34,11 @@ enable_language(C ASM)
 # Create an executable object type
 add_executable(${CMAKE_PROJECT_NAME}
     App/Utils/Inc/estimate_altitude.h
-    App/Utils/Src/estimate_altitude.c)
+    App/Utils/Src/estimate_altitude.c
+    App/Sensors/Inc/ms5611.h
+    App/Sensors/Src/ms5611.c
+    App/Sensors/Inc/bmi088.h
+    App/Sensors/Src/bmi088.c)
 
 # Add STM32CubeMX generated sources
 add_subdirectory(cmake/stm32cubemx)
@@ -52,6 +56,10 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
+    ${CMAKE_CURRENT_SOURCE_DIR}/App/Sensors/Inc
+    ${CMAKE_CURRENT_SOURCE_DIR}/App/Devices/Inc
+    ${CMAKE_CURRENT_SOURCE_DIR}/App/States/Inc
+    ${CMAKE_CURRENT_SOURCE_DIR}/App/Utils/Inc
 )
 
 # Add project symbols (macros)

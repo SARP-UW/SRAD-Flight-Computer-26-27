@@ -1,5 +1,5 @@
 /**
- * @file App/Sensors/Inc/MS5611.h
+ * @file App/Sensors/Inc/ms5611.h
  * @authors Jude Merritt
  * @brief MS561101BA03 Barometer driver
  */
@@ -24,6 +24,9 @@ typedef enum {
     OSR_4096 = 0x08  /**< 4096 samples per measurement */
 } ms5611_osr_t;
 
+/**
+ * @brief Barometer results
+ */
 typedef struct {
     float pressure;    // Pressure in mbar
     float temperature; // Temperature in degrees Celsius

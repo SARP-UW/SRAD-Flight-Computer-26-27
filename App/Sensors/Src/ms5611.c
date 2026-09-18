@@ -1,5 +1,5 @@
 /**
- * @file App/Sensors/Inc/MS5611.c
+ * @file App/Sensors/Src/ms5611.c
  * @authors Jude Merritt
  * @brief MS561101BA03 Barometer driver
  */
@@ -19,7 +19,7 @@
  **************************************************************************************************/
 
 typedef struct {
-    uint16_t sens;     // C1 Presure sensitivity
+    uint16_t sens;     // C1 Pressure sensitivity
     uint16_t off;      // C2 Pressure offset
     uint16_t tcs;      // C3 Temperature coefficient of pressure sensitivity
     uint16_t tco;      // C4 Temperature coefficient of pressure offset
@@ -28,7 +28,7 @@ typedef struct {
 }ms5611_calibration_data_t; 
 
 /**************************************************************************************************
- * @section Definititions and global variables
+ * @section Definitions and global variables
  **************************************************************************************************/
 
 // Basic Commands
@@ -49,10 +49,12 @@ typedef struct {
 
 // SPI
 extern SPI_HandleTypeDef hspi1;
-const uint8_t timeout = 10;              // 10ms timeout for SPI transfers
-#define MS5611_CS_GPIO_Port GPIOA        // CHAGE ME WHEN YOU HAVE THE ACTUAL CS PORT
-#define MS5611_CS_Pin GPIO_PIN_4         // CHAGE ME WHEN YOU HAVE THE ACTUAL CS PORT
+static const uint8_t timeout = 10;       // 10ms timeout for SPI transfers
+#define MS5611_CS_PORT GPIOA        // CHAGE ME WHEN YOU HAVE THE ACTUAL CS PORT
+#define MS5611_CS_PIN GPIO_PIN_4         // CHAGE ME WHEN YOU HAVE THE ACTUAL CS PORT
 
+// Global and static variables
+#define RELOAD_DELAY 10 // (ms)
 static ms5611_calibration_data_t calibration_data; // Static variable to hold calibration data
 static ms5611_osr_t osr;                           // Static variable to hold the oversampling ratio
 
@@ -79,7 +81,6 @@ static ms5611_osr_t osr;                           // Static variable to hold th
         case OSR_1024: conversion_time = 3;  break;
         case OSR_2048: conversion_time = 5;  break;
         case OSR_4096: conversion_time = 10; break;
-        case RELOAD:   conversion_time = 4;  break;
         default: return;
     }
 
@@ -88,9 +89,9 @@ static ms5611_osr_t osr;                           // Static variable to hold th
 
 static HAL_StatusTypeDef send_command(uint8_t cmd) {
     uint8_t tx[1] = {cmd};
-    HAL_GPIO_Write_Pin(MS5611_CS_GPIO_Port, MS5611_CS_Pin, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(MS5611_CS_PORT, MS5611_CS_PIN, GPIO_PIN_RESET);
     HAL_StatusTypeDef status = HAL_SPI_Transmit(&hspi1, tx, 1, timeout);
-    HAL_GPIO_Write_Pin(MS5611_CS_GPIO_Port, MS5611_CS_Pin, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(MS5611_CS_PORT, MS5611_CS_PIN, GPIO_PIN_SET);
     return status;
 }
 
@@ -98,15 +99,15 @@ static HAL_StatusTypeDef read_adc(uint32_t *res) {
     uint8_t tx[1] = {ADC_READ};
     uint8_t rx[3] = {0};
 
-    HAL_GPIO_Write_Pin(MS5611_CS_GPIO_Port, MS5611_CS_Pin, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(MS5611_CS_PORT, MS5611_CS_PIN, GPIO_PIN_RESET);
     HAL_StatusTypeDef status = HAL_SPI_Transmit(&hspi1, tx, 1, timeout);
     if (status != HAL_OK) {
-        HAL_GPIO_Write_Pin(MS5611_CS_GPIO_Port, MS5611_CS_Pin, GPIO_PIN_SET);
+        HAL_GPIO_WritePin(MS5611_CS_PORT, MS5611_CS_PIN, GPIO_PIN_SET);
         return status;
     }
 
     status = HAL_SPI_Receive(&hspi1, rx, 3, timeout);
-    HAL_GPIO_Write_Pin(MS5611_CS_GPIO_Port, MS5611_CS_Pin, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(MS5611_CS_PORT, MS5611_CS_PIN, GPIO_PIN_SET);
     if (status == HAL_OK) {
         *res = (rx[0] << 16) | (rx[1] << 8) | rx[2];
     }
@@ -118,15 +119,15 @@ static HAL_StatusTypeDef read_prom(uint8_t prom_addr, uint16_t *res) {
     uint8_t tx[1] = {prom_addr};
     uint8_t rx[2] = {0};
 
-    HAL_GPIO_Write_Pin(MS5611_CS_GPIO_Port, MS5611_CS_Pin, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(MS5611_CS_PORT, MS5611_CS_PIN, GPIO_PIN_RESET);
     HAL_StatusTypeDef status = HAL_SPI_Transmit(&hspi1, tx, 1, timeout);
     if (status != HAL_OK) {
-        HAL_GPIO_Write_Pin(MS5611_CS_GPIO_Port, MS5611_CS_Pin, GPIO_PIN_SET);
+        HAL_GPIO_WritePin(MS5611_CS_PORT, MS5611_CS_PIN, GPIO_PIN_SET);
         return status;
     }
 
     status = HAL_SPI_Receive(&hspi1, rx, 2, timeout);
-    HAL_GPIO_Write_Pin(MS5611_CS_GPIO_Port, MS5611_CS_Pin, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(MS5611_CS_PORT, MS5611_CS_PIN, GPIO_PIN_SET);
     if (status == HAL_OK) {
         *res = (rx[0] << 8) | rx[1];
     }
@@ -146,7 +147,7 @@ HAL_StatusTypeDef init_ms5611(ms5611_osr_t selected_osr) {
         return status;
     }
 
-    ms5611_delay(RELOAD); // Wait for the sensor to reset
+    HAL_Delay(RELOAD_DELAY); // Wait for the sensor to reset
 
     uint16_t res;
 
@@ -177,7 +178,7 @@ HAL_StatusTypeDef init_ms5611(ms5611_osr_t selected_osr) {
     return HAL_OK;
 }
 
-HAL_StatusTypeDef update_ms5611(ms5611_data *data) {
+HAL_StatusTypeDef update_ms5611(ms5611_data_t *data) {
     uint32_t d1, d2;
     HAL_StatusTypeDef status;
 
