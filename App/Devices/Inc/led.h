@@ -7,11 +7,6 @@
 #pragma once
 
 /**
- * @brief Initializes the LED GPIO pin
- */
-void led_init(void);
-
-/**
  * @brief Turns the LED on
  */
 void led_on(void);

@@ -15,6 +15,7 @@
 #include "bmi088.h"
 #include "spi.h"
 #include "gpio.h"
+#include "pinout.h"
 
 /**************************************************************************************************
  * @section Type definitions
@@ -63,10 +64,6 @@ typedef enum {
 // SPI
 extern SPI_HandleTypeDef hspi1;
 static const uint8_t timeout = 10; // 10ms timeout for SPI transfers
-#define ACCEL_CS_PORT GPIOA        // CHANGE ME WHEN YOU HAVE THE ACTUAL CS PORT
-#define ACCEL_CS_PIN GPIO_PIN_4    // CHANGE ME WHEN YOU HAVE THE ACTUAL CS PORT
-#define GYRO_CS_PORT GPIOA         // CHANGE ME WHEN YOU HAVE THE ACTUAL CS PORT
-#define GYRO_CS_PIN GPIO_PIN_4     // CHANGE ME WHEN YOU HAVE THE ACTUAL CS PORT
 
 /**************************************************************************************************
  * @section Private function definitions

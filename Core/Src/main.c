@@ -26,6 +26,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "state_machine.h"
+#include "init_gpio.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -93,6 +94,8 @@ int main(void)
   MX_SPI2_Init();
   MX_TIM2_Init();
   MX_USB_DEVICE_Init();
+  init_gpio();
+
   /* USER CODE BEGIN 2 */
   State curr_state = PRE_FLIGHT;
   State_Context context = {0};
