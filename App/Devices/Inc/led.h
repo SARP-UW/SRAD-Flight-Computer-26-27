@@ -1,22 +1,27 @@
 /**
  * @file App/Devices/Inc/led.h
  * @authors Michael Zheng
- * @brief ...
+ * @brief LED driver
  */
 
 #pragma once
 
-#define MCU_LED ...
-//...
-
-//comment
+/**
+ * @brief Initializes the LED GPIO pin
+ */
 void led_init(void);
 
-//comment
+/**
+ * @brief Turns the LED on
+ */
 void led_on(void);
 
-//comment
+/**
+ * @brief Turns the LED off
+ */
 void led_off(void);
 
-//comment
+/**
+ * @brief Toggles the LED state
+ */
 void led_toggle(void);
