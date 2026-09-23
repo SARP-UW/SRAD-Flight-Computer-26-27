@@ -1207,10 +1207,10 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "The CMake toolchain file"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "UNINITIALIZED",
 			"value" : "/Users/jm/SARP_SRAD_FC/SRAD-Flight-Computer-26-27/cmake/gcc-arm-none-eabi.cmake"
 		},
 		{

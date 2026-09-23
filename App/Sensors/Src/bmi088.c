@@ -2,6 +2,9 @@
  * @file App/Sensors/Inc/bmi088.c
  * @authors Jude Merritt
  * @brief BMI088 IMU driver
+ * 
+* Datasheet: Bosch BMI088 — JLCPCB C194919
+ * https://jlcpcb.com/partdetail/BoschSensortec-BMI088/C194919
  */
 
 /**
@@ -27,6 +30,7 @@ typedef enum {
  **************************************************************************************************/
 
 // Accelerometer Registers
+// ref: Section 5.2 and 5.3 in the datasheet
 #define ACC_CHIP_ID   0x00 // Manufacturer ID
 #define ACC_SOFTRESET 0x7E // Reset accelerometer
 #define ACC_CONF      0x40 // Accelerometer configuration
@@ -35,6 +39,7 @@ typedef enum {
 #define ACC_XYZ       0x12 // 0x12 - 0x17 is accel data: X, then Y, then Z; each two bytes (LSB first)
 
 // Accelerometer configuration variables
+// ref: Section 5.2 and 5.3 in the datasheet
 #define ACCEL_RESET  0xB6 // Reset accelerometer
 #define ACCEL_ODR    0x0A // 400 Hz ODR
 #define ACCEL_BWP    0x0A // Normal bandwidth
@@ -42,6 +47,7 @@ typedef enum {
 #define ACCEL_PWR_ON 0x04 // Accelerometer on
 
 // Gyroscope Registers
+// ref: Section 5.4 and 5.5 in the datasheet
 #define GYRO_CHIP_ID   0x00 // Manufacturer ID
 #define GYRO_SOFTRESET 0x14 // Reset gyroscope
 #define GYRO_RANGE     0x0F // Gyroscope range (in degrees / second)
@@ -49,6 +55,7 @@ typedef enum {
 #define GYRO_XYZ       0x02 // 0x02 - 0x07 is gyro data: X, then Y, then Z; each two bytes (LSB first)
 
 // Gyroscope configuration variables
+// ref: Section 5.4 and 5.5 in the datasheet
 #define GYRO_RESET_VAL     0xB6 // Reset gyroscope
 #define GYRO_BANDWIDTH_VAL 0x06 // 200 Hz ODR, 64 Hz filter bandwidth
 #define GYRO_RANGE_VAL     0x00 // +- 2000 degrees / second
@@ -56,15 +63,16 @@ typedef enum {
 // SPI
 extern SPI_HandleTypeDef hspi1;
 static const uint8_t timeout = 10; // 10ms timeout for SPI transfers
-#define ACCEL_CS_PORT GPIOA        // CHAGE ME WHEN YOU HAVE THE ACTUAL CS PORT
-#define ACCEL_CS_PIN GPIO_PIN_4    // CHAGE ME WHEN YOU HAVE THE ACTUAL CS PORT
-#define GYRO_CS_PORT GPIOA         // CHAGE ME WHEN YOU HAVE THE ACTUAL CS PORT
-#define GYRO_CS_PIN GPIO_PIN_4     // CHAGE ME WHEN YOU HAVE THE ACTUAL CS PORT
+#define ACCEL_CS_PORT GPIOA        // CHANGE ME WHEN YOU HAVE THE ACTUAL CS PORT
+#define ACCEL_CS_PIN GPIO_PIN_4    // CHANGE ME WHEN YOU HAVE THE ACTUAL CS PORT
+#define GYRO_CS_PORT GPIOA         // CHANGE ME WHEN YOU HAVE THE ACTUAL CS PORT
+#define GYRO_CS_PIN GPIO_PIN_4     // CHANGE ME WHEN YOU HAVE THE ACTUAL CS PORT
 
 /**************************************************************************************************
  * @section Private function definitions
  **************************************************************************************************/
 
+// This function is used to send a single command to the BMI088. 
 static HAL_StatusTypeDef send_command(sensor_t sensor, uint8_t cmd) {
     GPIO_TypeDef *cs_port;
     uint16_t cs_pin;
@@ -91,6 +99,7 @@ static HAL_StatusTypeDef send_command(sensor_t sensor, uint8_t cmd) {
     return status;
 }
 
+// This function is used to write data to a register on the BMI088.
 static HAL_StatusTypeDef write_reg(sensor_t sensor, uint8_t cmd, const uint8_t *data, uint8_t length) {
     uint8_t tx[3];
 
@@ -125,6 +134,7 @@ static HAL_StatusTypeDef write_reg(sensor_t sensor, uint8_t cmd, const uint8_t *
     return status;
 }
 
+// This function is used to read data from a register on the BMI088.
 static HAL_StatusTypeDef read_reg(sensor_t sensor, uint8_t cmd, uint8_t *rx, uint8_t length) {
     uint8_t tx[7] = {0};
 
@@ -168,11 +178,21 @@ static HAL_StatusTypeDef read_reg(sensor_t sensor, uint8_t cmd, uint8_t *rx, uin
     return status;
 }
 
+// This function is used to convert raw accelerometer data to m/s^2.
 static float convert_accel_data_ms2(int16_t raw_data) {
+    // At +-24g, the sensitivity is 1365 LSB/g. 
+    // ref: Section 1.2 in the datasheet
+
+    // LSB / (LSB/g) = g, g * (9.80665 m/s^2 / 1g) = m/s^2
     return ((float)raw_data / 1365.0f) * 9.80665f;
 }
 
+// This function is used to convert raw gyroscope data to radians per second.
 static float convert_gyro_data_rads(int16_t raw_data) {
+    // At +-2000 degrees/second, the sensitivity is 16.384 LSB/(degrees/second).
+    // ref: Section 1.3 in the datasheet
+    
+    // LSB / (LSB/(degrees/second)) = degrees/second, degrees/second * (pi radians / 180 degrees) = radians/second
     return ((float)raw_data / 16.384f) * (3.14159265f / 180.0f);
 }
 
@@ -208,6 +228,7 @@ static float convert_gyro_data_rads(int16_t raw_data) {
     }
 
     // Accelerometer configuration
+    // ref: Section 4 of the datasheet covers the configuration of the accelerometer.
     uint8_t accel_reset = ACCEL_RESET;
     status = write_reg(ACCEL, ACC_SOFTRESET, &accel_reset, 1);
     if (status != HAL_OK) {
@@ -233,6 +254,7 @@ static float convert_gyro_data_rads(int16_t raw_data) {
     }
 
     // Gyroscope configuration
+    // ref: Section 4 of the datasheet covers the configuration of the gyroscope.
     uint8_t gyro_reset = GYRO_RESET_VAL;
     status = write_reg(GYRO, GYRO_SOFTRESET, &gyro_reset, 1);
     if (status != HAL_OK) {
@@ -273,6 +295,7 @@ HAL_StatusTypeDef update_BMI088(bmi088_data_t *data) {
     }
 
     // Convert accelerometer data
+    // ref: Section 5.3.4 in the datasheet
     int16_t accel_x = (int16_t)((accel_data[1] << 8) | accel_data[0]);
     int16_t accel_y = (int16_t)((accel_data[3] << 8) | accel_data[2]);
     int16_t accel_z = (int16_t)((accel_data[5] << 8) | accel_data[4]);
@@ -282,6 +305,7 @@ HAL_StatusTypeDef update_BMI088(bmi088_data_t *data) {
     data->accel_z = convert_accel_data_ms2(accel_z);
 
     // Convert gyroscope data
+    // ref: Section 5.5.2 in the datasheet
     int16_t gyro_x = (int16_t)((gyro_data[1] << 8) | gyro_data[0]);
     int16_t gyro_y = (int16_t)((gyro_data[3] << 8) | gyro_data[2]);
     int16_t gyro_z = (int16_t)((gyro_data[5] << 8) | gyro_data[4]);
