@@ -59,7 +59,8 @@ The application layer of the flight computer software revolves around a finite s
 | **Idle Descent** | Two seconds after the main pyro charge is fired, the backup main charge is fired. The flight computer continues logging flight data during its descent. |
 | **Post-Flight** | Begins after the rocket is determined to be grounded. The flight computer stops logging data after 10 seconds, begins providing post-flight status feedback, and allows recorded data to be downloaded. |
 
-## Contributing and Testing
+## Contributing
+Contribute to this repository by making pull requests. These requests will be approved by the project lead (currently Jude Merritt).
 
 ## Contributors
 
@@ -69,3 +70,6 @@ The application layer of the flight computer software revolves around a finite s
 | **Hardware Member** | Andrew Winston | ... |
 | **Software Member** | Michael Zheng | ... |
 | **Software Member** | *Name* | ... |
+
+## Resources
+Apogee Detection Trade Study: https://docs.google.com/document/d/12nO3VqBxuzoluSDJDFiism0VeVs8u_7FXFGuN16y26I/edit?tab=t.0 
