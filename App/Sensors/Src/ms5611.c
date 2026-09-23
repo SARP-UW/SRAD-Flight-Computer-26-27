@@ -2,6 +2,9 @@
  * @file App/Sensors/Src/ms5611.c
  * @authors Jude Merritt
  * @brief MS561101BA03 Barometer driver
+ * 
+ * Datasheet: TE Connectivity MS561101BA03 — JLCPCB C15639
+ * https://jlcpcb.com/partdetail/TEConnectivity-MS561101BA0350/C15639
  */
 
 /**
@@ -21,6 +24,7 @@
  * @section Type definitions
  **************************************************************************************************/
 
+// ref: Page 8 of the datasheet
 typedef struct {
     uint16_t sens;     // C1 Pressure sensitivity
     uint16_t off;      // C2 Pressure offset
@@ -35,12 +39,14 @@ typedef struct {
  **************************************************************************************************/
 
 // Basic Commands
+// ref: Page 10 of the datasheet
 #define D1_BASE_CMD 0x40 // D1 conversion at 256 OSR. Add desired OSR value to this base command
 #define D2_BASE_CMD 0x50 // D2 conversion at 256 OSR. Add desired OSR value to this base command
 #define ADC_READ    0x00
 #define RESET       0x1E
 
 // Calibration commands
+// ref: Page 10 of the datasheet
 #define PROM_ADDR_MANUFACTURER 0xA0
 #define PROM_ADDR_C1           0xA2
 #define PROM_ADDR_C2           0xA4
@@ -52,10 +58,10 @@ typedef struct {
 
 // SPI
 extern SPI_HandleTypeDef hspi1;
-static const uint8_t timeout = 10;       // 10ms timeout for SPI transfers
+static const uint8_t timeout = 10; // 10ms timeout for SPI transfers
 
 // Global and static variables
-#define RELOAD_DELAY 10 // (ms)
+#define RELOAD_DELAY 10                            // (ms), ref: Bottom of page 10 of the datasheet (chose 10ms instead of 2.8ms to be safe)
 static ms5611_calibration_data_t calibration_data; // Static variable to hold calibration data
 static ms5611_osr_t osr;                           // Static variable to hold the oversampling ratio
 
@@ -64,6 +70,7 @@ static ms5611_osr_t osr;                           // Static variable to hold th
  **************************************************************************************************/
 
 // Used to provide correct delay based on selected osr
+// ref: Bottom of page 3 of the datasheet
  static void ms5611_delay(ms5611_osr_t osr) {
     uint8_t conversion_time;
 
@@ -119,6 +126,7 @@ static HAL_StatusTypeDef read_adc(uint32_t *res) {
 }
 
 // Used to read from the prom
+// ref: Bottom of page 11 of the datasheet
 static HAL_StatusTypeDef read_prom(uint8_t prom_addr, uint16_t *res) {
     uint8_t tx[1] = {prom_addr};
     uint8_t rx[2] = {0};
@@ -182,6 +190,7 @@ HAL_StatusTypeDef init_ms5611(ms5611_osr_t selected_osr) {
     return HAL_OK;
 }
 
+// ref: Pages 8 and 9 of the datasheet
 HAL_StatusTypeDef update_ms5611(ms5611_data_t *data) {
     uint32_t d1, d2;
     HAL_StatusTypeDef status;
