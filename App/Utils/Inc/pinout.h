@@ -1,4 +1,8 @@
-//Comment 
+/**
+ * @file App/Utils/Inc/pinout.h
+ * @authors Jude Merritt
+ * @brief Pinout definitions for the flight computer
+ */
 
 #pragma once
 

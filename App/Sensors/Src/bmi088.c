@@ -3,7 +3,7 @@
  * @authors Jude Merritt
  * @brief BMI088 IMU driver
  * 
-* Datasheet: Bosch BMI088 — JLCPCB C194919
+ * Datasheet: Bosch BMI088 — JLCPCB C194919
  * https://jlcpcb.com/partdetail/BoschSensortec-BMI088/C194919
  */
 

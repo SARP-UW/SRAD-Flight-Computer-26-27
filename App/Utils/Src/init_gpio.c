@@ -1,4 +1,9 @@
-// Comment
+/**
+ * @file App/Utils/Inc/init_gpio.h
+ * @authors Jude Merritt
+ * @brief Initializes the GPIO pins for the flight computer. To
+ *        make changes to gpio pin configurations, edit the gpio_configs array.
+ */
 
 #include "pinout.h"
 #include "stm32f4xx_hal.h"
@@ -12,6 +17,7 @@ typedef struct {
     uint32_t alternate;
 } gpio_config_t;
 
+// This array defines the configuration for each GPIO pin used in the flight computer.
 static const gpio_config_t gpio_configs[] = {
     // LEDs
     //PORT                  , PIN                   , MODE                , PULL       , SPEED             , ALTERNATE
