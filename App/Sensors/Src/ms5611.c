@@ -15,6 +15,7 @@
 #include "ms5611.h"
 #include "spi.h"
 #include "gpio.h"
+#include "pinout.h"
 
 /**************************************************************************************************
  * @section Type definitions
@@ -52,8 +53,6 @@ typedef struct {
 // SPI
 extern SPI_HandleTypeDef hspi1;
 static const uint8_t timeout = 10;       // 10ms timeout for SPI transfers
-#define MS5611_CS_PORT GPIOA        // CHAGE ME WHEN YOU HAVE THE ACTUAL CS PORT
-#define MS5611_CS_PIN GPIO_PIN_4         // CHAGE ME WHEN YOU HAVE THE ACTUAL CS PORT
 
 // Global and static variables
 #define RELOAD_DELAY 10 // (ms)

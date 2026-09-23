@@ -38,7 +38,10 @@ add_executable(${CMAKE_PROJECT_NAME}
     App/Sensors/Inc/ms5611.h
     App/Sensors/Src/ms5611.c
     App/Sensors/Inc/bmi088.h
-    App/Sensors/Src/bmi088.c)
+    App/Sensors/Src/bmi088.c
+    App/Devices/Inc/led.h
+    App/Devices/Src/led.c
+    App/Utils/Inc/pinout.h)
 
 # Add STM32CubeMX generated sources
 add_subdirectory(cmake/stm32cubemx)

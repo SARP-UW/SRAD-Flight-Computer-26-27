@@ -10,14 +10,13 @@
  */
 
 #include "led.h"
+#include "pinout.h"
 #include "stm32f4xx_hal.h"
 
 /**************************************************************************************************
  * @section Definitions and global variables
  **************************************************************************************************/
 
-#define MCU_LED_PORT GPIOA        // CHANGE ME WHEN YOU HAVE THE ACTUAL LED PORT
-#define MCU_LED_PIN GPIO_PIN_1    // CHANGE ME WHEN YOU HAVE THE ACTUAL LED PIN
 #define MCU_LED_ON GPIO_PIN_SET
 #define MCU_LED_OFF GPIO_PIN_RESET
 
