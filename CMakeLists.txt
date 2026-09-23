@@ -41,7 +41,9 @@ add_executable(${CMAKE_PROJECT_NAME}
     App/Sensors/Src/bmi088.c
     App/Devices/Inc/led.h
     App/Devices/Src/led.c
-    App/Utils/Inc/pinout.h)
+    App/Utils/Inc/pinout.h
+    App/Utils/Inc/init_gpio.h
+    App/Utils/Src/init_gpio.c)
 
 # Add STM32CubeMX generated sources
 add_subdirectory(cmake/stm32cubemx)
