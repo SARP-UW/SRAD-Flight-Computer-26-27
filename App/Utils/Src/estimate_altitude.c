@@ -1,5 +1,5 @@
 /**
- * @file App/Utils/Inc/estimate_altitude.h
+ * @file App/Utils/Inc/estimate_altitude.c
  * @authors Jude Merritt
  * @brief Altitude estimation algorithm based only on barometer readings
  */
@@ -57,7 +57,7 @@ HAL_StatusTypeDef estimate_altitude(float *altitude) {
     // ref: https://ntrs.nasa.gov/citations/19770009539 (Page 12, equation 33a, solve for delta H)
     // The constants are derived from the International Standard Atmosphere (ISA) model,
     // which assumes a standard lapse rate of 6.5 K/km in the troposphere.
-    float h = (t0 / 0.0065f) * (1.0f - powf((p / p0), 0.190284f)); // Altitude in meters
+    float h = (t0 / 0.0065f) * (1.0f - powf((p / p0), 0.190263f)); // Altitude in meters
 
     *altitude = h;
     return HAL_OK;
