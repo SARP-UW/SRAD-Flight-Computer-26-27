@@ -71,9 +71,9 @@ static ms5611_osr_t osr;                           // Static variable to hold th
 
 // Used to provide correct delay based on selected osr
 // ref: Bottom of page 3 of the datasheet
- static void ms5611_delay(ms5611_osr_t osr) {
+static void ms5611_delay(ms5611_osr_t osr) {
     uint8_t conversion_time;
-
+//multiple baro
    /*
     * The conversion times are based on the following table:
     * OSR   Min.   Max.
@@ -242,7 +242,7 @@ HAL_StatusTypeDef update_ms5611(ms5611_data_t *data) {
     // Calculate temperature compensated pressure
     int32_t pressure = (((d1 * sens) >> 21) - off) >> 15;
 
-    data->temperature = temp / 100.0f; // Convert to degrees Celsius
+    data->temperature = (temp / 100.0f) + 273.15f; // Convert to Kelvin
     data->pressure    = pressure / 100.0f; // Convert to mbar
 
     return HAL_OK;

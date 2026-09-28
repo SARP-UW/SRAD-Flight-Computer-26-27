@@ -29,7 +29,7 @@ typedef enum {
  */
 typedef struct {
     float pressure;    // Pressure in mbar
-    float temperature; // Temperature in degrees Celsius
+    float temperature; // Temperature in Kelvin
 } ms5611_data_t;
 
 /**************************************************************************************************
