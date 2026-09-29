@@ -5,6 +5,7 @@
  * - Still haven't decided what to do about errors in update_ascent.
  * - Some of these globals should be static. Keep in mind that pre_flight will also 
  *   use the imu. Maybe some things should be shared when pre_flight implementation is more defined.
+ * - We'll fire backup apogee pyro in the descent state, after two seconds have elapsed since apogee was detected.
  */
 
 #include <stdbool.h>
@@ -28,6 +29,9 @@ State update_ascent(State_Context *context) {
     }
 
     context->status = update_bmi088(&imu_data);
+    if (context->status != HAL_OK) {
+        // Do something
+    }
     
     uint32_t curr_tick = HAL_GetTick();
     float dt = (curr_tick - last_tick) / 1000.0f;
@@ -39,10 +43,9 @@ State update_ascent(State_Context *context) {
         return ASCENT;
     }
 
+    context->status = estimate_altitude(&context->altitude);
     if (context->status != HAL_OK) {
-        estimate_altitude(&context->altitude);
-    } else {
-        context->status = estimate_altitude(&context->altitude);
+        // Do something
     }
 
     if (context->altitude < prev_altitude) {
@@ -50,8 +53,10 @@ State update_ascent(State_Context *context) {
     } else if (descending_counter > 0){
         descending_counter--;
     }
+
     prev_altitude = context->altitude;
 
+    // APOGEE!!
     if (descending_counter > 20) {
         context->apogee_time = HAL_GetTick();
         pyro_fire(APOGEE);
