@@ -7,6 +7,6 @@
 #pragma once
 
 #include "stm32f4xx_hal.h"
-#include "App/States/Inc/state_machine.h"
+#include "state_machine.h"
 
-HAL_StatusTypeDef update_idle_descent(State_Context *context);
+State update_idle_descent(State_Context *context);

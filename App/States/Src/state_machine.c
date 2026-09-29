@@ -8,49 +8,33 @@
 State update_state(State next_state, State_Context *context) {
     switch (next_state) {
         case PRE_FLIGHT: {
-            HAL_StatusTypeDef status = update_pre_flight();
+            next_state = update_pre_flight(context);
 
-            if (status != HAL_OK) {
-                //...
-            }
-
-            break;
+            return next_state;
         }
         case ASCENT: {
-            HAL_StatusTypeDef status = update_ascent(context);
+            next_state = update_ascent(context);
 
-            if (status != HAL_OK) {
-                //...
-            }
-
-            break;
+            return next_state;
         }
         case DESCENT: {
-            HAL_StatusTypeDef status = update_descent(context);
-
-            if (status != HAL_OK) {
-                //...
-            }
+            next_state = update_descent(context);
             
-            break;
+            return next_state;
         }
         case IDLE_DESCENT: {
-            HAL_StatusTypeDef status = update_idle_descent(context);
+            next_state = update_idle_descent(context);
 
-            if (status != HAL_OK) {
-                //...
-            }
-
-            break;
+            return next_state;
         }
         case POST_FLIGHT: {
-            HAL_StatusTypeDef status = update_post_flight();
+            next_state = update_post_flight(context);
 
-            if (status != HAL_OK) {
-                //...
-            }
+            return next_state;
+        }
 
-            break;
+        default: {
+            return DESCENT; // Default to DESCENT if an invalid state is provided
         }
     }
 }

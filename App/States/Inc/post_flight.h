@@ -5,4 +5,6 @@
 
 #pragma once
 
-HAL_StatusTypeDef update_post_flight(void);
+#include "state_machine.h"
+
+State update_post_flight(State_Context *context);

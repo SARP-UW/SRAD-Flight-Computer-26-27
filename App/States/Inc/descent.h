@@ -6,6 +6,6 @@
 
 #pragma once
 
-#include "App/States/Inc/state_machine.h"
+#include "state_machine.h"
 
-HAL_StatusTypeDef update_descent(State_Context *context);
+State update_descent(State_Context *context);
