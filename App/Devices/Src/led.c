@@ -6,7 +6,6 @@
 
 /**
  * Notes:
- * - 
  */
 
 #include "led.h"
@@ -20,18 +19,52 @@
 #define MCU_LED_ON GPIO_PIN_SET
 #define MCU_LED_OFF GPIO_PIN_RESET
 
+static GPIO_TypeDef *led_port(led_t led) {
+    switch (led) {
+        case LED_MCU:
+            return LED_MCU_PORT;
+        case LED_APOGEE:
+            return LED_APOGEE_PORT;
+        case LED_APOGEE_BACKUP:
+            return LED_APOGEE_BACKUP_PORT;
+        case LED_MAIN:
+            return LED_MAIN_PORT;
+        case LED_MAIN_BACKUP:
+            return LED_MAIN_BACKUP_PORT;
+        default:
+            return NULL;
+    }
+}
+
+static uint16_t led_pin(led_t led) {
+    switch (led) {
+        case LED_MCU:
+            return LED_MCU_PIN;
+        case LED_APOGEE:
+            return LED_APOGEE_PIN;
+        case LED_APOGEE_BACKUP:
+            return LED_APOGEE_BACKUP_PIN;
+        case LED_MAIN:
+            return LED_MAIN_PIN;
+        case LED_MAIN_BACKUP:
+            return LED_MAIN_BACKUP_PIN;
+        default:
+            return 0;
+    }
+}
+
 /**************************************************************************************************
  * @section Public function definitions
  **************************************************************************************************/
 
-void led_on(void) {
-    HAL_GPIO_WritePin(MCU_LED_PORT, MCU_LED_PIN, MCU_LED_ON);
+void led_on(led_t led) {
+    HAL_GPIO_WritePin(led_port(led), led_pin(led), MCU_LED_ON);
 }
 
-void led_off(void) {
-    HAL_GPIO_WritePin(MCU_LED_PORT, MCU_LED_PIN, MCU_LED_OFF);
+void led_off(led_t led) {
+    HAL_GPIO_WritePin(led_port(led), led_pin(led), MCU_LED_OFF);
 }
 
-void led_toggle(void) {
-    HAL_GPIO_TogglePin(MCU_LED_PORT, MCU_LED_PIN);
+void led_toggle(led_t led) {
+    HAL_GPIO_TogglePin(led_port(led), led_pin(led));
 }
