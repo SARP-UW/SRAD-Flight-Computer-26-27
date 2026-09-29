@@ -1,5 +1,19 @@
 Archive member included to satisfy reference by file (symbol)
 
+/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_pow.o)
+                              CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj (powf)
+/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_finite.o)
+                              /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_pow.o) (finitef)
+/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_pow.o)
+                              /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_pow.o) (__ieee754_powf)
+/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_errf.o)
+                              /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_pow.o) (__math_uflowf)
+/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_scalbn.o)
+                              /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_pow.o) (scalbnf)
+/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_fabs.o)
+                              /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_pow.o) (fabsf)
+/Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_sqrt.o)
+                              /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_pow.o) (__ieee754_sqrtf)
 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
                               cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj (__aeabi_uldivmod)
 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
@@ -3179,18 +3193,137 @@ Discarded input sections
  .debug_macro   0x00000000       0x65 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
  .debug_macro   0x00000000      0x20f cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
  .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
  .text          0x00000000        0x0 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
  .data          0x00000000        0x0 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
  .bss           0x00000000        0x0 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
- .debug_info    0x00000000       0x22 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
- .debug_abbrev  0x00000000       0x12 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .data.ground_pressure
+                0x00000000        0x4 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .data.ground_temperature
+                0x00000000        0x4 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .bss.config_data_count
+                0x00000000        0x4 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .bss.ms5611_data
+                0x00000000        0x8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .text.configure_ground_reference
+                0x00000000       0xc0 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .text.estimate_altitude
+                0x00000000       0xa8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_info    0x00000000      0x20f CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_abbrev  0x00000000      0x126 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
  .debug_aranges
-                0x00000000       0x18 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
- .debug_macro   0x00000000       0x11 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+                0x00000000       0x28 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_rnglists
+                0x00000000       0x1b CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000      0x296 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
  .debug_macro   0x00000000      0xad8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
- .debug_line    0x00000000       0x74 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
- .debug_str     0x00000000     0x2ea0 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000      0x2a1 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0x2e CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0x28 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0x22 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0x8e CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0x51 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000      0x103 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0x6a CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000      0x1df CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0x1c CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0x22 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0xfb CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000     0x1011 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000      0x11f CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000     0xb968 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0x6d CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000     0x3693 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000      0x190 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0x5c CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000      0x45c CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000      0x9e9 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000      0x115 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000      0x11b CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0xa5 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000      0x15f CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000      0x287 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0x5f CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000      0x236 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000      0x132 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000      0x264 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0x2e CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000      0x127 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0x85 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0x89 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000      0x225 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000      0x8ed CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0x47 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000      0x293 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0xba CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000      0x126 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0x7b CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0x2a CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0x3c CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000      0x364 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0x16 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0x4a CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0x10 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000       0x58 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000      0x1e5 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_macro   0x00000000      0x19b CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_line    0x00000000      0x897 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_str     0x00000000    0x8aefe CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
  .comment       0x00000000       0x47 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
+ .debug_frame   0x00000000       0x68 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
  .ARM.attributes
                 0x00000000       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
  .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/ms5611.c.obj
@@ -3254,7 +3387,7 @@ Discarded input sections
  .text.init_ms5611
                 0x00000000       0xfc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/ms5611.c.obj
  .text.update_ms5611
-                0x00000000      0x6bc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/ms5611.c.obj
+                0x00000000      0x6c8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/ms5611.c.obj
  .debug_info    0x00000000      0xab6 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/ms5611.c.obj
  .debug_abbrev  0x00000000      0x203 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/ms5611.c.obj
  .debug_aranges
@@ -3304,8 +3437,8 @@ Discarded input sections
  .debug_macro   0x00000000       0xba CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/ms5611.c.obj
  .debug_macro   0x00000000      0x126 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/ms5611.c.obj
  .debug_macro   0x00000000      0x10c CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/ms5611.c.obj
- .debug_line    0x00000000      0xa68 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/ms5611.c.obj
- .debug_str     0x00000000    0x88685 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/ms5611.c.obj
+ .debug_line    0x00000000      0xa6b CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/ms5611.c.obj
+ .debug_str     0x00000000    0x886b5 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/ms5611.c.obj
  .comment       0x00000000       0x47 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/ms5611.c.obj
  .debug_frame   0x00000000       0xf8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/ms5611.c.obj
  .ARM.attributes
@@ -3357,26 +3490,32 @@ Discarded input sections
  .bss           0x00000000        0x0 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .rodata.timeout
                 0x00000000        0x1 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+ .data.accel_offset
+                0x00000000        0x4 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .text.send_command
                 0x00000000       0x70 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .text.write_reg
                 0x00000000       0xa8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .text.read_reg
-                0x00000000       0xe4 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+                0x00000000       0xf4 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .text.convert_accel_data_ms2
                 0x00000000       0x3c CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .text.convert_gyro_data_rads
                 0x00000000       0x3c CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+ .text.update_bmi088_uncalibrated
+                0x00000000      0x12e CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .text.init_bmi088
                 0x00000000      0x14e CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
- .text.update_BMI088
-                0x00000000      0x12e CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
- .debug_info    0x00000000      0xb42 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
- .debug_abbrev  0x00000000      0x268 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+ .text.calibrate_accel_offset
+                0x00000000       0x78 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+ .text.update_bmi088
+                0x00000000       0x40 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+ .debug_info    0x00000000      0xc1c CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+ .debug_abbrev  0x00000000      0x27e CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .debug_aranges
-                0x00000000       0x50 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+                0x00000000       0x60 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .debug_rnglists
-                0x00000000       0x3b CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+                0x00000000       0x47 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .debug_macro   0x00000000      0x28f CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .debug_macro   0x00000000      0xad8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .debug_macro   0x00000000       0x22 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
@@ -3420,12 +3559,203 @@ Discarded input sections
  .debug_macro   0x00000000       0xba CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .debug_macro   0x00000000      0x126 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .debug_macro   0x00000000      0x10c CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
- .debug_line    0x00000000      0xa24 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
- .debug_str     0x00000000    0x88704 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+ .debug_line    0x00000000      0xa9a CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+ .debug_str     0x00000000    0x88786 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .comment       0x00000000       0x47 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
- .debug_frame   0x00000000      0x118 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+ .debug_frame   0x00000000      0x160 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
  .ARM.attributes
                 0x00000000       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .text          0x00000000        0x0 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .data          0x00000000        0x0 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .text.led_on   0x00000000       0x18 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .text.led_off  0x00000000       0x18 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .text.led_toggle
+                0x00000000       0x14 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_info    0x00000000      0x1d2 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_abbrev  0x00000000       0xf6 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_aranges
+                0x00000000       0x30 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_rnglists
+                0x00000000       0x1f CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000      0x20b CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000      0xad8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000       0x22 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000       0x8e CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000       0x51 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000      0x103 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000       0x6a CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000      0x1df CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000      0x2a1 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000       0x2e CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000       0x28 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000       0x1c CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000       0x22 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000       0xfb CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000     0x1011 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000      0x11f CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000     0xb968 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000       0x6d CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000     0x3693 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000      0x190 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000       0x5c CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000      0x45c CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000      0x9e9 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000      0x115 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000      0x11b CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000       0xa5 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000      0x15f CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000      0x287 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000       0x5f CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000      0x236 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000      0x132 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000      0x264 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000       0x2e CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000      0x127 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000       0x85 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000       0x89 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000      0x225 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000      0x8ed CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000       0x47 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000      0x293 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000       0xba CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000      0x126 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_macro   0x00000000      0x10c CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_line    0x00000000      0x7c6 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_str     0x00000000    0x88001 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .comment       0x00000000       0x47 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .debug_frame   0x00000000       0x64 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .ARM.attributes
+                0x00000000       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .text          0x00000000        0x0 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .data          0x00000000        0x0 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000      0xad8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000       0x22 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000       0x8e CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000       0x51 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000      0x103 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000       0x6a CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000      0x1df CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000      0x2a1 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000       0x2e CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000       0x28 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000       0x1c CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000       0x22 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000       0xfb CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000     0x1011 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000      0x11f CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000     0xb968 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000       0x6d CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000     0x3693 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000      0x190 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000       0x5c CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000      0x45c CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000      0x9e9 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000      0x115 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000      0x11b CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000       0xa5 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000      0x15f CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000      0x287 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000       0x5f CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000      0x236 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000      0x132 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000      0x264 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000       0x2e CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000      0x127 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000       0x85 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000       0x89 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000      0x225 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000      0x8ed CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000       0x47 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000      0x293 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000       0xba CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000      0x126 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00000000      0x10c CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
  .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
  .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
  .group         0x00000000        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
@@ -3545,6 +3875,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x293 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
  .debug_macro   0x00000000       0xba CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
  .debug_macro   0x00000000      0x126 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+ .debug_macro   0x00000000       0x7b CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
  .debug_macro   0x00000000       0x2a CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
  .debug_macro   0x00000000       0x3c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
  .debug_macro   0x00000000       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
@@ -4730,6 +5061,67 @@ Discarded input sections
  .text          0x00000000       0x14 CMakeFiles/SARP_SRAD_Flight_Computer.dir/startup_stm32f411xe.s.obj
  .data          0x00000000        0x0 CMakeFiles/SARP_SRAD_Flight_Computer.dir/startup_stm32f411xe.s.obj
  .bss           0x00000000        0x0 CMakeFiles/SARP_SRAD_Flight_Computer.dir/startup_stm32f411xe.s.obj
+ .text          0x00000000        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_pow.o)
+ .data          0x00000000        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_pow.o)
+ .bss           0x00000000        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_pow.o)
+ .text.powf     0x00000000       0xbc /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_pow.o)
+ .debug_frame   0x00000000       0x44 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_pow.o)
+ .ARM.attributes
+                0x00000000       0x34 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_pow.o)
+ .text          0x00000000        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_finite.o)
+ .data          0x00000000        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_finite.o)
+ .bss           0x00000000        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_finite.o)
+ .text.finitef  0x00000000       0x14 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_finite.o)
+ .debug_frame   0x00000000       0x20 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_finite.o)
+ .ARM.attributes
+                0x00000000       0x34 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_finite.o)
+ .text          0x00000000        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_pow.o)
+ .data          0x00000000        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_pow.o)
+ .bss           0x00000000        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_pow.o)
+ .text.__ieee754_powf
+                0x00000000      0x6b8 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_pow.o)
+ .debug_frame   0x00000000       0xa0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_pow.o)
+ .ARM.attributes
+                0x00000000       0x34 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_pow.o)
+ .text          0x00000000        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_errf.o)
+ .data          0x00000000        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_errf.o)
+ .bss           0x00000000        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_errf.o)
+ .text.with_errnof
+                0x00000000       0x1c /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_errf.o)
+ .text.xflowf   0x00000000       0x20 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_errf.o)
+ .text.__math_uflowf
+                0x00000000        0xc /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_errf.o)
+ .text.__math_oflowf
+                0x00000000        0xc /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_errf.o)
+ .text.__math_divzerof
+                0x00000000       0x24 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_errf.o)
+ .text.__math_invalidf
+                0x00000000       0x20 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_errf.o)
+ .debug_frame   0x00000000       0x88 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_errf.o)
+ .ARM.attributes
+                0x00000000       0x34 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_errf.o)
+ .text          0x00000000        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_scalbn.o)
+ .data          0x00000000        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_scalbn.o)
+ .bss           0x00000000        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_scalbn.o)
+ .text.scalbnf  0x00000000       0xdc /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_scalbn.o)
+ .debug_frame   0x00000000       0x20 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_scalbn.o)
+ .ARM.attributes
+                0x00000000       0x34 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_scalbn.o)
+ .text          0x00000000        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_fabs.o)
+ .data          0x00000000        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_fabs.o)
+ .bss           0x00000000        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_fabs.o)
+ .text.fabsf    0x00000000       0x10 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_fabs.o)
+ .debug_frame   0x00000000       0x20 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_fabs.o)
+ .ARM.attributes
+                0x00000000       0x34 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_fabs.o)
+ .text          0x00000000        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_sqrt.o)
+ .data          0x00000000        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_sqrt.o)
+ .bss           0x00000000        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_sqrt.o)
+ .text.__ieee754_sqrtf
+                0x00000000        0x8 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_sqrt.o)
+ .debug_frame   0x00000000       0x20 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_sqrt.o)
+ .ARM.attributes
+                0x00000000       0x34 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_sqrt.o)
  .data          0x00000000        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
  .bss           0x00000000        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
  .text          0x00000000        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
@@ -5001,6 +5393,8 @@ LOAD cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/ST
 LOAD CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/estimate_altitude.c.obj
 LOAD CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/ms5611.c.obj
 LOAD CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Sensors/Src/bmi088.c.obj
+LOAD CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Devices/Src/led.c.obj
+LOAD CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
 LOAD CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
 LOAD CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
 LOAD CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
@@ -5038,7 +5432,7 @@ LOAD /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
                 0x08000000                g_pfnVectors
                 0x08000198                        . = ALIGN (0x4)
 
-.text           0x08000198     0x796c
+.text           0x08000198     0x7a20
                 0x08000198                        . = ALIGN (0x4)
  *(.text)
  .text          0x08000198       0x30 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
@@ -5457,339 +5851,344 @@ LOAD /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
  .text.USBD_CDC_ReceivePacket
                 0x08006710       0x6c cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
                 0x08006710                USBD_CDC_ReceivePacket
+ .text.init_gpio
+                0x0800677c       0xac CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+                0x0800677c                init_gpio
  .text.HAL_PCD_MspInit
-                0x0800677c       0xa8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x0800677c                HAL_PCD_MspInit
+                0x08006828       0xa8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006828                HAL_PCD_MspInit
  .text.HAL_PCD_SetupStageCallback
-                0x08006824       0x24 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006824                HAL_PCD_SetupStageCallback
+                0x080068d0       0x24 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x080068d0                HAL_PCD_SetupStageCallback
  .text.HAL_PCD_DataOutStageCallback
-                0x08006848       0x36 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006848                HAL_PCD_DataOutStageCallback
+                0x080068f4       0x36 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x080068f4                HAL_PCD_DataOutStageCallback
  .text.HAL_PCD_DataInStageCallback
-                0x0800687e       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x0800687e                HAL_PCD_DataInStageCallback
+                0x0800692a       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x0800692a                HAL_PCD_DataInStageCallback
  .text.HAL_PCD_SOFCallback
-                0x080068b2       0x1c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x080068b2                HAL_PCD_SOFCallback
+                0x0800695e       0x1c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x0800695e                HAL_PCD_SOFCallback
  .text.HAL_PCD_ResetCallback
-                0x080068ce       0x3c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x080068ce                HAL_PCD_ResetCallback
- *fill*         0x0800690a        0x2 
+                0x0800697a       0x3c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x0800697a                HAL_PCD_ResetCallback
+ *fill*         0x080069b6        0x2 
  .text.HAL_PCD_SuspendCallback
-                0x0800690c       0x4c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x0800690c                HAL_PCD_SuspendCallback
+                0x080069b8       0x4c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x080069b8                HAL_PCD_SuspendCallback
  .text.HAL_PCD_ResumeCallback
-                0x08006958       0x1c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006958                HAL_PCD_ResumeCallback
+                0x08006a04       0x1c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006a04                HAL_PCD_ResumeCallback
  .text.HAL_PCD_ISOOUTIncompleteCallback
-                0x08006974       0x24 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006974                HAL_PCD_ISOOUTIncompleteCallback
+                0x08006a20       0x24 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006a20                HAL_PCD_ISOOUTIncompleteCallback
  .text.HAL_PCD_ISOINIncompleteCallback
-                0x08006998       0x24 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006998                HAL_PCD_ISOINIncompleteCallback
+                0x08006a44       0x24 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006a44                HAL_PCD_ISOINIncompleteCallback
  .text.HAL_PCD_ConnectCallback
-                0x080069bc       0x1c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x080069bc                HAL_PCD_ConnectCallback
+                0x08006a68       0x1c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006a68                HAL_PCD_ConnectCallback
  .text.HAL_PCD_DisconnectCallback
-                0x080069d8       0x1c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x080069d8                HAL_PCD_DisconnectCallback
+                0x08006a84       0x1c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006a84                HAL_PCD_DisconnectCallback
  .text.USBD_LL_Init
-                0x080069f4       0x98 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x080069f4                USBD_LL_Init
+                0x08006aa0       0x98 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006aa0                USBD_LL_Init
  .text.USBD_LL_Start
-                0x08006a8c       0x36 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006a8c                USBD_LL_Start
+                0x08006b38       0x36 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006b38                USBD_LL_Start
  .text.USBD_LL_OpenEP
-                0x08006ac2       0x4c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006ac2                USBD_LL_OpenEP
+                0x08006b6e       0x4c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006b6e                USBD_LL_OpenEP
  .text.USBD_LL_CloseEP
-                0x08006b0e       0x3e CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006b0e                USBD_LL_CloseEP
+                0x08006bba       0x3e CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006bba                USBD_LL_CloseEP
  .text.USBD_LL_StallEP
-                0x08006b4c       0x3e CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006b4c                USBD_LL_StallEP
+                0x08006bf8       0x3e CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006bf8                USBD_LL_StallEP
  .text.USBD_LL_ClearStallEP
-                0x08006b8a       0x3e CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006b8a                USBD_LL_ClearStallEP
+                0x08006c36       0x3e CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006c36                USBD_LL_ClearStallEP
  .text.USBD_LL_IsStallEP
-                0x08006bc8       0x58 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006bc8                USBD_LL_IsStallEP
+                0x08006c74       0x58 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006c74                USBD_LL_IsStallEP
  .text.USBD_LL_SetUSBAddress
-                0x08006c20       0x3e CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006c20                USBD_LL_SetUSBAddress
+                0x08006ccc       0x3e CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006ccc                USBD_LL_SetUSBAddress
  .text.USBD_LL_Transmit
-                0x08006c5e       0x42 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006c5e                USBD_LL_Transmit
+                0x08006d0a       0x42 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006d0a                USBD_LL_Transmit
  .text.USBD_LL_PrepareReceive
-                0x08006ca0       0x42 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006ca0                USBD_LL_PrepareReceive
+                0x08006d4c       0x42 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006d4c                USBD_LL_PrepareReceive
  .text.USBD_LL_GetRxDataSize
-                0x08006ce2       0x26 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006ce2                USBD_LL_GetRxDataSize
+                0x08006d8e       0x26 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006d8e                USBD_LL_GetRxDataSize
  .text.USBD_static_malloc
-                0x08006d08       0x1c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006d08                USBD_static_malloc
+                0x08006db4       0x1c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006db4                USBD_static_malloc
  .text.USBD_static_free
-                0x08006d24       0x14 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006d24                USBD_static_free
+                0x08006dd0       0x14 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006dd0                USBD_static_free
  .text.USBD_Get_USB_Status
-                0x08006d38       0x58 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006d38                USBD_Get_USB_Status
+                0x08006de4       0x58 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006de4                USBD_Get_USB_Status
  .text.MX_USB_DEVICE_Init
-                0x08006d90       0x60 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
-                0x08006d90                MX_USB_DEVICE_Init
+                0x08006e3c       0x60 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
+                0x08006e3c                MX_USB_DEVICE_Init
  .text.USBD_FS_DeviceDescriptor
-                0x08006df0       0x24 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
-                0x08006df0                USBD_FS_DeviceDescriptor
- .text.USBD_FS_LangIDStrDescriptor
-                0x08006e14       0x24 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
-                0x08006e14                USBD_FS_LangIDStrDescriptor
- .text.USBD_FS_ProductStrDescriptor
-                0x08006e38       0x3c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
-                0x08006e38                USBD_FS_ProductStrDescriptor
- .text.USBD_FS_ManufacturerStrDescriptor
-                0x08006e74       0x28 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
-                0x08006e74                USBD_FS_ManufacturerStrDescriptor
- .text.USBD_FS_SerialStrDescriptor
                 0x08006e9c       0x24 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
-                0x08006e9c                USBD_FS_SerialStrDescriptor
+                0x08006e9c                USBD_FS_DeviceDescriptor
+ .text.USBD_FS_LangIDStrDescriptor
+                0x08006ec0       0x24 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x08006ec0                USBD_FS_LangIDStrDescriptor
+ .text.USBD_FS_ProductStrDescriptor
+                0x08006ee4       0x3c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x08006ee4                USBD_FS_ProductStrDescriptor
+ .text.USBD_FS_ManufacturerStrDescriptor
+                0x08006f20       0x28 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x08006f20                USBD_FS_ManufacturerStrDescriptor
+ .text.USBD_FS_SerialStrDescriptor
+                0x08006f48       0x24 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x08006f48                USBD_FS_SerialStrDescriptor
  .text.USBD_FS_ConfigStrDescriptor
-                0x08006ec0       0x3c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
-                0x08006ec0                USBD_FS_ConfigStrDescriptor
+                0x08006f6c       0x3c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x08006f6c                USBD_FS_ConfigStrDescriptor
  .text.USBD_FS_InterfaceStrDescriptor
-                0x08006efc       0x3c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
-                0x08006efc                USBD_FS_InterfaceStrDescriptor
+                0x08006fa8       0x3c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x08006fa8                USBD_FS_InterfaceStrDescriptor
  .text.Get_SerialNum
-                0x08006f38       0x58 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x08006fe4       0x58 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
  .text.IntToUnicode
-                0x08006f90       0x7e CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
- *fill*         0x0800700e        0x2 
+                0x0800703c       0x7e CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
+ *fill*         0x080070ba        0x2 
  .text.CDC_Init_FS
-                0x08007010       0x28 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+                0x080070bc       0x28 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
  .text.CDC_DeInit_FS
-                0x08007038       0x10 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+                0x080070e4       0x10 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
  .text.CDC_Control_FS
-                0x08007048       0xbc CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+                0x080070f4       0xbc CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
  .text.CDC_Receive_FS
-                0x08007104       0x28 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+                0x080071b0       0x28 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
  .text.CDC_TransmitCplt_FS
-                0x0800712c       0x22 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
- .text.main     0x0800714e       0x42 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/main.c.obj
-                0x0800714e                main
+                0x080071d8       0x22 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+ .text.main     0x080071fa       0x4a CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/main.c.obj
+                0x080071fa                main
  .text.SystemClock_Config
-                0x08007190       0xd0 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/main.c.obj
-                0x08007190                SystemClock_Config
+                0x08007244       0xd0 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/main.c.obj
+                0x08007244                SystemClock_Config
  .text.Error_Handler
-                0x08007260        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/main.c.obj
-                0x08007260                Error_Handler
+                0x08007314        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/main.c.obj
+                0x08007314                Error_Handler
  .text.MX_GPIO_Init
-                0x0800726c       0x6c CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/gpio.c.obj
-                0x0800726c                MX_GPIO_Init
+                0x08007320       0x6c CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/gpio.c.obj
+                0x08007320                MX_GPIO_Init
  .text.MX_SPI1_Init
-                0x080072d8       0x6c CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/spi.c.obj
-                0x080072d8                MX_SPI1_Init
+                0x0800738c       0x6c CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/spi.c.obj
+                0x0800738c                MX_SPI1_Init
  .text.MX_SPI2_Init
-                0x08007344       0x6c CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/spi.c.obj
-                0x08007344                MX_SPI2_Init
+                0x080073f8       0x6c CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/spi.c.obj
+                0x080073f8                MX_SPI2_Init
  .text.HAL_SPI_MspInit
-                0x080073b0      0x138 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/spi.c.obj
-                0x080073b0                HAL_SPI_MspInit
+                0x08007464      0x138 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/spi.c.obj
+                0x08007464                HAL_SPI_MspInit
  .text.MX_TIM2_Init
-                0x080074e8       0xec CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/tim.c.obj
-                0x080074e8                MX_TIM2_Init
+                0x0800759c       0xec CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/tim.c.obj
+                0x0800759c                MX_TIM2_Init
  .text.HAL_TIM_Base_MspInit
-                0x080075d4       0x40 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/tim.c.obj
-                0x080075d4                HAL_TIM_Base_MspInit
+                0x08007688       0x40 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/tim.c.obj
+                0x08007688                HAL_TIM_Base_MspInit
  .text.HAL_TIM_MspPostInit
-                0x08007614       0x70 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/tim.c.obj
-                0x08007614                HAL_TIM_MspPostInit
+                0x080076c8       0x70 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/tim.c.obj
+                0x080076c8                HAL_TIM_MspPostInit
  .text.NMI_Handler
-                0x08007684        0x8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08007684                NMI_Handler
+                0x08007738        0x8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08007738                NMI_Handler
  .text.HardFault_Handler
-                0x0800768c        0x8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
-                0x0800768c                HardFault_Handler
+                0x08007740        0x8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08007740                HardFault_Handler
  .text.MemManage_Handler
-                0x08007694        0x8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08007694                MemManage_Handler
+                0x08007748        0x8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08007748                MemManage_Handler
  .text.BusFault_Handler
-                0x0800769c        0x8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
-                0x0800769c                BusFault_Handler
+                0x08007750        0x8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08007750                BusFault_Handler
  .text.UsageFault_Handler
-                0x080076a4        0x8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080076a4                UsageFault_Handler
+                0x08007758        0x8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08007758                UsageFault_Handler
  .text.SVC_Handler
-                0x080076ac        0xe CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080076ac                SVC_Handler
+                0x08007760        0xe CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08007760                SVC_Handler
  .text.DebugMon_Handler
-                0x080076ba        0xe CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080076ba                DebugMon_Handler
+                0x0800776e        0xe CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
+                0x0800776e                DebugMon_Handler
  .text.PendSV_Handler
-                0x080076c8        0xe CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080076c8                PendSV_Handler
+                0x0800777c        0xe CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
+                0x0800777c                PendSV_Handler
  .text.SysTick_Handler
-                0x080076d6        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080076d6                SysTick_Handler
- *fill*         0x080076e2        0x2 
+                0x0800778a        0xc CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
+                0x0800778a                SysTick_Handler
+ *fill*         0x08007796        0x2 
  .text.OTG_FS_IRQHandler
-                0x080076e4       0x14 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080076e4                OTG_FS_IRQHandler
+                0x08007798       0x14 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08007798                OTG_FS_IRQHandler
  .text.HAL_MspInit
-                0x080076f8       0x50 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_hal_msp.c.obj
-                0x080076f8                HAL_MspInit
+                0x080077ac       0x50 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x080077ac                HAL_MspInit
  .text.Reset_Handler
-                0x08007748       0x50 CMakeFiles/SARP_SRAD_Flight_Computer.dir/startup_stm32f411xe.s.obj
-                0x08007748                Reset_Handler
+                0x080077fc       0x50 CMakeFiles/SARP_SRAD_Flight_Computer.dir/startup_stm32f411xe.s.obj
+                0x080077fc                Reset_Handler
  .text.Default_Handler
-                0x08007798        0x2 CMakeFiles/SARP_SRAD_Flight_Computer.dir/startup_stm32f411xe.s.obj
-                0x08007798                DMA1_Stream3_IRQHandler
-                0x08007798                EXTI2_IRQHandler
-                0x08007798                SPI4_IRQHandler
-                0x08007798                TIM1_CC_IRQHandler
-                0x08007798                DMA2_Stream5_IRQHandler
-                0x08007798                DMA1_Stream5_IRQHandler
-                0x08007798                PVD_IRQHandler
-                0x08007798                SDIO_IRQHandler
-                0x08007798                TAMP_STAMP_IRQHandler
-                0x08007798                EXTI3_IRQHandler
-                0x08007798                TIM1_UP_TIM10_IRQHandler
-                0x08007798                I2C3_ER_IRQHandler
-                0x08007798                EXTI0_IRQHandler
-                0x08007798                I2C2_EV_IRQHandler
-                0x08007798                DMA1_Stream2_IRQHandler
-                0x08007798                FPU_IRQHandler
-                0x08007798                DMA2_Stream2_IRQHandler
-                0x08007798                SPI1_IRQHandler
-                0x08007798                TIM1_BRK_TIM9_IRQHandler
-                0x08007798                DMA2_Stream3_IRQHandler
-                0x08007798                USART6_IRQHandler
-                0x08007798                DMA2_Stream0_IRQHandler
-                0x08007798                TIM4_IRQHandler
-                0x08007798                I2C1_EV_IRQHandler
-                0x08007798                DMA1_Stream6_IRQHandler
-                0x08007798                DMA1_Stream1_IRQHandler
-                0x08007798                TIM3_IRQHandler
-                0x08007798                RCC_IRQHandler
-                0x08007798                Default_Handler
-                0x08007798                EXTI15_10_IRQHandler
-                0x08007798                ADC_IRQHandler
-                0x08007798                DMA1_Stream7_IRQHandler
-                0x08007798                SPI5_IRQHandler
-                0x08007798                TIM5_IRQHandler
-                0x08007798                DMA2_Stream7_IRQHandler
-                0x08007798                I2C3_EV_IRQHandler
-                0x08007798                EXTI9_5_IRQHandler
-                0x08007798                RTC_WKUP_IRQHandler
-                0x08007798                SPI2_IRQHandler
-                0x08007798                DMA1_Stream0_IRQHandler
-                0x08007798                EXTI4_IRQHandler
-                0x08007798                WWDG_IRQHandler
-                0x08007798                TIM2_IRQHandler
-                0x08007798                OTG_FS_WKUP_IRQHandler
-                0x08007798                TIM1_TRG_COM_TIM11_IRQHandler
-                0x08007798                EXTI1_IRQHandler
-                0x08007798                USART2_IRQHandler
-                0x08007798                I2C2_ER_IRQHandler
-                0x08007798                DMA2_Stream1_IRQHandler
-                0x08007798                FLASH_IRQHandler
-                0x08007798                DMA2_Stream4_IRQHandler
-                0x08007798                USART1_IRQHandler
-                0x08007798                SPI3_IRQHandler
-                0x08007798                DMA1_Stream4_IRQHandler
-                0x08007798                I2C1_ER_IRQHandler
-                0x08007798                DMA2_Stream6_IRQHandler
-                0x08007798                RTC_Alarm_IRQHandler
- *fill*         0x0800779a        0x2 
+                0x0800784c        0x2 CMakeFiles/SARP_SRAD_Flight_Computer.dir/startup_stm32f411xe.s.obj
+                0x0800784c                DMA1_Stream3_IRQHandler
+                0x0800784c                EXTI2_IRQHandler
+                0x0800784c                SPI4_IRQHandler
+                0x0800784c                TIM1_CC_IRQHandler
+                0x0800784c                DMA2_Stream5_IRQHandler
+                0x0800784c                DMA1_Stream5_IRQHandler
+                0x0800784c                PVD_IRQHandler
+                0x0800784c                SDIO_IRQHandler
+                0x0800784c                TAMP_STAMP_IRQHandler
+                0x0800784c                EXTI3_IRQHandler
+                0x0800784c                TIM1_UP_TIM10_IRQHandler
+                0x0800784c                I2C3_ER_IRQHandler
+                0x0800784c                EXTI0_IRQHandler
+                0x0800784c                I2C2_EV_IRQHandler
+                0x0800784c                DMA1_Stream2_IRQHandler
+                0x0800784c                FPU_IRQHandler
+                0x0800784c                DMA2_Stream2_IRQHandler
+                0x0800784c                SPI1_IRQHandler
+                0x0800784c                TIM1_BRK_TIM9_IRQHandler
+                0x0800784c                DMA2_Stream3_IRQHandler
+                0x0800784c                USART6_IRQHandler
+                0x0800784c                DMA2_Stream0_IRQHandler
+                0x0800784c                TIM4_IRQHandler
+                0x0800784c                I2C1_EV_IRQHandler
+                0x0800784c                DMA1_Stream6_IRQHandler
+                0x0800784c                DMA1_Stream1_IRQHandler
+                0x0800784c                TIM3_IRQHandler
+                0x0800784c                RCC_IRQHandler
+                0x0800784c                Default_Handler
+                0x0800784c                EXTI15_10_IRQHandler
+                0x0800784c                ADC_IRQHandler
+                0x0800784c                DMA1_Stream7_IRQHandler
+                0x0800784c                SPI5_IRQHandler
+                0x0800784c                TIM5_IRQHandler
+                0x0800784c                DMA2_Stream7_IRQHandler
+                0x0800784c                I2C3_EV_IRQHandler
+                0x0800784c                EXTI9_5_IRQHandler
+                0x0800784c                RTC_WKUP_IRQHandler
+                0x0800784c                SPI2_IRQHandler
+                0x0800784c                DMA1_Stream0_IRQHandler
+                0x0800784c                EXTI4_IRQHandler
+                0x0800784c                WWDG_IRQHandler
+                0x0800784c                TIM2_IRQHandler
+                0x0800784c                OTG_FS_WKUP_IRQHandler
+                0x0800784c                TIM1_TRG_COM_TIM11_IRQHandler
+                0x0800784c                EXTI1_IRQHandler
+                0x0800784c                USART2_IRQHandler
+                0x0800784c                I2C2_ER_IRQHandler
+                0x0800784c                DMA2_Stream1_IRQHandler
+                0x0800784c                FLASH_IRQHandler
+                0x0800784c                DMA2_Stream4_IRQHandler
+                0x0800784c                USART1_IRQHandler
+                0x0800784c                SPI3_IRQHandler
+                0x0800784c                DMA1_Stream4_IRQHandler
+                0x0800784c                I2C1_ER_IRQHandler
+                0x0800784c                DMA2_Stream6_IRQHandler
+                0x0800784c                RTC_Alarm_IRQHandler
+ *fill*         0x0800784e        0x2 
  .text.__udivmoddi4
-                0x0800779c      0x2f8 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
-                0x0800779c                __udivmoddi4
- .text.memset   0x08007a94       0x10 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
-                0x08007a94                memset
+                0x08007850      0x2f8 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                0x08007850                __udivmoddi4
+ .text.memset   0x08007b48       0x10 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+                0x08007b48                memset
  .text.__libc_init_array
-                0x08007aa4       0x48 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
-                0x08007aa4                __libc_init_array
+                0x08007b58       0x48 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+                0x08007b58                __libc_init_array
  *(.glue_7)
- .glue_7        0x08007aec        0x0 linker stubs
+ .glue_7        0x08007ba0        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08007aec        0x0 linker stubs
+ .glue_7t       0x08007ba0        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08007aec        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x08007ba0        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x08007aec        0x4 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x08007aec                _init
- .init          0x08007af0        0x8 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x08007ba0        0x4 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x08007ba0                _init
+ .init          0x08007ba4        0x8 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x08007af8        0x4 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x08007af8                _fini
- .fini          0x08007afc        0x8 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtn.o
-                0x08007b04                        . = ALIGN (0x4)
-                0x08007b04                        _etext = .
+ .fini          0x08007bac        0x4 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x08007bac                _fini
+ .fini          0x08007bb0        0x8 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x08007bb8                        . = ALIGN (0x4)
+                0x08007bb8                        _etext = .
 
-.vfp11_veneer   0x08007b04        0x0
- .vfp11_veneer  0x08007b04        0x0 linker stubs
+.vfp11_veneer   0x08007bb8        0x0
+ .vfp11_veneer  0x08007bb8        0x0 linker stubs
 
-.v4_bx          0x08007b04        0x0
- .v4_bx         0x08007b04        0x0 linker stubs
+.v4_bx          0x08007bb8        0x0
+ .v4_bx         0x08007bb8        0x0 linker stubs
 
-.iplt           0x08007b04        0x0
- .iplt          0x08007b04        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x08007bb8        0x0
+ .iplt          0x08007bb8        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x08007b04       0x58
-                0x08007b04                        . = ALIGN (0x4)
+.rodata         0x08007bb8      0x268
+                0x08007bb8                        . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x08007b04       0x46 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
+ .rodata        0x08007bb8       0x46 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
  *(.rodata*)
- *fill*         0x08007b4a        0x2 
+ *fill*         0x08007bfe        0x2 
  .rodata.AHBPrescTable
-                0x08007b4c       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
-                0x08007b4c                AHBPrescTable
-                0x08007b5c                        . = ALIGN (0x4)
+                0x08007c00       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+                0x08007c00                AHBPrescTable
+ .rodata.gpio_configs
+                0x08007c10      0x210 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+                0x08007e20                        . = ALIGN (0x4)
 
-.ARM.extab      0x08007b5c        0x0
-                0x08007b5c                        . = ALIGN (0x4)
+.ARM.extab      0x08007e20        0x0
+                0x08007e20                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08007b5c                        . = ALIGN (0x4)
+                0x08007e20                        . = ALIGN (0x4)
 
-.ARM            0x08007b5c        0x8
-                0x08007b5c                        . = ALIGN (0x4)
-                0x08007b5c                        __exidx_start = .
+.ARM            0x08007e20        0x8
+                0x08007e20                        . = ALIGN (0x4)
+                0x08007e20                        __exidx_start = .
  *(.ARM.exidx*)
  .ARM.exidx.text.__udivmoddi4
-                0x08007b5c        0x8 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
-                0x08007b64                        __exidx_end = .
-                0x08007b64                        . = ALIGN (0x4)
+                0x08007e20        0x8 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                0x08007e28                        __exidx_end = .
+                0x08007e28                        . = ALIGN (0x4)
 
-.preinit_array  0x08007b64        0x0
-                0x08007b64                        . = ALIGN (0x4)
-                0x08007b64                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08007e28        0x0
+                0x08007e28                        . = ALIGN (0x4)
+                0x08007e28                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08007b64                        PROVIDE (__preinit_array_end = .)
-                0x08007b64                        . = ALIGN (0x4)
+                0x08007e28                        PROVIDE (__preinit_array_end = .)
+                0x08007e28                        . = ALIGN (0x4)
 
-.init_array     0x08007b64        0x4
-                0x08007b64                        . = ALIGN (0x4)
-                0x08007b64                        PROVIDE (__init_array_start = .)
+.init_array     0x08007e28        0x4
+                0x08007e28                        . = ALIGN (0x4)
+                0x08007e28                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x08007b64        0x4 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x08007b68                        PROVIDE (__init_array_end = .)
-                0x08007b68                        . = ALIGN (0x4)
+ .init_array    0x08007e28        0x4 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x08007e2c                        PROVIDE (__init_array_end = .)
+                0x08007e2c                        . = ALIGN (0x4)
 
-.fini_array     0x08007b68        0x4
-                0x08007b68                        . = ALIGN (0x4)
+.fini_array     0x08007e2c        0x4
+                0x08007e2c                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08007b68        0x4 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x08007e2c        0x4 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x08007b6c                        . = ALIGN (0x4)
-                0x08007b6c                        _sidata = LOADADDR (.data)
+                0x08007e30                        . = ALIGN (0x4)
+                0x08007e30                        _sidata = LOADADDR (.data)
 
-.rel.dyn        0x08007b6c        0x0
- .rel.iplt      0x08007b6c        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x08007e30        0x0
+ .rel.iplt      0x08007e30        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.data           0x20000000       0xfc load address 0x08007b6c
+.data           0x20000000       0xfc load address 0x08007e30
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -5840,16 +6239,16 @@ LOAD /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
                 0x200000fc                        . = ALIGN (0x4)
 
 .tm_clone_table
-                0x200000fc        0x0 load address 0x08007c68
+                0x200000fc        0x0 load address 0x08007f2c
  .tm_clone_table
                 0x200000fc        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  .tm_clone_table
                 0x200000fc        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtend.o
 
-.igot.plt       0x200000fc        0x0 load address 0x08007c68
+.igot.plt       0x200000fc        0x0 load address 0x08007f2c
  .igot.plt      0x200000fc        0x0 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.tdata          0x200000fc        0x0 load address 0x08007c68
+.tdata          0x200000fc        0x0 load address 0x08007f2c
  *(.tdata .tdata.* .gnu.linkonce.td.*)
                 0x200000fc                        . = ALIGN (0x4)
                 0x200000fc                        _edata = .
@@ -5866,7 +6265,7 @@ LOAD /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
                 [!provide]                        PROVIDE (__data_source_end = __tdata_source_end)
                 [!provide]                        PROVIDE (__data_source_size = (__data_source_end - __data_source))
 
-.tbss           0x200000fc        0x0 load address 0x08007c68
+.tbss           0x200000fc        0x0 load address 0x08007f2c
                 0x200000fc                        _sbss = .
                 0x200000fc                        __bss_start__ = _sbss
  *(.tbss .tbss.*)
@@ -5883,7 +6282,7 @@ LOAD /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
                 [!provide]                        PROVIDE (__arm32_tls_tcb_offset = MAX (0x8, __tls_align))
                 [!provide]                        PROVIDE (__arm64_tls_tcb_offset = MAX (0x10, __tls_align))
 
-.bss            0x200000fc     0x1cfc load address 0x08007c68
+.bss            0x200000fc     0x1cfc load address 0x08007f2c
  *(.bss)
  *(.bss*)
  .bss.completed.1
@@ -5926,7 +6325,7 @@ LOAD /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
                 [!provide]                        PROVIDE (__bss_size = (__bss_end - __bss_start))
 
 ._user_heap_stack
-                0x20001df8      0x600 load address 0x08007c68
+                0x20001df8      0x600 load address 0x08007f2c
                 0x20001df8                        . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end = .)
                 0x20001df8                        PROVIDE (_end = .)
@@ -5980,41 +6379,43 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000032e       0x34 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
  .ARM.attributes
-                0x00000362       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x00000362       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
  .ARM.attributes
-                0x00000396       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
+                0x00000396       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
  .ARM.attributes
-                0x000003ca       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x000003ca       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
  .ARM.attributes
-                0x000003fe       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+                0x000003fe       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
  .ARM.attributes
-                0x00000432       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/main.c.obj
+                0x00000432       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
  .ARM.attributes
-                0x00000466       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/gpio.c.obj
+                0x00000466       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/main.c.obj
  .ARM.attributes
-                0x0000049a       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/spi.c.obj
+                0x0000049a       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/gpio.c.obj
  .ARM.attributes
-                0x000004ce       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/tim.c.obj
+                0x000004ce       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/spi.c.obj
  .ARM.attributes
-                0x00000502       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
+                0x00000502       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/tim.c.obj
  .ARM.attributes
-                0x00000536       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x00000536       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
  .ARM.attributes
-                0x0000056a       0x21 CMakeFiles/SARP_SRAD_Flight_Computer.dir/startup_stm32f411xe.s.obj
+                0x0000056a       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_hal_msp.c.obj
  .ARM.attributes
-                0x0000058b       0x22 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+                0x0000059e       0x21 CMakeFiles/SARP_SRAD_Flight_Computer.dir/startup_stm32f411xe.s.obj
  .ARM.attributes
-                0x000005ad       0x34 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                0x000005bf       0x22 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
  .ARM.attributes
-                0x000005e1       0x22 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+                0x000005e1       0x34 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
  .ARM.attributes
-                0x00000603       0x34 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+                0x00000615       0x22 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
-                0x00000637       0x34 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+                0x00000637       0x34 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
  .ARM.attributes
-                0x0000066b       0x34 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtend.o
+                0x0000066b       0x34 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
  .ARM.attributes
-                0x0000069f       0x22 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x0000069f       0x34 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .ARM.attributes
+                0x000006d3       0x22 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtn.o
 
 .comment        0x00000000       0x46
  .comment       0x00000000       0x46 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
@@ -6033,6 +6434,7 @@ LOAD linker stubs
  .comment       0x00000046       0x47 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
  .comment       0x00000046       0x47 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
  .comment       0x00000046       0x47 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+ .comment       0x00000046       0x47 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
  .comment       0x00000046       0x47 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
  .comment       0x00000046       0x47 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
  .comment       0x00000046       0x47 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
@@ -6044,7 +6446,7 @@ LOAD linker stubs
  .comment       0x00000046       0x47 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
  .comment       0x00000046       0x47 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_hal_msp.c.obj
 
-.debug_info     0x00000000    0x13f5d
+.debug_info     0x00000000    0x14434
  .debug_info    0x00000000      0x53e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_info    0x0000053e     0x1577 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj
  .debug_info    0x00001ab5      0x6ea cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj
@@ -6060,19 +6462,20 @@ LOAD linker stubs
  .debug_info    0x0000c29b      0xaeb cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
  .debug_info    0x0000cd86      0x762 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
  .debug_info    0x0000d4e8     0x12a5 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
- .debug_info    0x0000e78d     0x1c13 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
- .debug_info    0x000103a0      0x70e CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
- .debug_info    0x00010aae      0x458 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
- .debug_info    0x00010f06      0x907 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
- .debug_info    0x0001180d      0x5b6 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/main.c.obj
- .debug_info    0x00011dc3      0x2ac CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/gpio.c.obj
- .debug_info    0x0001206f      0x9f4 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/spi.c.obj
- .debug_info    0x00012a63      0xc12 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/tim.c.obj
- .debug_info    0x00013675      0x627 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_info    0x00013c9c      0x291 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_info    0x00013f2d       0x30 CMakeFiles/SARP_SRAD_Flight_Computer.dir/startup_stm32f411xe.s.obj
+ .debug_info    0x0000e78d      0x4af CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_info    0x0000ec3c     0x1c13 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+ .debug_info    0x0001084f      0x70e CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
+ .debug_info    0x00010f5d      0x458 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
+ .debug_info    0x000113b5      0x907 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+ .debug_info    0x00011cbc      0x5de CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/main.c.obj
+ .debug_info    0x0001229a      0x2ac CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/gpio.c.obj
+ .debug_info    0x00012546      0x9f4 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/spi.c.obj
+ .debug_info    0x00012f3a      0xc12 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/tim.c.obj
+ .debug_info    0x00013b4c      0x627 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_info    0x00014173      0x291 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_info    0x00014404       0x30 CMakeFiles/SARP_SRAD_Flight_Computer.dir/startup_stm32f411xe.s.obj
 
-.debug_abbrev   0x00000000     0x3615
+.debug_abbrev   0x00000000     0x3762
  .debug_abbrev  0x00000000      0x11a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_abbrev  0x0000011a      0x2b6 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj
  .debug_abbrev  0x000003d0      0x1da cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj
@@ -6088,19 +6491,20 @@ LOAD linker stubs
  .debug_abbrev  0x00001c61      0x26f cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
  .debug_abbrev  0x00001ed0      0x19a cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
  .debug_abbrev  0x0000206a      0x2d2 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
- .debug_abbrev  0x0000233c      0x33f CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
- .debug_abbrev  0x0000267b      0x195 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
- .debug_abbrev  0x00002810      0x1e1 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
- .debug_abbrev  0x000029f1      0x29d CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
- .debug_abbrev  0x00002c8e      0x1f8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/main.c.obj
- .debug_abbrev  0x00002e86       0xd8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/gpio.c.obj
- .debug_abbrev  0x00002f5e      0x1fe CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/spi.c.obj
- .debug_abbrev  0x0000315c      0x219 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/tim.c.obj
- .debug_abbrev  0x00003375      0x1a4 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_abbrev  0x00003519       0xd8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_abbrev  0x000035f1       0x24 CMakeFiles/SARP_SRAD_Flight_Computer.dir/startup_stm32f411xe.s.obj
+ .debug_abbrev  0x0000233c      0x14d CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_abbrev  0x00002489      0x33f CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+ .debug_abbrev  0x000027c8      0x195 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
+ .debug_abbrev  0x0000295d      0x1e1 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
+ .debug_abbrev  0x00002b3e      0x29d CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+ .debug_abbrev  0x00002ddb      0x1f8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/main.c.obj
+ .debug_abbrev  0x00002fd3       0xd8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/gpio.c.obj
+ .debug_abbrev  0x000030ab      0x1fe CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/spi.c.obj
+ .debug_abbrev  0x000032a9      0x219 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/tim.c.obj
+ .debug_abbrev  0x000034c2      0x1a4 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_abbrev  0x00003666       0xd8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_abbrev  0x0000373e       0x24 CMakeFiles/SARP_SRAD_Flight_Computer.dir/startup_stm32f411xe.s.obj
 
-.debug_aranges  0x00000000     0x12e0
+.debug_aranges  0x00000000     0x1300
  .debug_aranges
                 0x00000000       0x28 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_aranges
@@ -6132,30 +6536,32 @@ LOAD linker stubs
  .debug_aranges
                 0x00000f08       0x90 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
  .debug_aranges
-                0x00000f98      0x110 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x00000f98       0x20 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
  .debug_aranges
-                0x000010a8       0x20 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
+                0x00000fb8      0x110 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
  .debug_aranges
-                0x000010c8       0x60 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x000010c8       0x20 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
  .debug_aranges
-                0x00001128       0x48 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+                0x000010e8       0x60 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
  .debug_aranges
-                0x00001170       0x30 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/main.c.obj
+                0x00001148       0x48 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
  .debug_aranges
-                0x000011a0       0x20 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/gpio.c.obj
+                0x00001190       0x30 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/main.c.obj
  .debug_aranges
-                0x000011c0       0x38 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/spi.c.obj
+                0x000011c0       0x20 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/gpio.c.obj
  .debug_aranges
-                0x000011f8       0x38 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/tim.c.obj
+                0x000011e0       0x38 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/spi.c.obj
  .debug_aranges
-                0x00001230       0x68 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
+                0x00001218       0x38 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/tim.c.obj
  .debug_aranges
-                0x00001298       0x20 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x00001250       0x68 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
  .debug_aranges
-                0x000012b8       0x28 CMakeFiles/SARP_SRAD_Flight_Computer.dir/startup_stm32f411xe.s.obj
+                0x000012b8       0x20 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_aranges
+                0x000012d8       0x28 CMakeFiles/SARP_SRAD_Flight_Computer.dir/startup_stm32f411xe.s.obj
 
 .debug_rnglists
-                0x00000000      0xe5a
+                0x00000000      0xe6e
  .debug_rnglists
                 0x00000000       0x1a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_rnglists
@@ -6187,29 +6593,31 @@ LOAD linker stubs
  .debug_rnglists
                 0x00000ba9       0x6c cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
  .debug_rnglists
-                0x00000c15       0xc9 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x00000c15       0x14 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
  .debug_rnglists
-                0x00000cde       0x13 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
+                0x00000c29       0xc9 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
  .debug_rnglists
-                0x00000cf1       0x43 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x00000cf2       0x13 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
  .debug_rnglists
-                0x00000d34       0x32 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+                0x00000d05       0x43 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
  .debug_rnglists
-                0x00000d66       0x20 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/main.c.obj
+                0x00000d48       0x32 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
  .debug_rnglists
-                0x00000d86       0x13 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/gpio.c.obj
+                0x00000d7a       0x20 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/main.c.obj
  .debug_rnglists
-                0x00000d99       0x26 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/spi.c.obj
+                0x00000d9a       0x13 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/gpio.c.obj
  .debug_rnglists
-                0x00000dbf       0x26 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/tim.c.obj
+                0x00000dad       0x26 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/spi.c.obj
  .debug_rnglists
-                0x00000de5       0x49 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
+                0x00000dd3       0x26 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/tim.c.obj
  .debug_rnglists
-                0x00000e2e       0x13 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x00000df9       0x49 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
  .debug_rnglists
-                0x00000e41       0x19 CMakeFiles/SARP_SRAD_Flight_Computer.dir/startup_stm32f411xe.s.obj
+                0x00000e42       0x13 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_rnglists
+                0x00000e55       0x19 CMakeFiles/SARP_SRAD_Flight_Computer.dir/startup_stm32f411xe.s.obj
 
-.debug_macro    0x00000000    0x19656
+.debug_macro    0x00000000    0x197da
  .debug_macro   0x00000000      0x1f2 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_macro   0x000001f2      0xad8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_macro   0x00000cca       0x2e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
@@ -6296,23 +6704,23 @@ LOAD linker stubs
  .debug_macro   0x0001723c      0x364 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
  .debug_macro   0x000175a0      0x377 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
  .debug_macro   0x00017917       0x95 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
- .debug_macro   0x000179ac      0x381 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
- .debug_macro   0x00017d2d       0x7b CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
- .debug_macro   0x00017da8      0x39d CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
- .debug_macro   0x00018145       0x22 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
- .debug_macro   0x00018167       0x16 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
- .debug_macro   0x0001817d      0x3a1 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
- .debug_macro   0x0001851e       0x1c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
- .debug_macro   0x0001853a      0x382 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
- .debug_macro   0x000188bc       0x10 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
- .debug_macro   0x000188cc      0x376 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/main.c.obj
- .debug_macro   0x00018c42      0x206 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/gpio.c.obj
- .debug_macro   0x00018e48      0x206 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/spi.c.obj
- .debug_macro   0x0001904e      0x206 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/tim.c.obj
- .debug_macro   0x00019254      0x206 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_macro   0x0001945a      0x1fc CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_macro   0x000179ac      0x1fb CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_macro   0x00017ba7      0x381 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+ .debug_macro   0x00017f28      0x39d CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
+ .debug_macro   0x000182c5       0x22 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
+ .debug_macro   0x000182e7       0x16 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
+ .debug_macro   0x000182fd      0x3a1 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
+ .debug_macro   0x0001869e       0x1c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
+ .debug_macro   0x000186ba      0x382 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+ .debug_macro   0x00018a3c       0x10 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+ .debug_macro   0x00018a4c      0x37a CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/main.c.obj
+ .debug_macro   0x00018dc6      0x206 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/gpio.c.obj
+ .debug_macro   0x00018fcc      0x206 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/spi.c.obj
+ .debug_macro   0x000191d2      0x206 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/tim.c.obj
+ .debug_macro   0x000193d8      0x206 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_macro   0x000195de      0x1fc CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_hal_msp.c.obj
 
-.debug_line     0x00000000    0x170f8
+.debug_line     0x00000000    0x178da
  .debug_line    0x00000000      0x789 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_line    0x00000789     0x1450 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj
  .debug_line    0x00001bd9      0x7ce cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj
@@ -6328,48 +6736,50 @@ LOAD linker stubs
  .debug_line    0x0000ea65     0x10b2 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
  .debug_line    0x0000fb17      0x9f7 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
  .debug_line    0x0001050e      0xe7f cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
- .debug_line    0x0001138d      0xdec CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
- .debug_line    0x00012179      0xa04 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
- .debug_line    0x00012b7d      0xa66 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
- .debug_line    0x000135e3      0xa57 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
- .debug_line    0x0001403a      0xa4e CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/main.c.obj
- .debug_line    0x00014a88      0x711 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/gpio.c.obj
- .debug_line    0x00015199      0x815 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/spi.c.obj
- .debug_line    0x000159ae      0x7e3 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/tim.c.obj
- .debug_line    0x00016191      0x7da CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_line    0x0001696b      0x713 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_line    0x0001707e       0x7a CMakeFiles/SARP_SRAD_Flight_Computer.dir/startup_stm32f411xe.s.obj
+ .debug_line    0x0001138d      0x792 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_line    0x00011b1f      0xdec CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+ .debug_line    0x0001290b      0xa04 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
+ .debug_line    0x0001330f      0xa66 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
+ .debug_line    0x00013d75      0xa57 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+ .debug_line    0x000147cc      0xa9e CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/main.c.obj
+ .debug_line    0x0001526a      0x711 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/gpio.c.obj
+ .debug_line    0x0001597b      0x815 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/spi.c.obj
+ .debug_line    0x00016190      0x7e3 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/tim.c.obj
+ .debug_line    0x00016973      0x7da CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_line    0x0001714d      0x713 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_line    0x00017860       0x7a CMakeFiles/SARP_SRAD_Flight_Computer.dir/startup_stm32f411xe.s.obj
 
-.debug_str      0x00000000    0x91610
- .debug_str     0x00000000    0x91610 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+.debug_str      0x00000000    0x91af9
+ .debug_str     0x00000000    0x91af9 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
                               0x87cb0 (size before relaxing)
- .debug_str     0x00091610    0x8877c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj
- .debug_str     0x00091610    0x8806c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj
- .debug_str     0x00091610    0x88657 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj
- .debug_str     0x00091610    0x880e4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_str     0x00091610    0x87e2b cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_str     0x00091610    0x88446 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_str     0x00091610    0x886dc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_str     0x00091610    0x8855c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
- .debug_str     0x00091610    0x89028 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
- .debug_str     0x00091610    0x88834 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
- .debug_str     0x00091610    0x8c072 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
- .debug_str     0x00091610    0x8be9d cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
- .debug_str     0x00091610    0x8bd72 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
- .debug_str     0x00091610    0x8c712 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
- .debug_str     0x00091610    0x8ce21 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
- .debug_str     0x00091610    0x8c125 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
- .debug_str     0x00091610    0x8bc6a CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
- .debug_str     0x00091610    0x8c165 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
- .debug_str     0x00091610    0x8bbcc CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/main.c.obj
- .debug_str     0x00091610    0x87c00 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/gpio.c.obj
- .debug_str     0x00091610    0x8816a CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/spi.c.obj
- .debug_str     0x00091610    0x883eb CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/tim.c.obj
- .debug_str     0x00091610    0x87fa7 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_str     0x00091610    0x87c00 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_str     0x00091610       0xa2 CMakeFiles/SARP_SRAD_Flight_Computer.dir/startup_stm32f411xe.s.obj
+ .debug_str     0x00091af9    0x8877c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj
+ .debug_str     0x00091af9    0x8806c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj
+ .debug_str     0x00091af9    0x88657 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj
+ .debug_str     0x00091af9    0x880e4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_str     0x00091af9    0x87e2b cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_str     0x00091af9    0x88446 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_str     0x00091af9    0x886dc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_str     0x00091af9    0x8855c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
+ .debug_str     0x00091af9    0x89028 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .debug_str     0x00091af9    0x88834 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .debug_str     0x00091af9    0x8c072 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+ .debug_str     0x00091af9    0x8be9d cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
+ .debug_str     0x00091af9    0x8bd72 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
+ .debug_str     0x00091af9    0x8c712 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+ .debug_str     0x00091af9    0x88125 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_str     0x00091af9    0x8ce21 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+ .debug_str     0x00091af9    0x8c125 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
+ .debug_str     0x00091af9    0x8bc6a CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
+ .debug_str     0x00091af9    0x8c165 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+ .debug_str     0x00091af9    0x8bbec CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/main.c.obj
+ .debug_str     0x00091af9    0x87c00 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/gpio.c.obj
+ .debug_str     0x00091af9    0x8816a CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/spi.c.obj
+ .debug_str     0x00091af9    0x883eb CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/tim.c.obj
+ .debug_str     0x00091af9    0x87fa7 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_str     0x00091af9    0x87c00 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_str     0x00091af9       0xa2 CMakeFiles/SARP_SRAD_Flight_Computer.dir/startup_stm32f411xe.s.obj
 
-.debug_frame    0x00000000     0x4e34
+.debug_frame    0x00000000     0x4e68
  .debug_frame   0x00000000       0x58 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_frame   0x00000058      0x5b8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj
  .debug_frame   0x00000610       0xb0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj
@@ -6385,20 +6795,21 @@ LOAD linker stubs
  .debug_frame   0x00003de4      0x23c cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
  .debug_frame   0x00004020      0x10c cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
  .debug_frame   0x0000412c      0x23c cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
- .debug_frame   0x00004368      0x47c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
- .debug_frame   0x000047e4       0x2c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
- .debug_frame   0x00004810      0x160 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
- .debug_frame   0x00004970       0xe4 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
- .debug_frame   0x00004a54       0x6c CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/main.c.obj
- .debug_frame   0x00004ac0       0x38 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/gpio.c.obj
- .debug_frame   0x00004af8       0x90 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/spi.c.obj
- .debug_frame   0x00004b88       0xa8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/tim.c.obj
- .debug_frame   0x00004c30      0x120 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_frame   0x00004d50       0x38 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_frame   0x00004d88       0x2c /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x00004db4       0x34 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
- .debug_frame   0x00004de8       0x20 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
- .debug_frame   0x00004e08       0x2c /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+ .debug_frame   0x00004368       0x34 CMakeFiles/SARP_SRAD_Flight_Computer.dir/App/Utils/Src/init_gpio.c.obj
+ .debug_frame   0x0000439c      0x47c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/Target/usbd_conf.c.obj
+ .debug_frame   0x00004818       0x2c CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usb_device.c.obj
+ .debug_frame   0x00004844      0x160 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_desc.c.obj
+ .debug_frame   0x000049a4       0xe4 CMakeFiles/SARP_SRAD_Flight_Computer.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+ .debug_frame   0x00004a88       0x6c CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/main.c.obj
+ .debug_frame   0x00004af4       0x38 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/gpio.c.obj
+ .debug_frame   0x00004b2c       0x90 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/spi.c.obj
+ .debug_frame   0x00004bbc       0xa8 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/tim.c.obj
+ .debug_frame   0x00004c64      0x120 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_frame   0x00004d84       0x38 CMakeFiles/SARP_SRAD_Flight_Computer.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_frame   0x00004dbc       0x2c /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00004de8       0x34 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x00004e1c       0x20 /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+ .debug_frame   0x00004e3c       0x2c /Applications/ArmGNUToolchain/14.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
 
 .debug_line_str
                 0x00000000      0x164

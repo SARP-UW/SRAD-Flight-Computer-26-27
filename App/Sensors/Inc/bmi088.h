@@ -26,6 +26,16 @@ typedef struct {
 HAL_StatusTypeDef init_bmi088(void);
 
 /**
+ * @brief Calibrates the accelerometer offset for the BMI088 IMU. 
+ * 
+ * IMPORTANT: This function should only be called once: after init_ms5611, during the pre-flight state.
+ * 
+ * @param data pointer to the bmi088_data_t structure to store the IMU data.
+ * @return HAL_StatusTypeDef HAL_OK if the calibration was successful, or an error code otherwise.
+ */
+HAL_StatusTypeDef calibrate_accel_offset(bmi088_data_t *data);
+
+/**
  * @brief Updates the bmi088_data_t structure with linear acceleration and angular velocity vaules.
  *
  * @param data pointer to the bmi088_data_t structure to store the IMU data.
