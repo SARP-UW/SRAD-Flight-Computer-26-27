@@ -24,9 +24,6 @@ bool ascent_initialized = false;
 State update_ascent(State_Context *context) {
     if (!ascent_initialized) {
         last_tick = HAL_GetTick();
-        velocity = 0.0f;
-        descending_counter = 0;
-        prev_altitude = 0.0f;
         ascent_initialized = true;
     }
 
