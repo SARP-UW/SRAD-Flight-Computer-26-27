@@ -1,4 +1,8 @@
-// Comment
+/**
+ * @file App/States/Inc/ascent.c
+ * @authors Jude Merritt
+ * @brief Ascent state draft
+ */
 
 /**
  * Notes:

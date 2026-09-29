@@ -1,8 +1,7 @@
 /**
- * State Operations:
- * - Collect IMU and barometer data and write it to external flash
- * - Detect apogee (implementation TBD)
- * - Fire apogee pyro channel at apogee.
+ * @file App/States/Inc/ascent.h
+ * @authors Jude Merritt
+ * @brief Ascent state draft
  */
 
 #pragma once
