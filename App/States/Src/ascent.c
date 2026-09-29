@@ -6,6 +6,8 @@
 #include "pyro.h"
 #include "ascent.h"
 
+#define GRAVITY 9.80665f // Acceleration due to gravity in m/s^2
+
 float velocity = 0.0f;
 uint32_t last_tick = 0; // Used to find dt for the velocity calculation
 bmi088_data_t imu_data; // Global variable to hold the IMU data
@@ -19,7 +21,7 @@ State update_ascent(State_Context *context) {
     float dt = (curr_tick - last_tick) / 1000.0f;
     last_tick = curr_tick;
 
-    velocity += imu_data.accel_z * dt; // Integrate acceleration to get velocity
+    velocity += (imu_data.accel_z - GRAVITY) * dt; // Integrate acceleration to get velocity
 
     if (velocity < 200.0f) {
         return HAL_OK;
