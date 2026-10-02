@@ -1,11 +1,12 @@
 /**
- * State Operations:
- * - Take the apogee_time from the state machine as a parameter, then check to see when two seconds has elapsed. Once it has, fire the backup apogee pyro charge. 
- * - ...
+ * @file App/States/Inc/descent.h
+ * @authors Jude Merritt
+ * @brief Descent state draft
  */
 
 #pragma once
 
 #include "state_machine.h"
 
+// Comment
 State update_descent(State_Context *context);
