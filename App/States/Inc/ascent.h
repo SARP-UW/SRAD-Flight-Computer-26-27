@@ -1,13 +1,18 @@
 /**
- * State Operations:
- * - Pull MCU LED high (so that it stops blinking)
- * - Collect IMU and barometer data and write it to external flash
- * - Detect apogee (implementation TBD)
- * - Fire apogee pyro channel at apogee.
+ * @file App/States/Inc/ascent.h
+ * @authors Jude Merritt
+ * @brief Ascent state draft
  */
 
 #pragma once
 
-#include "App/States/Inc/state_machine.h"
+#include "state_machine.h"
 
-HAL_StatusTypeDef update_ascent(State_Context *context);
+/**
+ * @brief Runs the ascent state operations, and returns either the ASCENT, or DESCENT
+ *        state based on the current conditions.
+ * 
+ * @param context pointer to the State_Context structure that holds the current state information.
+ * @return The updated state (ASCENT or DESCENT).
+ */
+State update_ascent(State_Context *context);
