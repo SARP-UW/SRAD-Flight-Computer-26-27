@@ -6,7 +6,13 @@
 
 #pragma once
 
-#include "stm32f4xx_hal.h"
 #include "state_machine.h"
 
+/**
+ * @brief Runs the ascent state operations, and returns either the ASCENT, or DESCENT
+ *        state based on the current conditions.
+ * 
+ * @param context pointer to the State_Context structure that holds the current state information.
+ * @return The updated state (ASCENT or DESCENT).
+ */
 State update_ascent(State_Context *context);

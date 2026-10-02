@@ -62,7 +62,7 @@ State update_ascent(State_Context *context) {
 
     // APOGEE!!
     if (descending_counter > 20) {
-        context->apogee_time = HAL_GetTick();
+        context->apogee_pyro_time = HAL_GetTick();
         pyro_fire(APOGEE);
 
         return DESCENT;
