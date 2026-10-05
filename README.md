@@ -68,6 +68,7 @@ Contribute to this repository by making pull requests. These requests will be ap
 |---|---|---|
 | **Project Lead** | Jude Merritt | ... |
 | **Hardware Member** | Andrew Winston | ... |
+| **Hardware Member** | Oliver Wang | ... |
 | **Software Member** | Michael Zheng | ... |
 | **Software Member** | *Name* | ... |
 
