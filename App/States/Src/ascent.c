@@ -10,6 +10,7 @@
  * - Some of these globals should be static. Keep in mind that pre_flight will also 
  *   use the imu. Maybe some things should be shared when pre_flight implementation is more defined.
  * - We'll fire backup apogee pyro in the descent state, after two seconds have elapsed since apogee was detected.
+ * - ascent.h documentation should probably be improved to better describe the state operations.
  */
 
 #include <stdbool.h>
