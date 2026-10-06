@@ -4,7 +4,7 @@
  * @brief MS561101BA03 Barometer driver
  */
 
- #pragma once
+#pragma once
 
 #include <stdint.h>
 #include "stm32f4xx_hal.h"

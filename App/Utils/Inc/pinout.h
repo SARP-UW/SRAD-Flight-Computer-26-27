@@ -72,5 +72,6 @@
 #define EXTERN_FLASH_MOSI_PIN  GPIO_PIN_15
 
 // PS1240P02BT (Piezo Buzzer)
+// If pin/port for this needs to be changed, make sure to update the PWM config in CubeMX
 #define BUZZER_PORT GPIOA
 #define BUZZER_PIN  GPIO_PIN_0

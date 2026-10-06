@@ -64,7 +64,7 @@ static const gpio_config_t gpio_configs[] = {
 
     // PS1240P02BT (Piezo Buzzer)
     //PORT      , PIN       , MODE               , PULL       , SPEED              , ALTERNATE
-    {BUZZER_PORT, BUZZER_PIN, GPIO_MODE_OUTPUT_PP, GPIO_NOPULL, GPIO_SPEED_FREQ_LOW, 0}
+    {BUZZER_PORT, BUZZER_PIN, GPIO_MODE_AF_PP, GPIO_NOPULL, GPIO_SPEED_FREQ_LOW, GPIO_AF1_TIM2}
 };
 
 void init_gpio(void) {

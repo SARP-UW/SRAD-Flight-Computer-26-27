@@ -6,6 +6,9 @@
 
 #pragma once
 
+#include <stdint.h>
+#include "stm32f4xx_hal.h"
+
 typedef enum {
 	LED_MCU,
 	LED_APOGEE,

@@ -16,9 +16,6 @@
  * @section Definitions and global variables
  **************************************************************************************************/
 
-#define MCU_LED_ON GPIO_PIN_SET
-#define MCU_LED_OFF GPIO_PIN_RESET
-
 static GPIO_TypeDef *led_port(led_t led) {
     switch (led) {
         case LED_MCU:
@@ -58,11 +55,11 @@ static uint16_t led_pin(led_t led) {
  **************************************************************************************************/
 
 void led_on(led_t led) {
-    HAL_GPIO_WritePin(led_port(led), led_pin(led), MCU_LED_ON);
+    HAL_GPIO_WritePin(led_port(led), led_pin(led), GPIO_PIN_SET);
 }
 
 void led_off(led_t led) {
-    HAL_GPIO_WritePin(led_port(led), led_pin(led), MCU_LED_OFF);
+    HAL_GPIO_WritePin(led_port(led), led_pin(led), GPIO_PIN_RESET);
 }
 
 void led_toggle(led_t led) {
