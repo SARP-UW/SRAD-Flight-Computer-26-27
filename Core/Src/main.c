@@ -94,9 +94,8 @@ int main(void)
   MX_SPI2_Init();
   MX_TIM2_Init();
   MX_USB_DEVICE_Init();
-  init_gpio();
-
   /* USER CODE BEGIN 2 */
+  init_gpio();
   State curr_state = PRE_FLIGHT;
   State_Context context = {0};
   /* USER CODE END 2 */
