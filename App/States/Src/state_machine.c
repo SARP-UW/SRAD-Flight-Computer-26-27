@@ -1,9 +1,9 @@
-#include "States/Inc/state_machine.h"
-#include "States/Inc/pre_flight.h"
-#include "States/Inc/ascent.h"
-#include "States/Inc/descent.h"
-#include "States/Inc/idle_descent.h"
-#include "States/Inc/post_flight.h"
+#include "state_machine.h"
+#include "pre_flight.h"
+#include "ascent.h"
+#include "descent.h"
+#include "idle_descent.h"
+#include "post_flight.h"
 
 State update_state(State next_state, State_Context *context) {
     switch (next_state) {

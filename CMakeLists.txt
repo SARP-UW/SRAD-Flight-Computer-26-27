@@ -35,15 +35,36 @@ enable_language(C ASM)
 add_executable(${CMAKE_PROJECT_NAME}
     App/Utils/Inc/estimate_altitude.h
     App/Utils/Src/estimate_altitude.c
+    App/Utils/Inc/pinout.h
+    App/Utils/Inc/init_gpio.h
+    App/Utils/Src/init_gpio.c
+    App/Utils/Inc/pyro.h
+    App/Utils/Src/pyro.c
     App/Sensors/Inc/ms5611.h
     App/Sensors/Src/ms5611.c
     App/Sensors/Inc/bmi088.h
     App/Sensors/Src/bmi088.c
     App/Devices/Inc/led.h
     App/Devices/Src/led.c
-    App/Utils/Inc/pinout.h
-    App/Utils/Inc/init_gpio.h
-    App/Utils/Src/init_gpio.c)
+    App/Devices/Inc/buzzer.h
+    App/Devices/Src/buzzer.c
+    App/Devices/Inc/extern_flash.h
+    App/Devices/Src/extern_flash.c
+    App/Devices/Inc/usb.h
+    App/Devices/Src/usb.c
+    App/States/Inc/pre_flight.h
+    App/States/Src/pre_flight.c
+    App/States/Inc/ascent.h
+    App/States/Src/ascent.c
+    App/States/Inc/descent.h
+    App/States/Src/descent.c
+    App/States/Inc/idle_descent.h
+    App/States/Src/idle_descent.c
+    App/States/Inc/post_flight.h
+    App/States/Src/post_flight.c
+    App/States/Inc/state_machine.h
+    App/States/Src/state_machine.c
+    App/States/Inc/states.h)
 
 # Add STM32CubeMX generated sources
 add_subdirectory(cmake/stm32cubemx)
@@ -65,6 +86,8 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/App/Devices/Inc
     ${CMAKE_CURRENT_SOURCE_DIR}/App/States/Inc
     ${CMAKE_CURRENT_SOURCE_DIR}/App/Utils/Inc
+    ${CMAKE_CURRENT_SOURCE_DIR}/App/Config
+    ${CMAKE_CURRENT_SOURCE_DIR}/Core/Inc
 )
 
 # Add project symbols (macros)

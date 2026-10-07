@@ -15,6 +15,7 @@
 #include <stdbool.h>
 #include "stm32f4xx_hal.h"
 #include "state_machine.h"
+#include "estimate_altitude.h"
 #include "pyro.h"
 #include "config.h"
 #include "descent.h"
@@ -26,7 +27,7 @@ State update_descent(State_Context *context) {
     if (!backup_apogee_fired) {
         uint32_t current_time = HAL_GetTick();
         if (current_time - context->apogee_pyro_time >= APOGEE_PYRO_BACKUP_DELAY_MS) {
-            pyro_fire(APOGEE_BACKUP);
+            fire_pyro(APOGEE_BACKUP);
             backup_apogee_fired = true;
         }
 
@@ -40,7 +41,7 @@ State update_descent(State_Context *context) {
 
     if (context->altitude <= MAIN_PYRO_BACKUP_ALTITUDE_M) {
         context->main_pyro_time = HAL_GetTick();
-        pyro_fire(MAIN);
+        fire_pyro(MAIN);
 
         return IDLE_DESCENT;
     }

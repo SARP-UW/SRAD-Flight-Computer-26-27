@@ -2,6 +2,7 @@
 
 #include <stdint.h>
 #include "states.h"
+#include "stm32f4xx_hal.h"
 
 /**
  * @brief Structure to hold the context of the current state:

@@ -9,6 +9,7 @@
  * - PS1240P02BT buzzer, with optimal input frequency of 4 kHz, and should have a 50% duty cycle
  * - Needs to be a non-blocking function, so TIM2 directly drives the buzzer pin
  * - In CubeMX, the output pin is PA0 (TIM2_CH1)
+ */
 
 #include "buzzer.h"
 #include "pinout.h"

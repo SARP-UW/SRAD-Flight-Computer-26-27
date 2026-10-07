@@ -11,6 +11,9 @@
  *   use the imu. Maybe some things should be shared when pre_flight implementation is more defined.
  * - We'll fire backup apogee pyro in the descent state, after two seconds have elapsed since apogee was detected.
  * - ascent.h documentation should probably be improved to better describe the state operations.
+ * - BIG PROBLEM: once the rocket is not vertical, the z acceleration will not be a good representation 
+ *   of the rocket's acceleration. This will cause the velocity to be inaccurate, and the apogee detection
+ *   to be inaccurate.
  */
 
 #include <stdbool.h>
@@ -64,7 +67,7 @@ State update_ascent(State_Context *context) {
     // APOGEE!!
     if (descending_counter > 20) {
         context->apogee_pyro_time = HAL_GetTick();
-        pyro_fire(APOGEE);
+        fire_pyro(APOGEE);
 
         return DESCENT;
     }

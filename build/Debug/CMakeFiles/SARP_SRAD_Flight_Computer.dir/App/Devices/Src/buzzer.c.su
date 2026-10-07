@@ -1,0 +1,3 @@
+/Users/jm/SARP_SRAD_FC/SRAD-Flight-Computer-26-27/App/Devices/Src/buzzer.c:30:6:buzzer_on	8	static
+/Users/jm/SARP_SRAD_FC/SRAD-Flight-Computer-26-27/App/Devices/Src/buzzer.c:34:6:buzzer_set_frequency	24	static
+/Users/jm/SARP_SRAD_FC/SRAD-Flight-Computer-26-27/App/Devices/Src/buzzer.c:41:6:buzzer_off	8	static
