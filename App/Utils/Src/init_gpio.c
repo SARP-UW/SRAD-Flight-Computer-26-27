@@ -21,7 +21,14 @@ typedef struct {
 static const gpio_config_t gpio_configs[] = {
     // LEDs
     //PORT                  , PIN                   , MODE                , PULL       , SPEED             , ALTERNATE
-    {MCU_LED_PORT           , MCU_LED_PIN           , GPIO_MODE_OUTPUT_PP, GPIO_NOPULL, GPIO_SPEED_FREQ_LOW, 0},
+    {LED_MCU_PORT           , LED_MCU_PIN           , GPIO_MODE_OUTPUT_PP, GPIO_NOPULL, GPIO_SPEED_FREQ_LOW, 0},
+    {LED_APOGEE_PORT        , LED_APOGEE_PIN        , GPIO_MODE_OUTPUT_PP, GPIO_NOPULL, GPIO_SPEED_FREQ_LOW, 0},
+    {LED_APOGEE_BACKUP_PORT , LED_APOGEE_BACKUP_PIN , GPIO_MODE_OUTPUT_PP, GPIO_NOPULL, GPIO_SPEED_FREQ_LOW, 0},
+    {LED_MAIN_PORT          , LED_MAIN_PIN          , GPIO_MODE_OUTPUT_PP, GPIO_NOPULL, GPIO_SPEED_FREQ_LOW, 0},
+    {LED_MAIN_BACKUP_PORT   , LED_MAIN_BACKUP_PIN   , GPIO_MODE_OUTPUT_PP, GPIO_NOPULL, GPIO_SPEED_FREQ_LOW, 0},
+    
+    // Pyro Channels
+    //PORT                  , PIN                   , MODE                , PULL       , SPEED             , AL
     {APOGEE_PYRO_PORT       , APOGEE_PYRO_PIN       , GPIO_MODE_OUTPUT_PP, GPIO_NOPULL, GPIO_SPEED_FREQ_LOW, 0},
     {APOGEE_BACKUP_PYRO_PORT, APOGEE_BACKUP_PYRO_PIN, GPIO_MODE_OUTPUT_PP, GPIO_NOPULL, GPIO_SPEED_FREQ_LOW, 0},
     {MAIN_PYRO_PORT         , MAIN_PYRO_PIN         , GPIO_MODE_OUTPUT_PP, GPIO_NOPULL, GPIO_SPEED_FREQ_LOW, 0},
@@ -57,7 +64,7 @@ static const gpio_config_t gpio_configs[] = {
 
     // PS1240P02BT (Piezo Buzzer)
     //PORT      , PIN       , MODE               , PULL       , SPEED              , ALTERNATE
-    {BUZZER_PORT, BUZZER_PIN, GPIO_MODE_OUTPUT_PP, GPIO_NOPULL, GPIO_SPEED_FREQ_LOW, 0}
+    {BUZZER_PORT, BUZZER_PIN, GPIO_MODE_AF_PP, GPIO_NOPULL, GPIO_SPEED_FREQ_LOW, GPIO_AF1_TIM2}
 };
 
 void init_gpio(void) {

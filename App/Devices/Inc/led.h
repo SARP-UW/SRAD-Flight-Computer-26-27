@@ -6,17 +6,28 @@
 
 #pragma once
 
-/**
- * @brief Turns the LED on
- */
-void led_on(void);
+#include <stdint.h>
+#include "stm32f4xx_hal.h"
+
+typedef enum {
+	LED_MCU,
+	LED_APOGEE,
+	LED_APOGEE_BACKUP,
+	LED_MAIN,
+	LED_MAIN_BACKUP
+} led_t;
 
 /**
- * @brief Turns the LED off
+ * @brief Turns the selected LED on
  */
-void led_off(void);
+void led_on(led_t led);
 
 /**
- * @brief Toggles the LED state
+ * @brief Turns the selected LED off
  */
-void led_toggle(void);
+void led_off(led_t led);
+
+/**
+ * @brief Toggles the selected LED state
+ */
+void led_toggle(led_t led);
