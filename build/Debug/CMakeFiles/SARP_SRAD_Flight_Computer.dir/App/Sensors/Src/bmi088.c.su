@@ -1,9 +1,0 @@
-/Users/jm/SARP_SRAD_FC/SRAD-Flight-Computer-26-27/App/Sensors/Src/bmi088.c:78:26:send_command	24	static
-/Users/jm/SARP_SRAD_FC/SRAD-Flight-Computer-26-27/App/Sensors/Src/bmi088.c:105:26:write_reg	32	static
-/Users/jm/SARP_SRAD_FC/SRAD-Flight-Computer-26-27/App/Sensors/Src/bmi088.c:140:26:read_reg	48	static
-/Users/jm/SARP_SRAD_FC/SRAD-Flight-Computer-26-27/App/Sensors/Src/bmi088.c:185:14:convert_accel_data_ms2	16	static
-/Users/jm/SARP_SRAD_FC/SRAD-Flight-Computer-26-27/App/Sensors/Src/bmi088.c:194:14:convert_gyro_data_rads	16	static
-/Users/jm/SARP_SRAD_FC/SRAD-Flight-Computer-26-27/App/Sensors/Src/bmi088.c:203:26:update_bmi088_uncalibrated	48	static
-/Users/jm/SARP_SRAD_FC/SRAD-Flight-Computer-26-27/App/Sensors/Src/bmi088.c:248:20:init_bmi088	24	static
-/Users/jm/SARP_SRAD_FC/SRAD-Flight-Computer-26-27/App/Sensors/Src/bmi088.c:324:19:calibrate_accel_offset	32	static
-/Users/jm/SARP_SRAD_FC/SRAD-Flight-Computer-26-27/App/Sensors/Src/bmi088.c:345:19:update_bmi088	24	static

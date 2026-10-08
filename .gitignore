@@ -1,0 +1,22 @@
+/build/
+/cmake-build-*/
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+*.su
+*.o
+*.d
+
+# STM32CubeMX and STM32CubeIDE local state
+/mx.scratch/
+/.settings/
+*.launch
+
+# Editor & language-server configurations
+/.vscode/
+/.clangd
+
+# MacOS metadata
+.DS_Store
