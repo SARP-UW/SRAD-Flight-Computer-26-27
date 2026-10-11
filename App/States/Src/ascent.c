@@ -14,6 +14,7 @@
  * - BIG PROBLEM: once the rocket is not vertical, the z acceleration will not be a good representation 
  *   of the rocket's acceleration. This will cause the velocity to be inaccurate, and the apogee detection
  *   to be inaccurate.
+ * - Write data to flash memory
  */
 
 #include <stdbool.h>

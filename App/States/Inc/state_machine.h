@@ -9,12 +9,14 @@
  *        - Apogee pyro time (time when apogee pyro was fired)
  *        - Main pyro time   (time when main pyro was fired)
  *        - Altitude         (current altitude)
+ *        - Post flight start time (time when post flight state was entered)
  *        - Status           (current status: HAL_OK, HAL_ERROR, etc.)
  */
 typedef struct {
     float altitude;
     uint32_t apogee_pyro_time;
     uint32_t main_pyro_time;
+    uint32_t post_flight_start_time; // Time when the rocket is grounded
     HAL_StatusTypeDef status;
 } State_Context;
 
