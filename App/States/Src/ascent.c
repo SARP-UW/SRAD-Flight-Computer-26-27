@@ -14,7 +14,7 @@
 
 #include <stdbool.h>
 #include <stdint.h>
-#include "baro_estimate_altitude.h"
+#include "kalman_filter_estimate_altitude.h"
 #include "stm32f4xx_hal.h"
 #include "bmi088.h"
 #include "pyro.h"
@@ -24,7 +24,7 @@ uint32_t descending_counter = 0; // Counter to track how many consecutive times 
 float prev_altitude = 0; // Variable to hold the previous altitude for comparison
 
 State update_ascent(State_Context *context) {
-    context->status = baro_estimate_altitude(&context->altitude);
+    context->status = kalman_filter_estimate_altitude(&context->altitude);
     if (context->status != HAL_OK) {
         // Do something
     }
