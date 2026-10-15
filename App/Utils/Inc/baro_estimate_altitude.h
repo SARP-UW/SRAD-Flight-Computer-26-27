@@ -16,7 +16,7 @@
  * 
  * @return HAL_StatusTypeDef HAL_OK if the configuration was successful, or an error code otherwise.
  */
-HAL_StatusTypeDef configure_ground_pressure(void);
+HAL_StatusTypeDef baro_configure_ground_pressure(void);
 
 /**
  * @brief Estimates the altitude based on the current barometer readings and the configured ground reference.
@@ -24,4 +24,4 @@ HAL_StatusTypeDef configure_ground_pressure(void);
  * @param altitude pointer to a float variable to store the estimated altitude in meters.
  * @return HAL_StatusTypeDef HAL_OK if the estimation was successful, or an error code otherwise.
  */
-HAL_StatusTypeDef estimate_altitude(float *altitude);
+HAL_StatusTypeDef baro_estimate_altitude(float *altitude);

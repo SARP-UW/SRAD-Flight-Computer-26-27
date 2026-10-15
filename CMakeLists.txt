@@ -33,8 +33,8 @@ enable_language(C ASM)
 
 # Create an executable object type
 add_executable(${CMAKE_PROJECT_NAME}
-    App/Utils/Inc/estimate_altitude.h
-    App/Utils/Src/estimate_altitude.c
+    App/Utils/Inc/baro_estimate_altitude.h
+    App/Utils/Src/baro_estimate_altitude.c
     App/Utils/Inc/pinout.h
     App/Utils/Inc/init_gpio.h
     App/Utils/Src/init_gpio.c
@@ -64,7 +64,8 @@ add_executable(${CMAKE_PROJECT_NAME}
     App/States/Src/post_flight.c
     App/States/Inc/state_machine.h
     App/States/Src/state_machine.c
-    App/States/Inc/states.h)
+    App/States/Inc/states.h
+    App/Utils/Src/kalman_filter_estimate_altitude.c)
 
 # Add STM32CubeMX generated sources
 add_subdirectory(cmake/stm32cubemx)

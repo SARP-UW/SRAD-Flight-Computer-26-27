@@ -14,9 +14,10 @@
  */
 
 #include <stdbool.h>
+#include <stdint.h>
 #include "stm32f4xx_hal.h"
 #include "state_machine.h"
-#include "estimate_altitude.h"
+#include "baro_estimate_altitude.h"
 #include "pyro.h"
 #include "config.h"
 #include "descent.h"
@@ -35,7 +36,7 @@ State update_descent(State_Context *context) {
         return DESCENT;
     }
 
-    context->status = estimate_altitude(&context->altitude);
+    context->status = baro_estimate_altitude(&context->altitude);
     if (context->status != HAL_OK) {
         // Do something
     }

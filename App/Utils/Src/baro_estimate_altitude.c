@@ -12,7 +12,7 @@
  * - Maybe replace the magic numbers in the altitude calculation with constants that are defined near the top of the file.
  */
 
-#include "estimate_altitude.h"
+#include "baro_estimate_altitude.h"
 #include "ms5611.h"
 #include <stdint.h>
 #include <math.h>
@@ -23,7 +23,7 @@ static float ground_temperature   = 288.15f;  // Default ground temperature in K
 static uint32_t config_data_count = 0;        // Counter for the number of configuration data points
 static ms5611_data_t ms5611_data;             // Global variable to hold the barometer data
 
-HAL_StatusTypeDef configure_ground_reference(void) {
+HAL_StatusTypeDef baro_configure_ground_pressure(void) {
     HAL_StatusTypeDef status = update_ms5611(&ms5611_data);
     if (status != HAL_OK) {
         return status;
@@ -40,7 +40,7 @@ HAL_StatusTypeDef configure_ground_reference(void) {
     return HAL_OK;
 }
 
-HAL_StatusTypeDef estimate_altitude(float *altitude) {
+HAL_StatusTypeDef baro_estimate_altitude(float *altitude) {
     HAL_StatusTypeDef status = update_ms5611(&ms5611_data);
     if (status != HAL_OK) {
         return status;
