@@ -4,12 +4,16 @@
  * @brief Idle descent state draft
  */
 
-/** Notes
- * - This state has two functions:
+/** State Operations:
  * 1) Fire main backup charge
  *   - Time-based based using the param in config.h, based on when the main charge fires in descent.c
  * 2) Determine when rocket has landed then switch to post_flight
  *   - Could use barometer or accel
+ */
+
+/** Notes
+ * - Likely NEEDS secondary check for landing detection,
+ * proably will analyze acceleration data
  */
 
 #include <stdbool.h>
@@ -31,6 +35,11 @@ State update_idle_descent(State_Context *context) {
             main_backup_fired = true;
         }
     }
+    
+    // Check if the rocket has landed, ref: 
+    // https://docs.google.com/document/d/14AMPyc_z-sSQZw2hGkxxA7nLwaDc4ogyx1ahcZhJtiA/edit?tab=t.0
+    // Check for constant vertical velocity from baro to determine landing
+    
 
     return IDLE_DESCENT;
 }
