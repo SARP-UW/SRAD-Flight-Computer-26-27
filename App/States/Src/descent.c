@@ -10,12 +10,14 @@
  * - We'll fire backup main pyro in the idle-descent state (I know, the name seems somewhat counterintuitive now),
  *   after two seconds have elapsed since an altitude of XXXX meters (currently 500m) was detected.
  * - descent.h documentation should probably be improved to better describe the state operations.
+ * - Write data to flash memory
  */
 
 #include <stdbool.h>
+#include <stdint.h>
 #include "stm32f4xx_hal.h"
 #include "state_machine.h"
-#include "estimate_altitude.h"
+#include "baro_estimate_altitude.h"
 #include "pyro.h"
 #include "config.h"
 #include "descent.h"
@@ -34,7 +36,7 @@ State update_descent(State_Context *context) {
         return DESCENT;
     }
 
-    context->status = estimate_altitude(&context->altitude);
+    context->status = baro_estimate_altitude(&context->altitude);
     if (context->status != HAL_OK) {
         // Do something
     }

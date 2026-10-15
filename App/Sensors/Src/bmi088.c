@@ -7,12 +7,6 @@
  * https://jlcpcb.com/partdetail/BoschSensortec-BMI088/C194919
  */
 
-/**
- * Notes:
- * - Calibrate_accel_offset currently only calibrates the accelerometer offset in the z direction.
- * - Calibration accounts for gravity and sensor bias. The accelerometer offset is subtracted from the z acceleration.
- */
-
 #include "bmi088.h"
 #include "spi.h"
 #include "gpio.h"
@@ -65,10 +59,6 @@ typedef enum {
 // SPI
 extern SPI_HandleTypeDef hspi1;
 static const uint8_t timeout = 10; // 10ms timeout for SPI transfers
-
-// Accelerometer offset
-static float accel_offset = 9.80665f; // Offset for the accelerometer readings. Accounts for gravity and sensor bias
-                                      // once calibrated, but only gravity by default
 
 /**************************************************************************************************
  * @section Private function definitions
@@ -199,48 +189,6 @@ static float convert_gyro_data_rads(int16_t raw_data) {
     return ((float)raw_data / 16.384f) * (3.14159265f / 180.0f);
 }
 
-// Updates the bmi088_data_t structure with uncalibrated linear acceleration and angular velocity vaules
-static HAL_StatusTypeDef update_bmi088_uncalibrated(bmi088_data_t *data) {
-    uint8_t accel_data[6];
-    uint8_t gyro_data[6];
-
-    HAL_StatusTypeDef status;
-
-    // Read accelerometer X, Y, Z
-    status = read_reg(ACCEL, ACC_XYZ, accel_data, 6);
-    if (status != HAL_OK) {
-        return status;
-    }
-
-    // Read gyroscope X, Y, Z
-    status = read_reg(GYRO, GYRO_XYZ, gyro_data, 6);
-    if (status != HAL_OK) {
-        return status;
-    }
-
-    // Convert accelerometer data
-    // ref: Section 5.3.4 in the datasheet
-    int16_t accel_x = (int16_t)((accel_data[1] << 8) | accel_data[0]);
-    int16_t accel_y = (int16_t)((accel_data[3] << 8) | accel_data[2]);
-    int16_t accel_z = (int16_t)((accel_data[5] << 8) | accel_data[4]);
-
-    data->accel_x = convert_accel_data_ms2(accel_x);
-    data->accel_y = convert_accel_data_ms2(accel_y);
-    data->accel_z = convert_accel_data_ms2(accel_z);
-
-    // Convert gyroscope data
-    // ref: Section 5.5.2 in the datasheet
-    int16_t gyro_x = (int16_t)((gyro_data[1] << 8) | gyro_data[0]);
-    int16_t gyro_y = (int16_t)((gyro_data[3] << 8) | gyro_data[2]);
-    int16_t gyro_z = (int16_t)((gyro_data[5] << 8) | gyro_data[4]);
-
-    data->gyro_x = convert_gyro_data_rads(gyro_x);
-    data->gyro_y = convert_gyro_data_rads(gyro_y);
-    data->gyro_z = convert_gyro_data_rads(gyro_z);
-
-    return HAL_OK;
-}
-
 /**************************************************************************************************
  * @section Public function definitions
  **************************************************************************************************/
@@ -321,34 +269,43 @@ static HAL_StatusTypeDef update_bmi088_uncalibrated(bmi088_data_t *data) {
     return HAL_OK;
 }
 
-HAL_StatusTypeDef calibrate_accel_offset(bmi088_data_t *data) {
+HAL_StatusTypeDef update_bmi088(bmi088_data_t *data) {
+    uint8_t accel_data[6];
+    uint8_t gyro_data[6];
+
     HAL_StatusTypeDef status;
 
-    float sum = 0.0f;
-    const int N = 200;
-
-    for (int i = 0; i < N; i++) {
-        status = update_bmi088_uncalibrated(data);
-        if (status != HAL_OK) {
-            return status;
-        }
-
-        sum += data->accel_z;
-        HAL_Delay(2);
-    }
-
-    accel_offset = sum / N;
-    
-    return HAL_OK;
-}
-
-HAL_StatusTypeDef update_bmi088(bmi088_data_t *data) {
-    HAL_StatusTypeDef status = update_bmi088_uncalibrated(data);
+    // Read accelerometer X, Y, Z
+    status = read_reg(ACCEL, ACC_XYZ, accel_data, 6);
     if (status != HAL_OK) {
         return status;
     }
 
-    data->accel_z -= accel_offset;
+    // Read gyroscope X, Y, Z
+    status = read_reg(GYRO, GYRO_XYZ, gyro_data, 6);
+    if (status != HAL_OK) {
+        return status;
+    }
+
+    // Convert accelerometer data
+    // ref: Section 5.3.4 in the datasheet
+    int16_t accel_x = (int16_t)((accel_data[1] << 8) | accel_data[0]);
+    int16_t accel_y = (int16_t)((accel_data[3] << 8) | accel_data[2]);
+    int16_t accel_z = (int16_t)((accel_data[5] << 8) | accel_data[4]);
+
+    data->accel_x = convert_accel_data_ms2(accel_x);
+    data->accel_y = convert_accel_data_ms2(accel_y);
+    data->accel_z = convert_accel_data_ms2(accel_z);
+
+    // Convert gyroscope data
+    // ref: Section 5.5.2 in the datasheet
+    int16_t gyro_x = (int16_t)((gyro_data[1] << 8) | gyro_data[0]);
+    int16_t gyro_y = (int16_t)((gyro_data[3] << 8) | gyro_data[2]);
+    int16_t gyro_z = (int16_t)((gyro_data[5] << 8) | gyro_data[4]);
+
+    data->gyro_x = convert_gyro_data_rads(gyro_x);
+    data->gyro_y = convert_gyro_data_rads(gyro_y);
+    data->gyro_z = convert_gyro_data_rads(gyro_z);
 
     return HAL_OK;
 }
