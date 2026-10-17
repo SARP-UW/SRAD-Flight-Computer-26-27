@@ -4,7 +4,17 @@
  * @brief Post-flight state draft
  */
 
+/**
+ * Notes:
+ * JUDE:
+ * - In the future, let's implement a buzzer beep method that takes a frequency and a duration as parameters.
+ *   the function would be contained in buzzer.c, and would be called in place of the buzzer_on() function. 
+ *   The would save energy by allowing us to turn the buzzer off after a set duration, instead of leaving
+ *   it on indefinitely.
+ */
+
 #include <stdbool.h>
+#include <stdint.h>
 #include "stm32f4xx_hal.h"
 #include "config.h"
 #include "post_flight.h"
@@ -32,15 +42,6 @@ State update_post_flight(State_Context *context) {
        if (curr_time - context->post_flight_start_time >= POST_FLIGHT_LOGGING_DURATION_MS){
         still_collecting_data = false;
        }
-    }
-
-    if(!buzzer_stopped){
-        uint32_t curr_time = HAL_GetTick();
-
-        if (curr_time - context->post_flight_start_time >= 2000){
-            buzzer_off();
-            buzzer_stopped = true;
-           }
     }
 
     return POST_FLIGHT;
