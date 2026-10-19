@@ -13,11 +13,21 @@
 
 /** Notes
  * - Likely NEEDS secondary check for landing detection,
- * proably will analyze acceleration data
+ *   proably will analyze acceleration data
+ * JUDE: 
+ * - I don't love that the under_threshold_timer resets to zero if
+ *   a single measurment is above the threshold. I worry that noise, or a strong gust
+ *   of wind could prevent the state machine from switching to the post_flight state. 
+ * - I also realize that due to the speed of the processor we may be working with 
+ *   altitude values that are incredibly close to one another, and very small differences 
+ *   in time. Maybe this is not inherently bad, but it is something to keep in mind.
+ * - Maybe we could get away with using just one flag instead of two?
+ * - This state makes me think that an entry function for each state may be useful. 
  */
 
 #include <math.h>
 #include <stdbool.h>
+#include <stdint.h>
 
 #include "stm32f4xx_hal.h"
 #include "state_machine.h"
