@@ -4,6 +4,14 @@
  * @brief Piezo buzzer driver
  */
 
+/**
+ * Notes:
+ * - The buzzer is loudest at 4800 Hz, quietest at 3100 Hz
+ * - Try to keep our output range within 4000 Hz to 5000 Hz if possible so we can hear it clearest
+ * - The jump from 4000 Hz to 5000 Hz is roughly from a C note to E note
+ * source: page 4, https://product.tdk.com/en/system/files/dam/doc/product/sw_piezo/sw_piezo/piezo-buzzer/catalog/piezoelectronic_buzzer_ps_en.pdf
+ */
+
 #pragma once
 
 #include <stdint.h>
