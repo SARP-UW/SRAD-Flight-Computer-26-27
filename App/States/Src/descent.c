@@ -41,7 +41,7 @@ State update_descent(State_Context *context) {
         // Do something
     }
 
-    if (context->altitude <= MAIN_PYRO_BACKUP_ALTITUDE_M) {
+    if (context->altitude <= MAIN_PYRO_ALTITUDE_M) {
         context->main_pyro_time = HAL_GetTick();
         fire_pyro(MAIN);
 

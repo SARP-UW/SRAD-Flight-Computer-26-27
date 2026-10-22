@@ -7,5 +7,6 @@ typedef enum {
     ASCENT,
     DESCENT,
     IDLE_DESCENT,
-    POST_FLIGHT
+    POST_FLIGHT,
+    SAFE
 } State;
