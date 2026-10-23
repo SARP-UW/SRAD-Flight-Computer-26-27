@@ -8,12 +8,12 @@
  * 1) Fire main backup charge
  *   - Fires x seconds after the main charge fires in descent.c
  * 2) Determine when rocket has landed, then switch to post_flight
- *   - Checks for low vertical speed and [backup condition]
+ *   - Checks for 1) low vertical speed and 2) [backup condition]
  */
 
 /** Notes
  * - Likely NEEDS secondary check for landing detection,
- *   proably will analyze acceleration data
+ *   probably will analyze acceleration data
  * JUDE: 
  * - I don't love that the under_threshold_timer resets to zero if
  *   a single measurment is above the threshold. I worry that noise, or a strong gust
