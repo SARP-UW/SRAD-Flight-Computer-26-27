@@ -18,19 +18,15 @@
 #include "stm32f4xx_hal.h"
 
 /**
- * @brief Initializes the buzzer PWM output.
+ * @brief Sets the buzzer tone frequency in Hz. For predictable behalvior, you must
+ *        call buzzer_set_frequency_hz() before calling buzzer_on().
  */
-// void init_buzzer(void);
+void buzzer_set_frequency_hz(uint32_t frequency_hz);
 
 /**
  * @brief Plays the buzzer tone indefinitely.
  */
 void buzzer_on(void);
-
-/**
- * @brief Sets the buzzer tone frequency in Hz.
- */
-void buzzer_set_frequency(uint32_t frequency_hz);
 
 /**
  * @brief Stops the buzzer tone.

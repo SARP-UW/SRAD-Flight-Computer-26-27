@@ -26,6 +26,7 @@ bool still_collecting_data = true;
 bool post_flight_initialized = false;
 
 State update_post_flight(State_Context *context) {
+    context->prev_state = POST_FLIGHT;
 
     if(!post_flight_initialized){
         uint32_t freq = 4000; 

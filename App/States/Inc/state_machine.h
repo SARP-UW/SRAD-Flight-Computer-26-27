@@ -13,11 +13,13 @@
  *        - Status           (current status: HAL_OK, HAL_ERROR, etc.)
  */
 typedef struct {
+    uint32_t flight_start_time;
     float altitude;
     uint32_t apogee_pyro_time;
     uint32_t main_pyro_time;
     uint32_t post_flight_start_time; // Time when the rocket is grounded
     HAL_StatusTypeDef status;
+    State prev_state; // Previous state before the current state
 } State_Context;
 
 /**

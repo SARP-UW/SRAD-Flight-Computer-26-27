@@ -27,15 +27,15 @@
  * @section Public function definitions
  **************************************************************************************************/
 
-void buzzer_on(void) {
-    HAL_TIM_PWM_Start(&BUZZER_TIMER, BUZZER_CHANNEL);
-}
-
-void buzzer_set_frequency(uint32_t frequency_hz) {
+void buzzer_set_frequency_hz(uint32_t frequency_hz) {
     uint32_t period = TIMER_CLOCK_HZ / frequency_hz;
 
     __HAL_TIM_SET_AUTORELOAD(&BUZZER_TIMER, period - 1); // Sets ARR register to count to specified number of ticks (controls frequency)
     __HAL_TIM_SET_COMPARE(&BUZZER_TIMER, BUZZER_CHANNEL, period / 2); // Target 50% duty cycle
+}
+
+ void buzzer_on(void) {
+    HAL_TIM_PWM_Start(&BUZZER_TIMER, BUZZER_CHANNEL);
 }
 
 void buzzer_off(void) {
