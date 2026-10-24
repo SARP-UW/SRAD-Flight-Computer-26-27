@@ -10,6 +10,8 @@
  * - We'll fire backup apogee pyro in the descent state, after two seconds have elapsed since apogee was detected.
  * - ascent.h documentation should probably be improved to better describe the state operations.
  * - Write data to flash memory
+ * - Right now, any error prompts the state machine to move to the safe state. We may want 
+ *   to implement different approaches for different errors. 
  */
 
 #include <stdbool.h>
@@ -24,9 +26,11 @@ uint32_t descending_counter = 0; // Counter to track how many consecutive times 
 float prev_altitude = 0; // Variable to hold the previous altitude for comparison
 
 State update_ascent(State_Context *context) {
+    context->prev_state = ASCENT;
+
     context->status = kalman_filter_estimate_altitude(&context->altitude);
     if (context->status != HAL_OK) {
-        // Do something
+        return SAFE;
     }
 
     if (context->altitude < prev_altitude) {
