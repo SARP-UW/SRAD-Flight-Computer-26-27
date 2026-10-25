@@ -6,11 +6,13 @@
 
 /**
  * @brief Structure to hold the context of the current state:
+ *        - Flight start time (time when the rocket was launched)
+ *        - Altitude (current altitude)
  *        - Apogee pyro time (time when apogee pyro was fired)
  *        - Main pyro time   (time when main pyro was fired)
- *        - Altitude         (current altitude)
  *        - Post flight start time (time when post flight state was entered)
  *        - Status           (current status: HAL_OK, HAL_ERROR, etc.)
+ *        - Previous state    (the state before the current state)
  */
 typedef struct {
     uint32_t flight_start_time;
