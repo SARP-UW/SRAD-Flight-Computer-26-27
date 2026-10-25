@@ -1,4 +1,4 @@
-//Comment
+//This could probably just be included in state_machine.h.
 
 #pragma once
 

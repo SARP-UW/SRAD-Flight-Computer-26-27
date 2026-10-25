@@ -2,6 +2,8 @@
 
 #pragma once
 
+#include <stdbool.h>
+
 typedef enum {
     APOGEE,
     APOGEE_BACKUP,
@@ -11,6 +13,6 @@ typedef enum {
 
 void init_pyro();
 
-void check_continuity(PyroChannel channel);
+bool check_continuity(PyroChannel channel);
 
 void fire_pyro(PyroChannel channel);

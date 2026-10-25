@@ -1,3 +1,9 @@
+/**
+ * @file App/States/Src/state_machine.c
+ * @authors Jude Merritt
+ * @brief State machine interface
+ */
+
 #pragma once
 
 #include <stdint.h>
