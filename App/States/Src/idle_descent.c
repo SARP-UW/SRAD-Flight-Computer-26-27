@@ -13,7 +13,7 @@
 
 /** Notes
  * - Likely NEEDS secondary check for landing detection,
- *   probably will analyze acceleration data
+ *     probably will analyze acceleration data
  * JUDE: 
  * - I don't love that the under_threshold_timer resets to zero if
  *   a single measurment is above the threshold. I worry that noise, or a strong gust
@@ -43,6 +43,8 @@ static uint32_t prev_altitude_time = 0;  // Timestamp of previous altitude readi
 static float under_threshold_timer = 0;  // How long the vertical speed has continuously under set threshold, ms
 
 State update_idle_descent(State_Context *context) {
+    context->prev_state = IDLE_DESCENT;
+    
     // Fire main backup pyro after the specified delay
     if (!main_backup_fired) {
         uint32_t current_time = HAL_GetTick();
@@ -58,7 +60,7 @@ State update_idle_descent(State_Context *context) {
     // Calculates vertical velocity
     context->status = baro_estimate_altitude(&context->altitude);
     if (context->status != HAL_OK) {
-        // Do something / error handling
+        return SAFE;
     }
 
     if(!landing_detection_started) {

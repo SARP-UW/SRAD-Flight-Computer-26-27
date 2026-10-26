@@ -11,6 +11,7 @@
  *   the function would be contained in buzzer.c, and would be called in place of the buzzer_on() function. 
  *   The would save energy by allowing us to turn the buzzer off after a set duration, instead of leaving
  *   it on indefinitely.
+ * - Save data to flash memory
  */
 
 #include <stdbool.h>
@@ -26,6 +27,7 @@ bool still_collecting_data = true;
 bool post_flight_initialized = false;
 
 State update_post_flight(State_Context *context) {
+    context->prev_state = POST_FLIGHT;
 
     if(!post_flight_initialized){
         uint32_t freq = 4000; 

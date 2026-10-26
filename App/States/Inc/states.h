@@ -1,4 +1,4 @@
-//Comment
+//This could probably just be included in state_machine.h.
 
 #pragma once
 
@@ -7,5 +7,6 @@ typedef enum {
     ASCENT,
     DESCENT,
     IDLE_DESCENT,
-    POST_FLIGHT
+    POST_FLIGHT,
+    SAFE
 } State;

@@ -11,6 +11,8 @@
  *   after two seconds have elapsed since an altitude of XXXX meters (currently 500m) was detected.
  * - descent.h documentation should probably be improved to better describe the state operations.
  * - Write data to flash memory
+ * - Right now, any error prompts the state machine to move to the safe state. We may want 
+ *   to implement different approaches for different errors. 
  */
 
 #include <stdbool.h>
@@ -25,7 +27,8 @@
 static bool backup_apogee_fired = false; // Flag to track if the backup apogee pyro has been fired
 
 State update_descent(State_Context *context) {
-    // What does this do
+    context->prev_state = DESCENT;
+
     if (!backup_apogee_fired) {
         uint32_t current_time = HAL_GetTick();
         if (current_time - context->apogee_pyro_time >= APOGEE_PYRO_BACKUP_DELAY_MS) {
@@ -38,10 +41,10 @@ State update_descent(State_Context *context) {
 
     context->status = baro_estimate_altitude(&context->altitude);
     if (context->status != HAL_OK) {
-        // Do something
+        return SAFE;
     }
 
-    if (context->altitude <= MAIN_PYRO_BACKUP_ALTITUDE_M) {
+    if (context->altitude <= MAIN_PYRO_ALTITUDE_M) {
         context->main_pyro_time = HAL_GetTick();
         fire_pyro(MAIN);
 

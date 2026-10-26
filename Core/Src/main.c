@@ -98,6 +98,7 @@ int main(void)
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
   init_gpio();
+  
   State curr_state = PRE_FLIGHT;
   State_Context context = {0};
   /* USER CODE END 2 */
