@@ -79,8 +79,8 @@ State update_pre_flight(State_Context *context) {
         }
 
 
-        // ascent state if the altitude is greater than 10 
-        if(context -> altitude >= 10){  
+        // ascent state if the altitude is greater than 10 meters and the z acceleration is greater than 2.5 m/s^2
+        if(context -> altitude >= 10 && imu_data.accel_z >= 2.5){  
             led_off(LED_MCU); 
             return ASCENT;
         }   
