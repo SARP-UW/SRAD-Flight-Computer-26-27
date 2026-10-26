@@ -10,8 +10,19 @@
  */
 
 #include "low_pass_filter.h"
-#include <math.h>
 
-float low_pass_filter(float input, float prev_output, float alpha) {
-	return alpha * input + (1.0f - alpha) * prev_output;
+typedef struct {
+	float alpha;
+	float prev_output;
+} low_pass_filter_t;
+
+void low_pass_filter_init(low_pass_filter_t *filter, float alpha, float initial_value) {
+	filter->alpha = alpha;
+	filter->prev_output = initial_value;
+}
+
+float low_pass_filter_update(low_pass_filter_t *filter, float input) {
+	float curr_output = filter->alpha * input + (1.0f - filter->alpha) * filter->prev_output;
+	filter->prev_output = curr_output;
+	return curr_output;
 }
