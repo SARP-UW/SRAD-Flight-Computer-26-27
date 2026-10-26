@@ -8,8 +8,7 @@
 
  /*
  NOTES:
- - Currently, the check to move into ascent state checks for altitude
-    - We could add a check for acceleration, but would make testing more complicated
+ - Currently, the check to move into ascent state checks for altitude and acceleration
  - We should also eventually add USB compatibility once we have the device drivers
  - Error handling updated to implement safe state
     - can use bluetooth to check which sensor is failing to help debug
@@ -32,10 +31,10 @@ bool preflight_init = false;
 
 void toggle_continuity_leds(PyroChannel channel, GPIO_TypeDef* led_port, uint16_t led_pin, led_t led){
     if (check_continuity(channel)){
-        if (HAL_GPIO_ReadPin(led_port, led_pin) != GPIO_PIN_SET){ //check if led is already on
+        if (HAL_GPIO_ReadPin(led_port, led_pin) != GPIO_PIN_SET){ 
             led_on(led); 
         }
-    } else if (HAL_GPIO_ReadPin(led_port, led_pin) != GPIO_PIN_RESET){ // check if led is off
+    } else if (HAL_GPIO_ReadPin(led_port, led_pin) != GPIO_PIN_RESET){ 
         led_off(led);
     }
 }
@@ -45,15 +44,17 @@ State update_pre_flight(State_Context *context) {
     if (!preflight_init){
 
         HAL_StatusTypeDef imu_init_status = init_bmi088();
+        HAL_StatusTypeDef imu_calibrate_status = calibrate_accel_offset(&imu_data);  
         HAL_StatusTypeDef baro_init_status = init_ms5611(OSR_4096);
 
-        if (imu_init_status != HAL_OK || baro_init_status != HAL_OK){
+        if (imu_init_status != HAL_OK || imu_calibrate_status != HAL_OK || baro_init_status != HAL_OK){
             return SAFE;
         } 
-        
+        preflight_init = true;
+
         led_on(LED_MCU);  
         baro_configure_ground_pressure();
-        preflight_init = true;
+        
         
     }
 
@@ -79,8 +80,8 @@ State update_pre_flight(State_Context *context) {
         }
 
 
-        // ascent state if the altitude is greater than 10 
-        if(context -> altitude >= 10){  
+        // Moves to ascent state if  altitude is greater than 10 and acceleration is greater than 2.5 gs
+        if(context -> altitude >= 10 && imu_data.accel_z >= 24.5){  
             led_off(LED_MCU); 
             return ASCENT;
         }   
