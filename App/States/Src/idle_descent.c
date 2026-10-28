@@ -40,7 +40,7 @@ static bool main_backup_fired = false;  // Flag to track if the main backup pyro
 static bool landing_detection_started = false;  // Flag to track if landing detection has started
 static float prev_altitude = 0;  // Variable to hold the previous altitude for comparison, 
 static uint32_t prev_altitude_time = 0;  // Timestamp of previous altitude reading, ms
-static float under_threshold_timer = 0;  // How long the vertical speed has continuously under set threshold, ms
+static uint32_t under_threshold_timer = 0;  // How long the vertical speed has continuously under set threshold, ms
 
 State update_idle_descent(State_Context *context) {
     context->prev_state = IDLE_DESCENT;
@@ -70,17 +70,21 @@ State update_idle_descent(State_Context *context) {
         return IDLE_DESCENT;
     } // Gets initial value for prev_altitude and prev_altitude_time
 
-    float current_time = HAL_GetTick();
-    float time_interval = (current_time - prev_altitude_time); // ms
-    float vertical_speed = fabsf((context->altitude - prev_altitude) / (time_interval / 1000.0f)); // positive m/s
+    uint32_t current_time = HAL_GetTick();
+    uint32_t time_interval = (current_time - prev_altitude_time); // ms
+
+    if (time_interval >= 20) {
+        float vertical_speed = fabsf((context->altitude - prev_altitude) / (time_interval / 1000.0f)); // positive m/s
+        
+        if (vertical_speed < LANDING_DETECTION_MAX_VELOCITY) {
+            under_threshold_timer += time_interval;
+        } else {
+            under_threshold_timer = 0; // Reset timer if vertical speed exceeds threshold
+        }
+    }
+
     prev_altitude = context->altitude;
     prev_altitude_time = current_time; // Update previous altitude time for next iteration
-
-    if (vertical_speed < LANDING_DETECTION_MAX_VELOCITY) {
-        under_threshold_timer += time_interval;
-    } else {
-        under_threshold_timer = 0; // Reset timer if vertical speed exceeds threshold
-    }
 
     if (under_threshold_timer >= LANDING_DETECTION_INTERVAL_MS) {
         // TEMP, this needs secondary check for landing detection
