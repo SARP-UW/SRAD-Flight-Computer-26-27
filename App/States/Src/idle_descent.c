@@ -1,5 +1,5 @@
 /**
- * @file App/States/Inc/idle_descent.c
+ * @file App/States/Src/idle_descent.c
  * @authors Michael Zheng
  * @brief Idle descent state draft
  */
@@ -31,16 +31,20 @@
 
 #include "stm32f4xx_hal.h"
 #include "state_machine.h"
-#include "baro_estimate_altitude.h"
-#include "pyro.h"
 #include "config.h"
 #include "idle_descent.h"
 
+#include "baro_estimate_altitude.h"
+#include "pyro.h"
+#include "low_pass_filter.h"
+
 static bool main_backup_fired = false;  // Flag to track if the main backup pyro has been fired
 static bool landing_detection_started = false;  // Flag to track if landing detection has started
-static float prev_altitude = 0;  // Variable to hold the previous altitude for comparison, 
-static uint32_t prev_altitude_time = 0;  // Timestamp of previous altitude reading, ms
-static uint32_t under_threshold_timer = 0;  // How long the vertical speed has continuously under set threshold, ms
+static float prev_altitude_m = 0;  // Variable to hold the previous altitude for comparison, 
+static uint32_t prev_altitude_time_ms = 0;  // Timestamp of previous altitude reading, ms
+static uint32_t under_threshold_timer_ms = 0;  // How long the vertical speed has continuously under set threshold, ms
+
+static low_pass_filter_t vertical_speed_lpf;  // Low-pass filter for vertical speed
 
 State update_idle_descent(State_Context *context) {
     context->prev_state = IDLE_DESCENT;
@@ -64,30 +68,39 @@ State update_idle_descent(State_Context *context) {
     }
 
     if(!landing_detection_started) {
-        prev_altitude = context->altitude;
-        prev_altitude_time = HAL_GetTick();
+        prev_altitude_m = context->altitude;
+        prev_altitude_time_ms = HAL_GetTick();
+
+        low_pass_filter_init(&vertical_speed_lpf, 1.0f);
+
         landing_detection_started = true;
         return IDLE_DESCENT;
     } // Gets initial value for prev_altitude and prev_altitude_time
 
     uint32_t current_time = HAL_GetTick();
-    uint32_t time_interval = (current_time - prev_altitude_time); // ms
+    uint32_t time_interval_ms = (current_time - prev_altitude_time_ms);
 
-    if (time_interval >= 20) {
-        float vertical_speed = fabsf((context->altitude - prev_altitude) / (time_interval / 1000.0f)); // positive m/s
+    if (time_interval_ms >= 20) {
+        float vertical_speed = (context->altitude - prev_altitude_m) / (time_interval_ms / 1000.0f);
+        // low pass filter
+        vertical_speed = fabsf(low_pass_filter_update(&vertical_speed_lpf, vertical_speed, time_interval_ms));
         
         if (vertical_speed < LANDING_DETECTION_MAX_VELOCITY) {
-            under_threshold_timer += time_interval;
+            under_threshold_timer_ms += time_interval_ms;
         } else {
-            under_threshold_timer = 0; // Reset timer if vertical speed exceeds threshold
+            if (under_threshold_timer_ms > time_interval_ms) {
+                under_threshold_timer_ms -= time_interval_ms; // it would be bad if we set a uint32 negative
+            } else {
+                under_threshold_timer_ms = 0;
+            }
         }
+
+        prev_altitude_m = context->altitude;
+        prev_altitude_time_ms = current_time; // Update previous altitude time for next iteration
     }
 
-    prev_altitude = context->altitude;
-    prev_altitude_time = current_time; // Update previous altitude time for next iteration
-
-    if (under_threshold_timer >= LANDING_DETECTION_INTERVAL_MS) {
-        // TEMP, this needs secondary check for landing detection
+    if (under_threshold_timer_ms >= LANDING_DETECTION_INTERVAL_MS) {
+        // Revise how this secondary check is implemented
         return POST_FLIGHT;
     }
 
