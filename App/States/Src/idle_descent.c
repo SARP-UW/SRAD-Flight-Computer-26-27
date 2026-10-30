@@ -29,11 +29,13 @@
 #include <stdbool.h>
 #include <stdint.h>
 
+#include "states.h"
 #include "stm32f4xx_hal.h"
 #include "state_machine.h"
 #include "config.h"
 #include "idle_descent.h"
 
+#include "bmi088.h"
 #include "baro_estimate_altitude.h"
 #include "pyro.h"
 #include "low_pass_filter.h"
@@ -45,6 +47,7 @@ static uint32_t prev_altitude_time_ms = 0;  // Timestamp of previous altitude re
 static uint32_t under_threshold_timer_ms = 0;  // How long the vertical speed has continuously under set threshold, ms
 
 static low_pass_filter_t vertical_speed_lpf;  // Low-pass filter for vertical speed
+static bmi088_data_t imu_data;
 
 State update_idle_descent(State_Context *context) {
     context->prev_state = IDLE_DESCENT;
@@ -71,7 +74,7 @@ State update_idle_descent(State_Context *context) {
         prev_altitude_m = context->altitude;
         prev_altitude_time_ms = HAL_GetTick();
 
-        low_pass_filter_init(&vertical_speed_lpf, 1.0f);
+        low_pass_filter_init_blank(&vertical_speed_lpf, 1.0f);
 
         landing_detection_started = true;
         return IDLE_DESCENT;
@@ -99,9 +102,21 @@ State update_idle_descent(State_Context *context) {
         prev_altitude_time_ms = current_time; // Update previous altitude time for next iteration
     }
 
+    context->status = update_bmi088(&imu_data);
+    if (context->status != HAL_OK) {
+        return SAFE;
+    }
     if (under_threshold_timer_ms >= LANDING_DETECTION_INTERVAL_MS) {
         // Revise how this secondary check is implemented
-        return POST_FLIGHT;
+        float sum_of_squares = (imu_data.accel_x * imu_data.accel_x) + 
+                           (imu_data.accel_y * imu_data.accel_y) + 
+                           (imu_data.accel_z * imu_data.accel_z);
+        float magnitude = sqrtf(sum_of_squares);
+        if (fabsf(magnitude - 9.81f) < LANDING_DETECTION_ACCELERATION_TOLERANCE) {
+            return POST_FLIGHT;
+        } else {
+            return IDLE_DESCENT;
+        }
     }
 
     return IDLE_DESCENT;
