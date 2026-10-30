@@ -5,7 +5,7 @@
 
 #define TEN_SECOND_BUFFER_MS 10000
 
-bool restart_needed = false;
+static bool restart_needed = false;
 
 void enter_safe_state(State_Context *context) {
     uint32_t curr_time;

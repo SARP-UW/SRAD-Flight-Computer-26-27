@@ -13,7 +13,7 @@
 
 /** Notes
  * - Likely NEEDS secondary check for landing detection,
- *     probably will analyze acceleration data
+ *   mainly by analyzing acceleration data
  * JUDE: 
  * - I don't love that the under_threshold_timer resets to zero if
  *   a single measurment is above the threshold. I worry that noise, or a strong gust

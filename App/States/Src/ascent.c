@@ -22,8 +22,8 @@
 #include "pyro.h"
 #include "ascent.h"
 
-uint32_t descending_counter = 0; // Counter to track how many consecutive times the altitude has decreased
-float prev_altitude = 0; // Variable to hold the previous altitude for comparison
+static uint32_t descending_counter = 0; // Counter to track how many consecutive times the altitude has decreased
+static float prev_altitude = 0; // Variable to hold the previous altitude for comparison
 
 State update_ascent(State_Context *context) {
     context->prev_state = ASCENT;

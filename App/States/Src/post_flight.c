@@ -22,9 +22,9 @@
 #include "buzzer.h"
 #include "state_machine.h"
 
-bool buzzer_stopped = false;
-bool still_collecting_data = true;
-bool post_flight_initialized = false;
+static bool buzzer_stopped = false;
+static bool still_collecting_data = true;
+static bool post_flight_initialized = false;
 
 State update_post_flight(State_Context *context) {
     context->prev_state = POST_FLIGHT;
