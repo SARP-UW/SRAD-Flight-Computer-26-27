@@ -26,8 +26,8 @@
 #include "stm32f411xe.h"
 
 
-bmi088_data_t imu_data;
-bool preflight_init = false;
+static bmi088_data_t imu_data;
+static bool preflight_init = false;
 
 void toggle_continuity_leds(PyroChannel channel, GPIO_TypeDef* led_port, uint16_t led_pin, led_t led){
     if (check_continuity(channel)){
