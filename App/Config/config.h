@@ -8,8 +8,10 @@
 
 #define POST_FLIGHT_LOGGING_DURATION_MS 15000
 
+// Idle Descent State
 #define LANDING_DETECTION_MAX_VELOCITY 3.0f // m/s
 #define LANDING_DETECTION_INTERVAL_MS 5000U
+#define LANDING_DETECTION_ACCELERATION_TOLERANCE 2.0f // m/s^2
 
 // Safe State
 #define SIMULATED_TIME_TO_APOGEE_MS 0000 // Make sure to consider equipment like airbrakes, 
