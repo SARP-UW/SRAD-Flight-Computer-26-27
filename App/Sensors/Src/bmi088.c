@@ -128,46 +128,40 @@ static HAL_StatusTypeDef write_reg(sensor_t sensor, uint8_t cmd, const uint8_t *
 
 // Used to read data from a register on the BMI088.
 static HAL_StatusTypeDef read_reg(sensor_t sensor, uint8_t cmd, uint8_t *rx, uint8_t length) {
-    uint8_t tx[7] = {0};
+    const uint8_t skip = (sensor == ACCEL) ? 2 : 1;
 
     GPIO_TypeDef *cs_port;
     uint16_t cs_pin;
 
     switch (sensor) {
-        case ACCEL:
-            cs_port = ACCEL_CS_PORT;
-            cs_pin = ACCEL_CS_PIN;
+        case ACCEL: 
+            cs_port = ACCEL_CS_PORT; 
+            cs_pin = ACCEL_CS_PIN; 
             break;
-
-        case GYRO:
-            cs_port = GYRO_CS_PORT;
-            cs_pin = GYRO_CS_PIN;
+        case GYRO:  
+            cs_port = GYRO_CS_PORT;  
+            cs_pin = GYRO_CS_PIN;  
             break;
-
-        default:
+        default:    
             return HAL_ERROR;
     }
 
+    // The largest read will be 6 bytes (for accel and gyro data), 
+    // plus the skip bytes (2 for accel, 1 for gyro)
+    // ref: Section 6.1 of the datasheet
+    uint8_t tx[8] = {0};
+    uint8_t buf[8] = {0};
     tx[0] = cmd | 0x80;
 
-    HAL_StatusTypeDef status;
-
     HAL_GPIO_WritePin(cs_port, cs_pin, GPIO_PIN_RESET);
-    if (sensor == ACCEL) {
-        uint8_t dummy_rx[7] = {0}; // Used so that we don't overwrite the rx buffer
-        status = HAL_SPI_TransmitReceive(&hspi1, tx, dummy_rx, length + 1, timeout);
-
-        if (status == HAL_OK) {
-            for (uint8_t i = 0; i < length; i++) {
-                rx[i] = dummy_rx[i + 1];
-            }
-        }
-    }
-    else {
-        status = HAL_SPI_TransmitReceive(&hspi1, tx, rx, length, timeout);
-    }
+    HAL_StatusTypeDef status = HAL_SPI_TransmitReceive(&hspi1, tx, buf, length + skip, timeout);
     HAL_GPIO_WritePin(cs_port, cs_pin, GPIO_PIN_SET);
 
+    if (status == HAL_OK) {
+        for (uint8_t i = 0; i < length; i++) {
+            rx[i] = buf[i + skip];
+        }
+    }
     return status;
 }
 
@@ -202,7 +196,8 @@ static float convert_gyro_data_rads(int16_t raw_data) {
         return status;
     }
 
-    // Varify accelerometer manufacturer ID
+    // Varify accelerometer manufacturer ID and switch to SPI mode
+    // ref: Section 3 of the datasheet
     uint8_t acc_id;
     status = read_reg(ACCEL, ACC_CHIP_ID, &acc_id, 1);
     if (status != HAL_OK) {
@@ -306,6 +301,24 @@ HAL_StatusTypeDef update_bmi088(bmi088_data_t *data) {
     data->gyro_x = convert_gyro_data_rads(gyro_x);
     data->gyro_y = convert_gyro_data_rads(gyro_y);
     data->gyro_z = convert_gyro_data_rads(gyro_z);
+
+    return HAL_OK;
+}
+
+HAL_StatusTypeDef read_manufacturer_id(uint8_t *accel_id, uint8_t *gyro_id) {
+    HAL_StatusTypeDef status;
+
+    // Read accelerometer manufacturer ID
+    status = read_reg(ACCEL, ACC_CHIP_ID, accel_id, 1);
+    if (status != HAL_OK) {
+        return status;
+    }
+
+    // Read gyroscope manufacturer ID
+    status = read_reg(GYRO, GYRO_CHIP_ID, gyro_id, 1);
+    if (status != HAL_OK) {
+        return status;
+    }
 
     return HAL_OK;
 }

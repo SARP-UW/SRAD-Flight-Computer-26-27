@@ -1,3 +1,9 @@
+/**
+ * @file App/States/Src/state_machine.c
+ * @authors Jude Merritt
+ * @brief State machine implementation
+ */
+
 #include "state_machine.h"
 #include "pre_flight.h"
 #include "ascent.h"

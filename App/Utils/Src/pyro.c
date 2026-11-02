@@ -4,6 +4,8 @@
 
 void init_pyro(){}
 
-void check_continuity(PyroChannel channel){}
+bool check_continuity(PyroChannel channel){
+    return false;
+}
 
 void fire_pyro(PyroChannel channel){}

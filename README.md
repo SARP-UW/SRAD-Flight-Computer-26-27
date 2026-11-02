@@ -70,7 +70,7 @@ Contribute to this repository by making pull requests. These requests will be ap
 | **Hardware Member** | Andrew Winston | ... |
 | **Hardware Member** | Oliver Wang | ... |
 | **Software Member** | Michael Zheng | ... |
-| **Software Member** | *Name* | ... |
+| **Software Member** | Shivani Palanikumar | ... |
 
 ## Resources
 Apogee Detection Trade Study: https://docs.google.com/document/d/12nO3VqBxuzoluSDJDFiism0VeVs8u_7FXFGuN16y26I/edit?tab=t.0 

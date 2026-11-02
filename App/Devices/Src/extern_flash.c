@@ -1,0 +1,6 @@
+// WIP requirements
+// - Each packet fits within 256 byte page
+// - Checksum at the end of data content (maybe uint32_t)
+// - Writes using regular SPI (not QSPI), no DMA
+// - Consider what happens if a write operation is interrupted (e.g., power loss)
+// - Consider if flash is full when writing

@@ -32,3 +32,14 @@ HAL_StatusTypeDef init_bmi088(void);
  * @return HAL_StatusTypeDef HAL_OK if the initialization was successful, or an error code otherwise.
  */
 HAL_StatusTypeDef update_bmi088(bmi088_data_t *data);
+
+/**
+ * @brief Reads the manufacturer IDs of the accelerometer and gyroscope. The correct values are as follow:
+ * - Accelerometer: 0x1E
+ * - Gyroscope: 0x0F
+ * 
+ * @param accel_id pointer to a uint8_t variable to store the accelerometer manufacturer ID.
+ * @param gyro_id pointer to a uint8_t variable to store the gyroscope manufacturer ID
+ * @return HAL_StatusTypeDef HAL_OK if the read was successful, or an error code otherwise.
+ */
+HAL_StatusTypeDef read_manufacturer_id(uint8_t *accel_id, uint8_t *gyro_id);
