@@ -1,4 +1,8 @@
-// Name and stuff
+/**
+ * @file App/States/Inc/post_flight.h
+ * @authors Shivani Palanikumar
+ * @brief Post-flight state draft
+ */
 
 /**
  * State Operations: 

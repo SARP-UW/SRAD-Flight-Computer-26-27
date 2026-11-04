@@ -1,3 +1,9 @@
+/**
+ * @file App/States/Inc/idle_descent.h
+ * @authors Michael Zheng
+ * @brief Idle descent state draft
+ */
+
 #pragma once
 
 #include "stm32f4xx_hal.h"
