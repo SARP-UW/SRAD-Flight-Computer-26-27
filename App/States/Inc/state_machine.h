@@ -26,7 +26,9 @@ typedef struct {
     uint32_t apogee_pyro_time;
     uint32_t main_pyro_time;
     uint32_t post_flight_start_time; // Time when the rocket is grounded
-    HAL_StatusTypeDef status;
+    HAL_StatusTypeDef imu_status;
+    HAL_StatusTypeDef baro_status;
+    HAL_StatusTypeDef kalman_status;
     State prev_state; // Previous state before the current state
 } State_Context;
 

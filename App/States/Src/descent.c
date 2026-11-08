@@ -39,8 +39,8 @@ State update_descent(State_Context *context) {
         return DESCENT;
     }
 
-    context->status = baro_estimate_altitude(&context->altitude);
-    if (context->status != HAL_OK) {
+    context->baro_status = baro_estimate_altitude(&context->altitude);
+    if (context->baro_status != HAL_OK) {
         return SAFE;
     }
 
