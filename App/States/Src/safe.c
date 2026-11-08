@@ -15,12 +15,15 @@
 #include "config.h"
 #include "pyro.h"
 #include "safe.h"
+#include "buzzer.h"
+#include "stm32f4xx_hal.h"
+#include "state_machine.h"
 
 #define TEN_SECOND_BUFFER_MS 10000
 
 static bool restart_needed = false;
 
-void enter_safe_state(State_Context *context) {
+State enter_safe_state(State_Context *context) {
     uint32_t curr_time;
 
     switch (context->prev_state) {
@@ -31,7 +34,7 @@ void enter_safe_state(State_Context *context) {
             break;
 
         case ASCENT:
-            curr_time = HAL_getTick();
+            curr_time = HAL_GetTick();
             if (curr_time - context->flight_start_time >= SIMULATED_TIME_TO_APOGEE_MS) {
                 fire_pyro(APOGEE); // Fire apogee pyro charge at apogee if there is a critical error in the ascent state
                 HAL_Delay(APOGEE_PYRO_BACKUP_DELAY_MS);
@@ -42,7 +45,7 @@ void enter_safe_state(State_Context *context) {
             break;
 
         case DESCENT:
-            curr_time = HAL_getTick();
+            curr_time = HAL_GetTick();
             if (curr_time - context->flight_start_time >= (SIMULATED_TIME_TO_APOGEE_MS + APOGEE_TO_MAIN_PYRO_DELAY_MS)) {
                 fire_pyro(MAIN);
                 HAL_Delay(MAIN_PYRO_BACKUP_DELAY_MS);
@@ -53,6 +56,7 @@ void enter_safe_state(State_Context *context) {
             break;
 
         case IDLE_DESCENT:
+            curr_time = HAL_GetTick();
             if (curr_time - context->flight_start_time >= SIMULATED_FLIGHT_DURATION_MS + TEN_SECOND_BUFFER_MS) {
                 return POST_FLIGHT;
             }

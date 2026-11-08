@@ -22,7 +22,6 @@
 #include "buzzer.h"
 #include "state_machine.h"
 
-static bool buzzer_stopped = false;
 static bool still_collecting_data = true;
 static bool post_flight_initialized = false;
 
@@ -31,7 +30,7 @@ State update_post_flight(State_Context *context) {
 
     if(!post_flight_initialized){
         uint32_t freq = 4000; 
-        buzzer_set_frequency(freq);
+        buzzer_set_frequency_hz(freq);
         buzzer_on();
         
         post_flight_initialized = true;

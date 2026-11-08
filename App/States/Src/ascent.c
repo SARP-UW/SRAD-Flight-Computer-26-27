@@ -12,6 +12,10 @@
  * - Write data to flash memory
  * - Right now, any error prompts the state machine to move to the safe state. We may want 
  *   to implement different approaches for different errors. 
+ * 
+ * BIG NOTES: 
+ * - CONSISTENT SAMPLING
+ * - 
  */
 
 #include <stdbool.h>

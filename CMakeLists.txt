@@ -67,7 +67,13 @@ add_executable(${CMAKE_PROJECT_NAME}
     App/States/Inc/states.h
     App/Utils/Src/kalman_filter_estimate_altitude.c
     App/States/Inc/safe.h
-    App/States/Src/safe.c)
+    App/States/Src/safe.c
+    App/Utils/Inc/matrix.h
+    App/Utils/Src/matrix.c
+    App/Utils/Inc/low_pass_filter.h
+    App/Utils/Src/low_pass_filter.c
+    Core/Inc/main.h
+    Core/Src/main.c)
 
 # Add STM32CubeMX generated sources
 add_subdirectory(cmake/stm32cubemx)

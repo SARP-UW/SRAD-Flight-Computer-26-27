@@ -19,6 +19,7 @@
 #include "bmi088.h"
 #include "ms5611.h"
 #include "pyro.h"
+#include "baro_estimate_altitude.h"
 #include "stm32f4xx_hal_gpio.h"
 #include <pinout.h>
 #include "stm32f411xe.h"
@@ -42,18 +43,15 @@ State update_pre_flight(State_Context *context) {
     if (!preflight_init){
 
         HAL_StatusTypeDef imu_init_status = init_bmi088();
-        HAL_StatusTypeDef imu_calibrate_status = calibrate_accel_offset(&imu_data);  
         HAL_StatusTypeDef baro_init_status = init_ms5611(OSR_4096);
 
-        if (imu_init_status != HAL_OK || imu_calibrate_status != HAL_OK || baro_init_status != HAL_OK){
+        if (imu_init_status != HAL_OK || baro_init_status != HAL_OK){
             return SAFE;
         } 
         preflight_init = true;
 
         led_on(LED_MCU);  
-        baro_configure_ground_pressure();
-        
-        
+        baro_configure_ground_pressure(); 
     }
 
     if (preflight_init){

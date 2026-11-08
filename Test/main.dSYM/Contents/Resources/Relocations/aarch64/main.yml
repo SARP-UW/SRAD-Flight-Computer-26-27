@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/jm/SARP_SRAD_FC/SRAD-Flight-Computer-26-27/Test/main'
+relocations:     []
+...

@@ -8,4 +8,4 @@
 
 #include "state_machine.h"
 
-void enter_safe_state(State_Context *context);
+State enter_safe_state(State_Context *context);
