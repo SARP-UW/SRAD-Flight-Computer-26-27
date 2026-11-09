@@ -13,9 +13,7 @@
 
  /**
   * Notes (Shivani): Added, tim3 for buzzer interrupts
-  * - Right now, the ARR is set to 35999 with a 72 mHz clock, so the interrupt counts using 0.5 ms ticks,
-  * - Possible changes: we can change clock mHz to 36 mHz so that the ticks would be every ms. 
-  *   
+  * - Right now, the ARR is set to 999, with a prescaler of 71, which means the interrupt will fire every 1 ms. 
   */
 
 #include "buzzer.h"
