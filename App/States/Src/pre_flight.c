@@ -1,10 +1,8 @@
-//Temp
 /**
  * @file App/States/Src/pre_flight.c
  * @authors Shivani Palanikumar
  * @brief Pre-flight state draft
  */
-
 
  /*
  NOTES:

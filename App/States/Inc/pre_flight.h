@@ -1,4 +1,10 @@
 /**
+ * @file App/States/Inc/pre_flight.h
+ * @authors Shivani Palanikumar
+ * @brief Pre-flight state draft
+ */
+
+/**
  * State Operations:
  * - Toggle MCU LED at the beginning of the loop (so that it blinks)
  *     - Pull MCU LED high (so that it stops blinking) once switching states

@@ -1,3 +1,16 @@
+/**
+ * @file App/States/Src/safe.c
+ * @authors Jude Merritt
+ * @brief Safe state draft
+ */
+
+/**
+ * Notes:
+ * - Need to add a significant buffer to each of these events to guarentee that they do not happen too early. 
+ * - Not every error should send the state machine to the safe state. For example, if one sensor fails, we should try to use 
+ *   the other sensor before sending the state machine to the safe state.
+ */
+
 #include <stdbool.h>
 #include "config.h"
 #include "pyro.h"
