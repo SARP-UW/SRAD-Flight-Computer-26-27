@@ -1,7 +1,7 @@
 
 
 /**
- * @file App/Devices/Src/extern_flash.c
+ * @file App/Devices/Src/w25q128jv.c
  * @authors Michael Zheng
  * @brief W25Q128JV external flash driver
  * 
@@ -13,20 +13,14 @@
 #include "spi.h"
 #include "gpio.h"
 #include "pinout.h"
+#include <string.h>
 
 /** 
 * Notes
 * ! REMINDER In cubemx, set CS pin to be high on startup
+* - Functions are designed to be non-blocking, with the exception of init and send_command
+*     - Calling functions should check if the flash is busy before any operations
  */
-
-/**************************************************************************************************
- * @section Type definitions
- **************************************************************************************************/
-
-// ref: 
-typedef struct {
-    
-}; 
 
 /**************************************************************************************************
  * @section Definitions and global variables
@@ -42,6 +36,7 @@ typedef struct {
 #define JEDEC_ID_READ 0x9F
 
 #define WRITE_ENABLE 0x06
+#define PAGE_PROGRAM 0x02
 #define CHIP_ERASE 0xC7
 #define SECTOR_ERASE 0x20
 
@@ -49,47 +44,100 @@ typedef struct {
 
 // SPI
 extern SPI_HandleTypeDef hspi2;
-static const uint32_t timeout = 20; // 20ms timeout for commands
 
 /**************************************************************************************************
  * @section Private function definitions
  **************************************************************************************************/
 
+// Returns a timeout value in ms based on how many bytes we expect to transfer, with extra margin
+// If a transfer takes longer than this timeout, HAL assumes the transfer failed
+static uint32_t spi_timeout_ms(uint32_t num_bytes) {
+    // Calculates SPI frequency in Hz
+    uint32_t br = (hspi2.Init.BaudRatePrescaler & SPI_CR1_BR) >> SPI_CR1_BR_Pos;
+    uint32_t spi_hz = HAL_RCC_GetPCLK1Freq() >> (br + 1U);
+    return 2 * (num_bytes * 8U * 1000U) / spi_hz + 5U; // 2x margin + 5ms extra margin
+}
+
 // Used to send a single command
 static HAL_StatusTypeDef send_command(
     uint8_t command,
-    const uint8_t *tx_data,
+    uint8_t *tx_data,
     uint16_t tx_size,
     uint8_t *rx_data,
-    uint16_t rx_size)
+    uint32_t rx_size)
 {
     HAL_StatusTypeDef status;
+
+    // Flag empty pointers
+    if ((tx_size > 0 && tx_data == NULL) || (rx_size > 0 && rx_data == NULL)) {
+        return HAL_ERROR;
+    }
 
     // Select flash chip
     HAL_GPIO_WritePin(EXTERN_FLASH_CS_PORT, EXTERN_FLASH_CS_PIN, GPIO_PIN_RESET);
 
     // Transmit instruction
-    status = HAL_SPI_Transmit(&hspi2, &command, 1, timeout);
+    status = HAL_SPI_Transmit(&hspi2, &command, 1, spi_timeout_ms(1));
+    if (status != HAL_OK) {
+        HAL_GPIO_WritePin(EXTERN_FLASH_CS_PORT, EXTERN_FLASH_CS_PIN, GPIO_PIN_SET);
+        return status;
+    }
 
     // Transmit optional address and/or write data
     if (status == HAL_OK && tx_size > 0) {
-        status = HAL_SPI_Transmit(&hspi2, tx_data, tx_size, timeout);
+        status = HAL_SPI_Transmit(&hspi2, tx_data, tx_size, spi_timeout_ms(tx_size));
+    }
+    if (status != HAL_OK) {
+        HAL_GPIO_WritePin(EXTERN_FLASH_CS_PORT, EXTERN_FLASH_CS_PIN, GPIO_PIN_SET);
+        return status;
     }
 
     // Receive response, if applicable
-    if (status == HAL_OK && rx_size > 0) {
-    	status = HAL_SPI_Receive(&hspi2, rx_data, rx_size, timeout);
-	}
+    // ! HAL_SPI_Receive is limited to a Size of type uint16_t. For simplicity, we split reads into chunks of 4096 bytes
+    while (status == HAL_OK && rx_size > 0) {
+        if (rx_size >= 4096U) {
+            uint16_t chunk = 4096U;
+        } else {
+            uint16_t chunk = (uint16_t)rx_size;
+        }
+        status = HAL_SPI_Receive(&hspi2, rx_data, chunk, spi_timeout_ms(chunk));
+        
+        rx_data += chunk;
+        rx_size -= chunk; // No need to worry about underflow since chunk <= rx_size
+    }
+    if (status != HAL_OK) {
+        HAL_GPIO_WritePin(EXTERN_FLASH_CS_PORT, EXTERN_FLASH_CS_PIN, GPIO_PIN_SET);
+        return status;
+    }
 
     HAL_GPIO_WritePin(EXTERN_FLASH_CS_PORT, EXTERN_FLASH_CS_PIN, GPIO_PIN_SET);
 
     return status;
 }
 
-HAL_StatusTypeDef is_busy(bool *busy) {
-    uint8_t status_reg = 0;
+static HAL_StatusTypeDef check_write_enable(void) {
+    // Check if write enable was successful
+    uint8_t sr1 = 0;
+    HAL_StatusTypeDef status = send_command(
+        SR1_READ, // Read Status Register 1 command
+        NULL, 0,
+        &sr1, 1
+    );
+    if (status != HAL_OK)
+        return status;
+    // Write enable bit is in position S1 of status register 1, make sure it is 1
+    if ((sr1 & 0b00000010) == 0) // Throw error if write enable bit is not set
+        return HAL_ERROR;
+    return HAL_OK;
+}
 
-    if (busy == NULL) return HAL_ERROR;
+/**************************************************************************************************
+ * @section Public function definitions
+ **************************************************************************************************/
+
+HAL_StatusTypeDef extern_flash_is_busy(void) {
+    uint8_t status_reg = 0;
+    bool busy;
 
     HAL_StatusTypeDef status = send_command(
         SR1_READ, // Read Status Register 1 command
@@ -99,35 +147,34 @@ HAL_StatusTypeDef is_busy(bool *busy) {
 
     if (status != HAL_OK)
         return status;
-    *busy = (status_reg & 0b00000001) != 0; // Busy bit is the LSB of status register 1
+    busy = (status_reg & 0b00000001) != 0; // Busy bit is the LSB of status register 1
+
+    if (busy) {
+        return HAL_BUSY;
+    }
     return HAL_OK;
 }
 
-HAL_StatusTypeDef wait_until_ready(uint32_t max_timeout){
+HAL_StatusTypeDef extern_flash_wait_until_ready(uint32_t max_timeout){
     uint32_t start_time = HAL_GetTick();
-    bool busy = true;
+    HAL_StatusTypeDef status = extern_flash_is_busy();
 
-    while (busy){
-        HAL_StatusTypeDef status = is_busy(&busy);
-
-        if (status != HAL_OK)
+    while (status != HAL_OK) {
+        status = extern_flash_is_busy();
+        if (status != HAL_OK && status != HAL_BUSY) {
             return status;
-
-        if (!busy)
-            return HAL_OK;
-
-        if ((HAL_GetTick() - start_time) >= max_timeout)
+        }
+        
+        if ((HAL_GetTick() - start_time) >= max_timeout) {
             return HAL_TIMEOUT;
+        }
     }
 
     return HAL_OK;
 }
 
-/**************************************************************************************************
- * @section Public function definitions
- **************************************************************************************************/
-
 HAL_StatusTypeDef init_w25q128jv(void) {
+    HAL_Delay(10); // Wait for flash to accept instructions
 	HAL_StatusTypeDef status;
 
 	// * Release from power-down state
@@ -176,8 +223,11 @@ HAL_StatusTypeDef init_w25q128jv(void) {
 }
 
 // Fully erase the entire flash chip. This operation takes max 200sec to complete.
-HAL_StatusTypeDef erase_w15q128jv(void) {
+HAL_StatusTypeDef chip_erase(void) {
     HAL_StatusTypeDef status;
+    status = extern_flash_is_busy();
+    if (status != HAL_OK) 
+        return status;
 
     // * Enable writing to the flash
     status = send_command(
@@ -185,6 +235,10 @@ HAL_StatusTypeDef erase_w15q128jv(void) {
         NULL, 0,
         NULL, 0
     );
+    if (status != HAL_OK)
+        return status;
+    // Check if write enable was successful
+    status = check_write_enable();
     if (status != HAL_OK)
         return status;
 
@@ -197,27 +251,81 @@ HAL_StatusTypeDef erase_w15q128jv(void) {
     if (status != HAL_OK)
         return status;
 
-    // * Wait for the erase operation to complete
-    status = wait_until_ready(200000); // Wait up to 200 seconds for erase to complete, ref datasheet 9.6
-    if (status != HAL_OK)
-        return status;
+    // Wait for the erase operation to complete
+    // status = extern_flash_wait_until_ready(200000); // Wait up to 200 seconds for erase to complete, ref datasheet 9.6
+    // if (status != HAL_OK)
+    //     return status;
 
     return HAL_OK;
 }
 
-// Reads for specified length starting from input address, len is number of bytes to read.
-static HAL_StatusTypeDef read_data(uint32_t address, uint8_t *buffer, uint32_t len) {
-    // Ensure read is within the size of memory
-    if (address >= FLASH_SIZE_BYTES || address + len > FLASH_SIZE_BYTES) {
+HAL_StatusTypeDef sector_erase(uint32_t address) {
+    HAL_StatusTypeDef status;
+    status = extern_flash_is_busy();
+    if (status != HAL_OK) 
+        return status;
+
+    // Ensure sector location is within the size of memory
+    if (address >= FLASH_SIZE_BYTES || address + 4096U > FLASH_SIZE_BYTES) {
         return HAL_ERROR;
     }
 
-    // Wait until flash is ready
-    HAL_StatusTypeDef status = wait_until_ready(100);
+
+    // Ensure sector address is aligned to 4096 bytes (sector size)
+    if (address % 4096 != 0) 
+        return HAL_ERROR;
+
+    // Enable writing to the flash
+    status = send_command(
+        WRITE_ENABLE, // Write Enable command
+        NULL, 0,
+        NULL, 0
+    );
+    if (status != HAL_OK)
+        return status;
+    // Check if write enable was successful
+    status = check_write_enable();
     if (status != HAL_OK)
         return status;
 
-    // Convert 24-bit address to be sent in three separate 8-byte chunks
+    // Erase the specified sector
+    uint8_t address_bytes[3] = {
+        (uint8_t)(address >> 16), // MSB
+        (uint8_t)(address >> 8),
+        (uint8_t)(0x00)          // Addresses are always aligned to 4096 bytes, so last byte is always 0
+    };
+    status = send_command(
+        SECTOR_ERASE, // Sector Erase command
+        address_bytes, 3,
+        NULL, 0
+    );
+    if (status != HAL_OK)
+        return status;
+
+    // Wait for the erase operation to complete
+    // status = extern_flash_wait_until_ready(400); // Max sector erase duration, ref datasheet 9.6
+    // if (status != HAL_OK)
+    //     return status;
+
+    return HAL_OK;
+}
+
+// Reads for specified length starting from input address, len is number of bytes to read
+HAL_StatusTypeDef read_data(uint32_t address, uint8_t *buffer, uint32_t len) {
+    HAL_StatusTypeDef status;
+    // Ensure read is within the size of memory
+    if (buffer == NULL || len == 0) {
+        return HAL_ERROR;
+    }
+    if (address >= FLASH_SIZE_BYTES || len > FLASH_SIZE_BYTES - address) {
+        return HAL_ERROR;
+    }
+
+    status = extern_flash_is_busy();
+    if (status != HAL_OK) 
+        return status;
+
+    // Convert 24-bit address to be sent in three separate 8-byte chunks, casting leaves the last byte after the bit shift
     uint8_t address_bytes[3] = {
         (uint8_t)(address >> 16), // MSB
         (uint8_t)(address >> 8),
@@ -231,26 +339,26 @@ static HAL_StatusTypeDef read_data(uint32_t address, uint8_t *buffer, uint32_t l
     );
 }
 
-// Note that the page number is zero-indexed.
-HAL_StatusTypeDef read_page(uint32_t page, uint8_t *buffer){
-    return read_data(
-        page * 256, // page * 256 bytes/page
-        buffer,
-        256
-    );
-}
-
-// ! wip
-static HAL_StatusTypeDef write_data(uint32_t address, const uint8_t *data, uint32_t len) {
-    if (data == NULL) 
+HAL_StatusTypeDef write_data(uint32_t address, uint8_t *data, uint16_t len) {
+    HAL_StatusTypeDef status;
+    if (data == NULL)
         return HAL_ERROR;
     // Ensure the write fits within flash memory
     if (address >= FLASH_SIZE_BYTES || address + len > FLASH_SIZE_BYTES) {
         return HAL_ERROR;
     }
+    // Ensure the write fits within a single page (256 bytes)
+    // This is assuming that we will never write across page boundaries
+    if (address % 256 + len > 256) {
+        return HAL_ERROR;
+    }
+    
+    status = extern_flash_is_busy();
+    if (status != HAL_OK) 
+        return status;
 
     // Write enable
-    HAL_StatusTypeDef status = send_command(
+    status = send_command(
         WRITE_ENABLE,
         NULL, 0,
         NULL, 0
@@ -259,21 +367,20 @@ static HAL_StatusTypeDef write_data(uint32_t address, const uint8_t *data, uint3
         return status;
 
     // Check if write enable was successful
-    uint8_t status_reg = 0;
-    HAL_StatusTypeDef status = send_command(
-        SR1_READ, // Read Status Register 1 command
-        NULL, 0,
-        &status_reg, 1
-    );
+    status = check_write_enable();
     if (status != HAL_OK)
         return status;
-    // Busy bit is in position S1 of status register 1
-    if ((status_reg & 0b00000010) == 0)
-        return HAL_ERROR;
 
+    // Combine write command, address, and data
+    uint8_t tx_buffer[3 + len]; // 3 bytes for address + len bytes for data
+    tx_buffer[0] = (uint8_t)(address >> 16); // MSB
+    tx_buffer[1] = (uint8_t)(address >> 8);
+    tx_buffer[2] = (uint8_t)(address); // LSB
+    memcpy(&tx_buffer[3], data, len);
 
-
-    // Datsheet page 34:
-    // "If an entire 256 byte page is to be programmed, the last address byte (the 8 least significant address bits) should be set to 0"
-    return status;
+    return send_command(
+        PAGE_PROGRAM, // Write Data command
+        tx_buffer, 3 + len,
+        NULL, 0
+    );
 }
