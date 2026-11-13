@@ -67,13 +67,13 @@ State update_pre_flight(State_Context *context) {
 
         // collect baro and imu data
         // if there is an error with any of the sensors, goes to safe state
-        context->status = update_bmi088(&imu_data); //collect data from imu
-        if (context->status != HAL_OK){
+        context->baro_status = update_bmi088(&imu_data); //collect data from imu
+        if (context->baro_status != HAL_OK){
             return SAFE;
         }
 
-        context->status = baro_estimate_altitude(&context->altitude); // collect data from baro
-        if (context->status != HAL_OK){
+        context->imu_status = baro_estimate_altitude(&context->altitude); // collect data from baro
+        if (context->imu_status != HAL_OK){
             return SAFE;
         }
 

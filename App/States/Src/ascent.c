@@ -14,7 +14,6 @@
  *   to implement different approaches for different errors. 
  */
 
-#include <stdbool.h>
 #include <stdint.h>
 #include "kalman_filter_estimate_altitude.h"
 #include "stm32f4xx_hal.h"
@@ -28,8 +27,8 @@ static float prev_altitude = 0; // Variable to hold the previous altitude for co
 State update_ascent(State_Context *context) {
     context->prev_state = ASCENT;
 
-    context->status = kalman_filter_estimate_altitude(&context->altitude);
-    if (context->status != HAL_OK) {
+    context->kalman_status = kalman_filter_estimate_altitude(&context->altitude);
+    if (context->kalman_status != HAL_OK) {
         return SAFE;
     }
 

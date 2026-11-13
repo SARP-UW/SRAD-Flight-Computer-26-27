@@ -65,8 +65,8 @@ State update_idle_descent(State_Context *context) {
     //   ref: https://docs.google.com/document/d/14AMPyc_z-sSQZw2hGkxxA7nLwaDc4ogyx1ahcZhJtiA/edit?tab=t.0
     
     // Calculates vertical velocity
-    context->status = baro_estimate_altitude(&context->altitude);
-    if (context->status != HAL_OK) {
+    context->baro_status = baro_estimate_altitude(&context->altitude);
+    if (context->baro_status != HAL_OK) {
         return SAFE;
     }
 
@@ -102,8 +102,8 @@ State update_idle_descent(State_Context *context) {
         prev_altitude_time_ms = current_time; // Update previous altitude time for next iteration
     }
 
-    context->status = update_bmi088(&imu_data);
-    if (context->status != HAL_OK) {
+    context->imu_status = update_bmi088(&imu_data);
+    if (context->imu_status != HAL_OK) {
         return SAFE;
     }
     if (under_threshold_timer_ms >= LANDING_DETECTION_INTERVAL_MS) {
