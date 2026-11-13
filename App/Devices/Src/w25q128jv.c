@@ -106,10 +106,6 @@ static HAL_StatusTypeDef send_command(
         rx_data += chunk;
         rx_size -= chunk; // No need to worry about underflow since chunk <= rx_size
     }
-    if (status != HAL_OK) {
-        HAL_GPIO_WritePin(EXTERN_FLASH_CS_PORT, EXTERN_FLASH_CS_PIN, GPIO_PIN_SET);
-        return status;
-    }
 
     HAL_GPIO_WritePin(EXTERN_FLASH_CS_PORT, EXTERN_FLASH_CS_PIN, GPIO_PIN_SET);
 
