@@ -44,6 +44,8 @@ add_executable(${CMAKE_PROJECT_NAME}
     App/Sensors/Src/ms5611.c
     App/Sensors/Inc/bmi088.h
     App/Sensors/Src/bmi088.c
+    App/Devices/Inc/w25q128jv.h
+    App/Devices/Src/w25q128jv.c
     App/Devices/Inc/led.h
     App/Devices/Src/led.c
     App/Devices/Inc/buzzer.h
